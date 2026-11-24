@@ -1,0 +1,600 @@
+{
+  "isStage": false,
+  "name": "demons//Sprite1",
+  "variables": {
+    ".#d2/g#-hnlCn[9DvN3;": [
+      "I",
+      2
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "g.t": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "Jt",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 59,
+      "y": 506
+    },
+    "Jt": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "g.t",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dN|"
+        ],
+        "SUBSTACK": [
+          2,
+          "dN}"
+        ],
+        "SUBSTACK2": [
+          2,
+          "g.u"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dN|": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "Jt",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "dN~",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dN~": {
+      "opcode": "sensing_of",
+      "next": null,
+      "parent": "dN|",
+      "inputs": {
+        "OBJECT": [
+          1,
+          "g.v"
+        ]
+      },
+      "fields": {
+        "PROPERTY": [
+          "trackable",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.v": {
+      "opcode": "sensing_of_object_menu",
+      "next": null,
+      "parent": "dN~",
+      "inputs": {},
+      "fields": {
+        "OBJECT": [
+          "demons//hunter",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dN}": {
+      "opcode": "looks_show",
+      "next": "dOa",
+      "parent": "Jt",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.u": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "Jt",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.w": {
+      "opcode": "looks_nextcostume",
+      "next": null,
+      "parent": "dOa",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.x": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g.y",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 386,
+      "y": 171
+    },
+    "g.y": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g.x",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.z": {
+      "opcode": "event_whenflagclicked",
+      "next": "g.A",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 115,
+      "y": 109
+    },
+    "g.A": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g.z",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOa": {
+      "opcode": "looks_seteffectto",
+      "next": "g.w",
+      "parent": "dN}",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOb": {
+      "opcode": "procedures_definition",
+      "next": "dOc",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "dOd"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 826,
+      "y": 785
+    },
+    "dOd": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dOb",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "g.B"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "g.B": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOd",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category"
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOc": {
+      "opcode": "looks_gotofrontback",
+      "next": "dOe",
+      "parent": "dOb",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOe": {
+      "opcode": "data_setvariableto",
+      "next": "Ju",
+      "parent": "dOc",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          ".#d2/g#-hnlCn[9DvN3;"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ju": {
+      "opcode": "control_repeat_until",
+      "next": "a/D",
+      "parent": "dOe",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dOf"
+        ],
+        "SUBSTACK": [
+          2,
+          "g.C"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOf": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Ju",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "a/E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/E": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "dOf",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g.D",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "g.E",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.D": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/E",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.E": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "a/E",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            ".#d2/g#-hnlCn[9DvN3;"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.C": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "Ju",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          ".#d2/g#-hnlCn[9DvN3;"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/D": {
+      "opcode": "data_insertatlist",
+      "next": "dOg",
+      "parent": "Ju",
+      "inputs": {
+        "ITEM": [
+          3,
+          "g.F",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            ".#d2/g#-hnlCn[9DvN3;"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.F": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/D",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOg": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "a/D",
+      "inputs": {
+        "NUM": [
+          3,
+          "g.G",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.G": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dOg",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            ".#d2/g#-hnlCn[9DvN3;"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.H": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g.I",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 861,
+      "y": 615
+    },
+    "g.I": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "g.H",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-1588"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    }
+  },
+  "comments": {},
+  "currentCostume": 1,
+  "costumes": [
+    {
+      "name": "bad_news",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "b394528e3c4064902e6b6f0e59d0d675",
+      "md5ext": "b394528e3c4064902e6b6f0e59d0d675.svg",
+      "rotationCenterX": 282.9999999999998,
+      "rotationCenterY": 213.1307053941909
+    },
+    {
+      "name": "bad_news3",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "98cad18f19716a383de27a2ef2f15401",
+      "md5ext": "98cad18f19716a383de27a2ef2f15401.svg",
+      "rotationCenterX": 283,
+      "rotationCenterY": 213.130705
+    },
+    {
+      "name": "bad_news2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "b394528e3c4064902e6b6f0e59d0d675",
+      "md5ext": "b394528e3c4064902e6b6f0e59d0d675.svg",
+      "rotationCenterX": 283,
+      "rotationCenterY": 213.130705
+    },
+    {
+      "name": "bad_news4",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "2e190ee00a21b6cefbd7bb76ab40cb5b",
+      "md5ext": "2e190ee00a21b6cefbd7bb76ab40cb5b.svg",
+      "rotationCenterX": 283,
+      "rotationCenterY": 213.130705
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 62,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

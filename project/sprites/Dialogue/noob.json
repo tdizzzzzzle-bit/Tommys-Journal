@@ -1,0 +1,815 @@
+{
+  "isStage": false,
+  "name": "Dialogue//noob",
+  "variables": {
+    "YEoEXeUx`^|91E]xU]P}": [
+      "I",
+      2
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "gs/": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gs:",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 240
+    },
+    "gs:": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "gs/",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-99999"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "dfP": {
+      "opcode": "procedures_definition",
+      "next": "dfQ",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "dfR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 416
+    },
+    "dfR": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dfP",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "gs;"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "gs;": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dfR",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dfQ": {
+      "opcode": "looks_gotofrontback",
+      "next": "dfS",
+      "parent": "dfP",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfS": {
+      "opcode": "data_setvariableto",
+      "next": "Ee",
+      "parent": "dfQ",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "YEoEXeUx`^|91E]xU]P}"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ee": {
+      "opcode": "control_repeat_until",
+      "next": "aTD",
+      "parent": "dfS",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dfT"
+        ],
+        "SUBSTACK": [
+          2,
+          "gs="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfT": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Ee",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aTE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTE": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "dfT",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gs?",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "gs@",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs?": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aTE",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs@": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aTE",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "YEoEXeUx`^|91E]xU]P}"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs=": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "Ee",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "YEoEXeUx`^|91E]xU]P}"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTD": {
+      "opcode": "data_insertatlist",
+      "next": "dfU",
+      "parent": "Ee",
+      "inputs": {
+        "ITEM": [
+          3,
+          "gs[",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "YEoEXeUx`^|91E]xU]P}"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs[": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aTD",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfU": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "aTD",
+      "inputs": {
+        "NUM": [
+          3,
+          "gs]",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs]": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dfU",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "YEoEXeUx`^|91E]xU]P}"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs^": {
+      "opcode": "event_whenflagclicked",
+      "next": "gs_",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "gs_": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "gs^",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs`": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dfV",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "noob",
+          "z|!:%J9!6?zVxk!i6WE4"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 912
+    },
+    "dfV": {
+      "opcode": "data_setvariableto",
+      "next": "aTF",
+      "parent": "gs`",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "controls? //dontsave//",
+          ";)nRXr$_%(-RcM2}5#1M"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTG": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "aTF",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dfW"
+        ],
+        "SUBSTACK": [
+          2,
+          "aTH"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfW": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aTG",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gs{",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs{": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "dfW",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "room history",
+          "4k*(I),0r4,hF@l]:ZvZ"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTH": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dfX",
+      "parent": "aTG",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gs|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs|": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aTH",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dfX": {
+      "opcode": "looks_show",
+      "next": "dfY",
+      "parent": "aTH",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfY": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "aTI",
+      "parent": "dfX",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTJ": {
+      "opcode": "control_repeat",
+      "next": "gs}",
+      "parent": "aTI",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aTK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs~": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "aTK",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gs}": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aTJ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dfZ": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "df!",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gta"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gta": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dfZ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTK": {
+      "opcode": "control_wait_until",
+      "next": "gs~",
+      "parent": "aTJ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gtb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gtb": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aTK",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTF": {
+      "opcode": "control_repeat",
+      "next": "aTG",
+      "parent": "dfV",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "140"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "df!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "df!": {
+      "opcode": "control_wait",
+      "next": "dfZ",
+      "parent": "aTF",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aTI": {
+      "opcode": "control_repeat",
+      "next": "aTJ",
+      "parent": "dfY",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "60"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "df#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "df#": {
+      "opcode": "control_wait",
+      "next": "df%",
+      "parent": "aTI",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "df%": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "df#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gtc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gtc": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "df%",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "2a6bb02d52b5be8d8e5058276664b2bb",
+      "md5ext": "2a6bb02d52b5be8d8e5058276664b2bb.svg",
+      "rotationCenterX": 253.25,
+      "rotationCenterY": -142.2001484287262
+    },
+    {
+      "name": "costume2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "7444f975535cd7234f882732eb0d0952",
+      "md5ext": "7444f975535cd7234f882732eb0d0952.svg",
+      "rotationCenterX": 253.25,
+      "rotationCenterY": -142.20025499999997
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 87,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

@@ -1,0 +1,345 @@
+{
+  "isStage": false,
+  "name": "the whole screen",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "haL": {
+      "opcode": "event_whenflagclicked",
+      "next": "dZ+",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 56,
+      "y": 411
+    },
+    "dZ+": {
+      "opcode": "looks_seteffectto",
+      "next": "haM",
+      "parent": "haL",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haM": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dZ+",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haN": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZ,",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 640,
+      "y": 282
+    },
+    "dZ,": {
+      "opcode": "looks_seteffectto",
+      "next": "haO",
+      "parent": "haN",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haO": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "dZ,",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haP": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZ-",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -115,
+      "y": 164
+    },
+    "dZ-": {
+      "opcode": "looks_seteffectto",
+      "next": "haQ",
+      "parent": "haP",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haQ": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dZ-",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haR": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "haS",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 236,
+      "y": 649
+    },
+    "haS": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "haR",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hlU": {
+      "opcode": "event_whenkeypressed",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1258,
+      "y": 334
+    },
+    "haT": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZ.",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "GAME CRASHED",
+          "JSsU7jhBv}|yz0[EjZ(f"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 604,
+      "y": 655
+    },
+    "dZ/": {
+      "opcode": "looks_seteffectto",
+      "next": "dZ;",
+      "parent": "dZ:",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ;": {
+      "opcode": "looks_show",
+      "next": "dZ=",
+      "parent": "dZ/",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ=": {
+      "opcode": "data_setvariableto",
+      "next": "haU",
+      "parent": "dZ;",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haU": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "dZ=",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "haV": {
+      "opcode": "lmsMoreEvents_whenStopClicked",
+      "next": "haW",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1049,
+      "y": 466
+    },
+    "haW": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "haV",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ.": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "haT",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "dZ:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ:": {
+      "opcode": "looks_gotofrontback",
+      "next": "dZ/",
+      "parent": "dZ.",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "d46dba283f06be112c5108b3dba34b1d",
+      "md5ext": "d46dba283f06be112c5108b3dba34b1d.svg",
+      "rotationCenterX": 245.5,
+      "rotationCenterY": 185
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 156,
+  "visible": true,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

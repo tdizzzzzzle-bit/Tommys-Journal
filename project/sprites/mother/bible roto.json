@@ -1,0 +1,1257 @@
+{
+  "isStage": false,
+  "name": "mother//bible roto",
+  "variables": {
+    "mafSfx1_z;/%GmGV|fz:": [
+      "I",
+      2
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "e+@": {
+      "opcode": "event_whenflagclicked",
+      "next": "e+[",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 552,
+      "y": 282
+    },
+    "e+[": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "e+@",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+]": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "|e",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Bible roto",
+          "%h3RBVMKykl!Ucq|Ftw4"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -701,
+      "y": -158
+    },
+    "|e": {
+      "opcode": "sound_play",
+      "next": "b,U",
+      "parent": "e+]",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "e+^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+^": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "|e",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Ephesians 6:17",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "b,U": {
+      "opcode": "data_setvariableto",
+      "next": "b,V",
+      "parent": "|e",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "%PAUSED //dontsave//",
+          "3V/ojquZ3Os2Sr|;~zt9"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,V": {
+      "opcode": "looks_gotofrontback",
+      "next": "b,W",
+      "parent": "b,U",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,W": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "b,X",
+      "parent": "b,V",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,X": {
+      "opcode": "looks_show",
+      "next": "|f",
+      "parent": "b,W",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "|f": {
+      "opcode": "looks_switchcostumeto",
+      "next": "|g",
+      "parent": "b,X",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "e+_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+_": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "|f",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "|h": {
+      "opcode": "looks_switchcostumeto",
+      "next": "b,Y",
+      "parent": "|g",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "e+`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+`": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "|h",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "|g": {
+      "opcode": "control_wait_until",
+      "next": "|h",
+      "parent": "|f",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "b,Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,Z": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "|g",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "b,!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,Y": {
+      "opcode": "motion_gotoxy",
+      "next": "b,#",
+      "parent": "|h",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,#": {
+      "opcode": "looks_setsizeto",
+      "next": "b,%",
+      "parent": "b,Y",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,%": {
+      "opcode": "looks_nextcostume",
+      "next": "|i",
+      "parent": "b,#",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "|i": {
+      "opcode": "control_repeat",
+      "next": "|j",
+      "parent": "b,%",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "42"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "b,("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,(": {
+      "opcode": "looks_nextcostume",
+      "next": "e+{",
+      "parent": "|i",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+{": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": "b,(",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0.08"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "|j": {
+      "opcode": "looks_switchcostumeto",
+      "next": "|k",
+      "parent": "|i",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "e+|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+|": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "|j",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "38",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "|k": {
+      "opcode": "control_repeat",
+      "next": "b,)",
+      "parent": "|j",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "6"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "e+}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+}": {
+      "opcode": "looks_nextcostume",
+      "next": null,
+      "parent": "|k",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,)": {
+      "opcode": "data_setvariableto",
+      "next": "e+~",
+      "parent": "|k",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "%PAUSED //dontsave//",
+          "3V/ojquZ3Os2Sr|;~zt9"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e+~": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "b,)",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,*": {
+      "opcode": "procedures_definition",
+      "next": "b,+",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "b,,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 103,
+      "y": -255
+    },
+    "b,,": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "b,*",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "e,a"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "e,a": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "b,,",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "b,+": {
+      "opcode": "looks_gotofrontback",
+      "next": "b,-",
+      "parent": "b,*",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,-": {
+      "opcode": "data_setvariableto",
+      "next": "o.",
+      "parent": "b,+",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "mafSfx1_z;/%GmGV|fz:"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "o.": {
+      "opcode": "control_repeat_until",
+      "next": "|l",
+      "parent": "b,-",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "b,."
+        ],
+        "SUBSTACK": [
+          2,
+          "e,b"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,.": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "o.",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "|m"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "|m": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "b,.",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "e,c",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "e,d",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,c": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "|m",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,d": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "|m",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "mafSfx1_z;/%GmGV|fz:"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,b": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "o.",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "mafSfx1_z;/%GmGV|fz:"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "|l": {
+      "opcode": "data_insertatlist",
+      "next": "b,/",
+      "parent": "o.",
+      "inputs": {
+        "ITEM": [
+          3,
+          "e,e",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "mafSfx1_z;/%GmGV|fz:"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,e": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "|l",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,/": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "|l",
+      "inputs": {
+        "NUM": [
+          3,
+          "e,f",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,f": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "b,/",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "mafSfx1_z;/%GmGV|fz:"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,g": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "e,h",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 101,
+      "y": -419
+    },
+    "e,h": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "e,g",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-9999"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "e,i": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "e,j",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "MOTHER PHASE 2!!",
+          "oaYFW%t2*.*,1_H?DEAX"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 117,
+      "y": 324
+    },
+    "e,j": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "e,i",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b,!": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "b,Z",
+      "inputs": {
+        "SOUND": [
+          1,
+          "e,k"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e,k": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "b,!",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Ephesians 6:17",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 43,
+  "costumes": [
+    {
+      "name": "1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "fee1839ed68fea88bfe2f6b614c04550",
+      "md5ext": "fee1839ed68fea88bfe2f6b614c04550.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2e454e82910a1046c3c6dcf393d143be",
+      "md5ext": "2e454e82910a1046c3c6dcf393d143be.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "17a4cff2eec1a74eebeead66b1a6b8cf",
+      "md5ext": "17a4cff2eec1a74eebeead66b1a6b8cf.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2660b9749b025f499e2d03f2cabf4ee4",
+      "md5ext": "2660b9749b025f499e2d03f2cabf4ee4.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b831096cd0a745b1192cdaf13c14fc46",
+      "md5ext": "b831096cd0a745b1192cdaf13c14fc46.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "6",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1d1a4dfb094a266b750ee0fccf7c9f3e",
+      "md5ext": "1d1a4dfb094a266b750ee0fccf7c9f3e.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "7",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b140607ebcf5a4abc620ce358df5c4f0",
+      "md5ext": "b140607ebcf5a4abc620ce358df5c4f0.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "8",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "42a9641d756728eaf2205992e23aee3e",
+      "md5ext": "42a9641d756728eaf2205992e23aee3e.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "9",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "806044806e1740f4e218a5ebe5bbd724",
+      "md5ext": "806044806e1740f4e218a5ebe5bbd724.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "10",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7d13bc289c0e370bc308b9e81fb969c5",
+      "md5ext": "7d13bc289c0e370bc308b9e81fb969c5.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "11",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "69b3be7cb8adf7eba329e54386b686f7",
+      "md5ext": "69b3be7cb8adf7eba329e54386b686f7.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "12",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "24d3dafd25fdc4fe7fd30836471f9740",
+      "md5ext": "24d3dafd25fdc4fe7fd30836471f9740.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "13",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "eea0a82481fed44088720a03c0fd79eb",
+      "md5ext": "eea0a82481fed44088720a03c0fd79eb.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "14",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "da04d62158f9003110358dcabe51b126",
+      "md5ext": "da04d62158f9003110358dcabe51b126.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "15",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1f6f0550a9cbf7931a0a6c9390305f1a",
+      "md5ext": "1f6f0550a9cbf7931a0a6c9390305f1a.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "16",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9c1327a19c2cc96e0811ffa37844b736",
+      "md5ext": "9c1327a19c2cc96e0811ffa37844b736.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "17",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e99c571a6ea63dbb48d61c852025132d",
+      "md5ext": "e99c571a6ea63dbb48d61c852025132d.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "18",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "53dd82820a115807804f368af3703761",
+      "md5ext": "53dd82820a115807804f368af3703761.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "19",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d199547852dcca492a71d2c32c05b4b3",
+      "md5ext": "d199547852dcca492a71d2c32c05b4b3.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "20",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "995b11ca53a7ec4ab1f16b25247c45bf",
+      "md5ext": "995b11ca53a7ec4ab1f16b25247c45bf.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "21",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8f9c3556adf01b691c56447b92e85c1f",
+      "md5ext": "8f9c3556adf01b691c56447b92e85c1f.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "22",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bbea3ebe36a23f72e7eb100db3f22616",
+      "md5ext": "bbea3ebe36a23f72e7eb100db3f22616.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "23",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "323975d4507c47fccc9cd1bb742d85f1",
+      "md5ext": "323975d4507c47fccc9cd1bb742d85f1.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "24",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "45db75e5fb777dcaa14f3127c8de2fa5",
+      "md5ext": "45db75e5fb777dcaa14f3127c8de2fa5.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "25",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2c555c17735db1e9adfcf57dd6e4288b",
+      "md5ext": "2c555c17735db1e9adfcf57dd6e4288b.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "26",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "17f56de0833a63f007c7a405a3f1c538",
+      "md5ext": "17f56de0833a63f007c7a405a3f1c538.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "27",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2e4b6cde66bf484e0ae3ebc1e4c93e48",
+      "md5ext": "2e4b6cde66bf484e0ae3ebc1e4c93e48.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "28",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2ea97aa80820a675b2bf5e3a34a9b50f",
+      "md5ext": "2ea97aa80820a675b2bf5e3a34a9b50f.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "29",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b41191a3a79e64f44c7910a04c1fbb97",
+      "md5ext": "b41191a3a79e64f44c7910a04c1fbb97.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "30",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "44da8c5760a3adca2f0abc1191036b16",
+      "md5ext": "44da8c5760a3adca2f0abc1191036b16.svg",
+      "rotationCenterX": 240,
+      "rotationCenterY": 180
+    },
+    {
+      "name": "31",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "816195d2f044a2728920593e2f88cc3a",
+      "md5ext": "816195d2f044a2728920593e2f88cc3a.svg",
+      "rotationCenterX": 240,
+      "rotationCenterY": 262.89488
+    },
+    {
+      "name": "32",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "296d22e9fe801f8b63e78a6c3fc096c0",
+      "md5ext": "296d22e9fe801f8b63e78a6c3fc096c0.svg",
+      "rotationCenterX": 331.5,
+      "rotationCenterY": 297
+    },
+    {
+      "name": "33",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "d6eccb8b34d8d6bb8ed272a28088fdc9",
+      "md5ext": "d6eccb8b34d8d6bb8ed272a28088fdc9.svg",
+      "rotationCenterX": 331.5,
+      "rotationCenterY": 297
+    },
+    {
+      "name": "34",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "a806a936fd0952daa8f74ffe828e0dfd",
+      "md5ext": "a806a936fd0952daa8f74ffe828e0dfd.svg",
+      "rotationCenterX": 331.5,
+      "rotationCenterY": 305.89488
+    },
+    {
+      "name": "35",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "be81d8bbc9bb9333839ff2af7e1e6fa3",
+      "md5ext": "be81d8bbc9bb9333839ff2af7e1e6fa3.svg",
+      "rotationCenterX": 323.5,
+      "rotationCenterY": 276.89488
+    },
+    {
+      "name": "36",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "9a53be52eda0ec2afbc31273a9be8ac4",
+      "md5ext": "9a53be52eda0ec2afbc31273a9be8ac4.svg",
+      "rotationCenterX": 240,
+      "rotationCenterY": 218.89488
+    },
+    {
+      "name": "37",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "16ab4b75d88041301ec3c00c4551a921",
+      "md5ext": "16ab4b75d88041301ec3c00c4551a921.svg",
+      "rotationCenterX": 240,
+      "rotationCenterY": 180
+    },
+    {
+      "name": "38",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "3de8355830e9b3551aec662bd152c20c",
+      "md5ext": "3de8355830e9b3551aec662bd152c20c.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "39",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "123fd0e219dc614f56205ca956a75614",
+      "md5ext": "123fd0e219dc614f56205ca956a75614.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "40",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "886f93e43337c9dafa8535afcbaf8a0c",
+      "md5ext": "886f93e43337c9dafa8535afcbaf8a0c.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "41",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8a514843b5235c30b7ca46726eac1bbc",
+      "md5ext": "8a514843b5235c30b7ca46726eac1bbc.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "42",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9f7c7ddf9849e21fcbe039f23e7228bf",
+      "md5ext": "9f7c7ddf9849e21fcbe039f23e7228bf.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "43",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "74c161ad25704f6e13ada33770299870",
+      "md5ext": "74c161ad25704f6e13ada33770299870.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "44",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d89a4e862f704a5d6b48495d965a401f",
+      "md5ext": "d89a4e862f704a5d6b48495d965a401f.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "79802ccff8641f4fce4943626e6935b4",
+      "md5ext": "79802ccff8641f4fce4943626e6935b4.svg",
+      "rotationCenterX": 257.43,
+      "rotationCenterY": 197.11334333333338
+    }
+  ],
+  "sounds": [
+    {
+      "name": "fb208f5d-976d-4112-bc9f-b2246c8cd668",
+      "assetId": "8bdcc5124f4b7f2d0393b2a289a19083",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 345418,
+      "md5ext": "8bdcc5124f4b7f2d0393b2a289a19083.wav"
+    },
+    {
+      "name": "Ephesians 6:17",
+      "assetId": "ba540eb143f93dac831e8d2ed30ff048",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 292748,
+      "md5ext": "ba540eb143f93dac831e8d2ed30ff048.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 118,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

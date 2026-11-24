@@ -1,0 +1,2093 @@
+{
+  "isStage": false,
+  "name": "mother//splats",
+  "variables": {
+    "Se~~.(iNyD:vPbsSlRXV": [
+      "x",
+      0
+    ],
+    "kg!}wFA/./L`vl]D!P=8": [
+      "y",
+      0
+    ],
+    "wOL.1R;?+y60S1?qplr5": [
+      "I",
+      2
+    ],
+    "Qubh6Ov4)7eSI:$.(ita": [
+      "no splatting //dontsave//",
+      "0"
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "eP/": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "m(",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1504
+    },
+    "m(": {
+      "opcode": "procedures_call",
+      "next": "@v",
+      "parent": "eP/",
+      "inputs": {
+        "K.rEVN[)mrcO{AwB#b2M": [
+          3,
+          "eP:",
+          [
+            10,
+            ""
+          ]
+        ],
+        "Wnj(.7PmF8]|.h5WCYMo": [
+          3,
+          "eP;",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "go to %s %s",
+        "argumentids": "[\"K.rEVN[)mrcO{AwB#b2M\",\"Wnj(.7PmF8]|.h5WCYMo\"]",
+        "warp": "true"
+      }
+    },
+    "eP:": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "m(",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL X",
+            "9rFp!1FTa10/)2VZ/d]("
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP;": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "m(",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL Y",
+            "P3Crb1Eo%$b-|#3/6:~Y"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "@v": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "m(",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bUq"
+        ],
+        "SUBSTACK": [
+          2,
+          "eP="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUq": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "@v",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "eP?",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP?": {
+      "opcode": "chimeristampinglayer_stampCount",
+      "next": null,
+      "parent": "bUq",
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP=": {
+      "opcode": "chimeristampinglayer_renderOntoSelf",
+      "next": null,
+      "parent": "@v",
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUr": {
+      "opcode": "procedures_definition",
+      "next": "@w",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "@x"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "@x": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "bUr",
+      "inputs": {
+        "K.rEVN[)mrcO{AwB#b2M": [
+          1,
+          "eP@"
+        ],
+        "Wnj(.7PmF8]|.h5WCYMo": [
+          1,
+          "eP["
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "go to %s %s",
+        "argumentids": "[\"K.rEVN[)mrcO{AwB#b2M\",\"Wnj(.7PmF8]|.h5WCYMo\"]",
+        "argumentnames": "[\"x\",\"y\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "eP@": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@x",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "x",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "eP[": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@x",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "y",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "@w": {
+      "opcode": "motion_gotoxy",
+      "next": null,
+      "parent": "bUr",
+      "inputs": {
+        "X": [
+          3,
+          "eP]",
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          3,
+          "eP^",
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP]": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@w",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "x",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP^": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@w",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "y",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUs": {
+      "opcode": "procedures_definition",
+      "next": "bUt",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "bUu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1008
+    },
+    "bUu": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "bUs",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "eP_"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "eP_": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "bUu",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bUt": {
+      "opcode": "looks_gotofrontback",
+      "next": "bUv",
+      "parent": "bUs",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUv": {
+      "opcode": "data_setvariableto",
+      "next": "m)",
+      "parent": "bUt",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "wOL.1R;?+y60S1?qplr5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "m)": {
+      "opcode": "control_repeat_until",
+      "next": "@y",
+      "parent": "bUv",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bUw"
+        ],
+        "SUBSTACK": [
+          2,
+          "eP`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUw": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "m)",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "@z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "@z": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "bUw",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "eP{",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "eP|",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP{": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@z",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP|": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "@z",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "wOL.1R;?+y60S1?qplr5"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP`": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "m)",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "wOL.1R;?+y60S1?qplr5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "@y": {
+      "opcode": "data_insertatlist",
+      "next": "bUx",
+      "parent": "m)",
+      "inputs": {
+        "ITEM": [
+          3,
+          "eP}",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "wOL.1R;?+y60S1?qplr5"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP}": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "@y",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUx": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "@y",
+      "inputs": {
+        "NUM": [
+          3,
+          "eP~",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eP~": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "bUx",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "wOL.1R;?+y60S1?qplr5"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQa": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "eQb",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 43,
+      "y": 876
+    },
+    "eQb": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "eQa",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "eQc": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "bUy",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "change bounds",
+          "^j?j9pL*0aWqoA?i@o25"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -137,
+      "y": 391
+    },
+    "bUy": {
+      "opcode": "chimeristampinglayer_clearLayer",
+      "next": "bUz",
+      "parent": "eQc",
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUz": {
+      "opcode": "looks_hide",
+      "next": "m*",
+      "parent": "bUy",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "m*": {
+      "opcode": "chimeristampinglayer_setLayerSize",
+      "next": "bUA",
+      "parent": "bUz",
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ],
+        "W": [
+          3,
+          "eQd",
+          [
+            4,
+            "1440"
+          ]
+        ],
+        "H": [
+          3,
+          "eQe",
+          [
+            4,
+            "1080"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQd": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "m*",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Level width //dontsave//",
+            ";9w~?Zd$vBbK[|NzxmE1"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1.5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQe": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "m*",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Level height //dontsave//",
+            "axOFi4G/dUW#f/Bal^Tm"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1.5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUA": {
+      "opcode": "looks_setsizeto",
+      "next": "bUB",
+      "parent": "m*",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUB": {
+      "opcode": "looks_show",
+      "next": "eQf",
+      "parent": "bUA",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQf": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "bUB",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQg": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "eQh",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 37,
+      "y": 294
+    },
+    "eQh": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "eQg",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hhj": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 360,
+      "y": 495
+    },
+    "hhk": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 584,
+      "y": 452
+    },
+    "eQi": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "eQj",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "splat",
+          "+hwXuPh1x/-f~3m/~Vy-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 941,
+      "y": 221
+    },
+    "eQj": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "eQi",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "splat",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "bUC": {
+      "opcode": "procedures_definition",
+      "next": "bUD",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "eQk"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 989,
+      "y": 437
+    },
+    "eQk": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "bUC",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "splat",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "bUD": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "bUE",
+      "parent": "bUC",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUE": {
+      "opcode": "looks_seteffectto",
+      "next": "ji",
+      "parent": "bUD",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ji": {
+      "opcode": "control_if_else",
+      "next": "eQl",
+      "parent": "bUE",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "eQm"
+        ],
+        "SUBSTACK": [
+          2,
+          "jj"
+        ],
+        "SUBSTACK2": [
+          2,
+          "jk"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQm": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "ji",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "type splat //dontsave//",
+            "2Ms?i5*;Xgv;YP`X%X0p"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "hand"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "jj": {
+      "opcode": "chimeristampinglayer_addStampSized",
+      "next": null,
+      "parent": "ji",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "@A",
+          [
+            10,
+            "1"
+          ]
+        ],
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ],
+        "X": [
+          3,
+          "bUF",
+          [
+            4,
+            "-76"
+          ]
+        ],
+        "Y": [
+          3,
+          "bUG",
+          [
+            4,
+            "25"
+          ]
+        ],
+        "SIZE": [
+          3,
+          "bUH",
+          [
+            4,
+            "5"
+          ]
+        ],
+        "DIR": [
+          3,
+          [
+            12,
+            "splat d //dontsave//",
+            "Nk|Xyb^f,qe1h6vfUB$a"
+          ],
+          [
+            4,
+            "90"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "@A": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "jj",
+      "inputs": {
+        "STRING1": [
+          3,
+          "eQn",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "eQo",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQn": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "@A",
+      "inputs": {
+        "LETTER": [
+          1,
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "side",
+            "w{gg,nBv[lLN[Nn4K~3b"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQo": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "@A",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUF": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jj",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "splat x //dontsave//",
+            "0q-V`wM.vr?E57cd|Bsj"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUI",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUI": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUF",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQp",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQp": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUI",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUG": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jj",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "splat y //dontsave//",
+            "B)wz{O#rO[,JgVp~:yq,"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUJ",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUJ": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUG",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQq",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQq": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUJ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUH": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jj",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "15"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUK",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUK": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUH",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQr",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQr": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUK",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "jk": {
+      "opcode": "chimeristampinglayer_addStampSized",
+      "next": null,
+      "parent": "ji",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "bUL",
+          [
+            10,
+            "1"
+          ]
+        ],
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ],
+        "X": [
+          3,
+          "bUM",
+          [
+            4,
+            "-76"
+          ]
+        ],
+        "Y": [
+          3,
+          "bUN",
+          [
+            4,
+            "25"
+          ]
+        ],
+        "SIZE": [
+          3,
+          "bUO",
+          [
+            4,
+            "9"
+          ]
+        ],
+        "DIR": [
+          3,
+          [
+            12,
+            "splat d //dontsave//",
+            "Nk|Xyb^f,qe1h6vfUB$a"
+          ],
+          [
+            4,
+            "90"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUL": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "jk",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "T"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "eQs",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQs": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "bUL",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUM": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jk",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "splat x //dontsave//",
+            "0q-V`wM.vr?E57cd|Bsj"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUP",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUP": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUM",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQt",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQt": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUP",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUN": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jk",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "splat y //dontsave//",
+            "B)wz{O#rO[,JgVp~:yq,"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUQ",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUQ": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUN",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQu",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQu": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUQ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUO": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "jk",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "25"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "bUR",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUR": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "bUO",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "eQv",
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQv": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "bUR",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQl": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "ji",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQw": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "eQx",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 532,
+      "y": 782
+    },
+    "eQx": {
+      "opcode": "chimeristampinglayer_clearLayer",
+      "next": null,
+      "parent": "eQw",
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hhl": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Level width //dontsave//",
+            ";9w~?Zd$vBbK[|NzxmE1"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 232,
+      "y": 642
+    },
+    "hhm": {
+      "opcode": "chimeristampinglayer_setLayerSize",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "LAYER": [
+          1,
+          [
+            10,
+            "splats"
+          ]
+        ],
+        "W": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "H": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 319,
+      "y": 152
+    },
+    "eQy": {
+      "opcode": "data_setvariableto",
+      "next": "@B",
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "no splatting //dontsave//",
+          "Qubh6Ov4)7eSI:$.(ita"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 692,
+      "y": 953
+    },
+    "@B": {
+      "opcode": "control_wait_until",
+      "next": "eQz",
+      "parent": "eQy",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bUS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUS": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "@B",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "bUT",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "19"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bUT": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": "bUS",
+      "inputs": {
+        "INPUT": [
+          1,
+          "eQA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "eQA": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "bUT",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "mother//mother body",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "eQz": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "@B",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "no splatting //dontsave//",
+          "Qubh6Ov4)7eSI:$.(ita"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 15,
+  "costumes": [
+    {
+      "name": "l1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4ec8d7da0771dae361d221605c7f8060",
+      "md5ext": "4ec8d7da0771dae361d221605c7f8060.png",
+      "rotationCenterX": 34,
+      "rotationCenterY": 53
+    },
+    {
+      "name": "l2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2f9e034497acee8151152114c5cd28ab",
+      "md5ext": "2f9e034497acee8151152114c5cd28ab.png",
+      "rotationCenterX": 34,
+      "rotationCenterY": 52
+    },
+    {
+      "name": "l3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "081d568095cf609cce44fb3906dc1eee",
+      "md5ext": "081d568095cf609cce44fb3906dc1eee.png",
+      "rotationCenterX": 6,
+      "rotationCenterY": 57
+    },
+    {
+      "name": "l4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2c46a8c3bddab299855cf0bed51ac2d9",
+      "md5ext": "2c46a8c3bddab299855cf0bed51ac2d9.png",
+      "rotationCenterX": 16,
+      "rotationCenterY": 62
+    },
+    {
+      "name": "l5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "101f70b2fecd2bfde280b7c76cd28d85",
+      "md5ext": "101f70b2fecd2bfde280b7c76cd28d85.png",
+      "rotationCenterX": 26,
+      "rotationCenterY": 50
+    },
+    {
+      "name": "r1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "89b2c0e902983f7cc5afcbc0f4e4e8d2",
+      "md5ext": "89b2c0e902983f7cc5afcbc0f4e4e8d2.png",
+      "rotationCenterX": 34,
+      "rotationCenterY": 57
+    },
+    {
+      "name": "r2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "baf9465a1c348f8af454c66b9fb91632",
+      "md5ext": "baf9465a1c348f8af454c66b9fb91632.png",
+      "rotationCenterX": 34,
+      "rotationCenterY": 53
+    },
+    {
+      "name": "r3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "6fc91877e47ab8905896a19f10e22819",
+      "md5ext": "6fc91877e47ab8905896a19f10e22819.png",
+      "rotationCenterX": 6,
+      "rotationCenterY": 65
+    },
+    {
+      "name": "r4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "95f5f00bca83871ca0e4fb012ee59775",
+      "md5ext": "95f5f00bca83871ca0e4fb012ee59775.png",
+      "rotationCenterX": 16,
+      "rotationCenterY": 66
+    },
+    {
+      "name": "r5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f1aa9884cd271a9d1288816ae830784a",
+      "md5ext": "f1aa9884cd271a9d1288816ae830784a.png",
+      "rotationCenterX": 26,
+      "rotationCenterY": 50
+    },
+    {
+      "name": "T1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1f7f240a0860336fa0991a3027cd3ee9",
+      "md5ext": "1f7f240a0860336fa0991a3027cd3ee9.png",
+      "rotationCenterX": 91,
+      "rotationCenterY": 41
+    },
+    {
+      "name": "T2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "01dd6324fb73271c334f376df442abcf",
+      "md5ext": "01dd6324fb73271c334f376df442abcf.png",
+      "rotationCenterX": 91,
+      "rotationCenterY": 41
+    },
+    {
+      "name": "T3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1acf59c5e169c83cddb65dc0bb1ff2bb",
+      "md5ext": "1acf59c5e169c83cddb65dc0bb1ff2bb.png",
+      "rotationCenterX": 93,
+      "rotationCenterY": 36
+    },
+    {
+      "name": "T4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "404f85d6d4c6929c296fa15442863012",
+      "md5ext": "404f85d6d4c6929c296fa15442863012.png",
+      "rotationCenterX": 89,
+      "rotationCenterY": 35
+    },
+    {
+      "name": "T5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e66fdc80f096c8569facac739de864dc",
+      "md5ext": "e66fdc80f096c8569facac739de864dc.png",
+      "rotationCenterX": 91,
+      "rotationCenterY": 41
+    },
+    {
+      "name": "po",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+      "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 109,
+  "visible": true,
+  "x": -304,
+  "y": 12,
+  "size": 200,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

@@ -1,0 +1,1573 @@
+{
+  "isStage": false,
+  "name": "parallax backgrounds",
+  "variables": {
+    "0#KF_rv[@PLPo(owvcv|": [
+      "x",
+      "0"
+    ],
+    "Z1{5CRY1%#(n%!CJt@GX": [
+      "y",
+      "0"
+    ],
+    "2d[83GV)e%1IgYkAV](x": [
+      "I",
+      "1"
+    ],
+    "gmu8AEBF*Whd+cgETsn+": [
+      "x",
+      0
+    ],
+    "Sw=V.WlITbEr1/AEFdgf": [
+      "y",
+      0
+    ],
+    "g9Fj05`QH8,lUr+#NH)W": [
+      "I",
+      0
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "fyv": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "eW",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1196,
+      "y": 428
+    },
+    "eW": {
+      "opcode": "motion_gotoxy",
+      "next": "vb",
+      "parent": "fyv",
+      "inputs": {
+        "X": [
+          3,
+          "aqW",
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          3,
+          "aqX",
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aqW": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "eW",
+      "inputs": {
+        "NUM1": [
+          3,
+          "fyw",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "cD~",
+          [
+            4,
+            ".8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyw": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "aqW",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "x",
+            "0#KF_rv[@PLPo(owvcv|"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL X",
+            "9rFp!1FTa10/)2VZ/d]("
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cD~": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "aqW",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ],
+        "STRING": [
+          3,
+          "fyx",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            ","
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyx": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cD~",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aqX": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "eW",
+      "inputs": {
+        "NUM1": [
+          3,
+          "fyy",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "cEa",
+          [
+            4,
+            ".8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyy": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "aqX",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "y",
+            "Z1{5CRY1%#(n%!CJt@GX"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL Y",
+            "P3Crb1Eo%$b-|#3/6:~Y"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEa": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "aqX",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ],
+        "STRING": [
+          3,
+          "fyz",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            ","
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyz": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cEa",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "vb": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "eW",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "fyA"
+        ],
+        "SUBSTACK": [
+          2,
+          "cEb"
+        ],
+        "SUBSTACK2": [
+          2,
+          "fyB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyA": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "vb",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "lightning? //dontsave//",
+            "I}Uj?gLy9X8XB0D_L:]t"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEb": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "vb",
+      "inputs": {
+        "VALUE": [
+          3,
+          "cEc",
+          [
+            4,
+            "70"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEc": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "cEb",
+      "inputs": {
+        "NUM1": [
+          3,
+          "cEd",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEd": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "cEc",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "fyC",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyC": {
+      "opcode": "operator_round",
+      "next": null,
+      "parent": "cEd",
+      "inputs": {
+        "NUM": [
+          3,
+          [
+            12,
+            "loudness multiplier",
+            ";Z3a|,|Zj))+_GsJ@2RL"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyB": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "vb",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyD": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fyE",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 764,
+      "y": 782
+    },
+    "fyE": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "fyD",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Figure Out bg",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "fyF": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fyG",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1181,
+      "y": 240
+    },
+    "fyG": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "fyF",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "fyH": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "cEe",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Terror que #2",
+          "^A(0K=)Zk|#*th`dBdUP"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 755,
+      "y": 980
+    },
+    "cEe": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "fyH",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "fyI"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyI": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "cEe",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          ",0.8",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "fyJ": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fyK",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "fyK": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "fyJ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEf": {
+      "opcode": "procedures_definition",
+      "next": "cEg",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "cEh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 240
+    },
+    "cEh": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "cEf",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "fyL"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "fyL": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "cEh",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cEg": {
+      "opcode": "looks_gotofrontback",
+      "next": "cEi",
+      "parent": "cEf",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEi": {
+      "opcode": "data_setvariableto",
+      "next": "iw",
+      "parent": "cEg",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "2d[83GV)e%1IgYkAV](x"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "iw": {
+      "opcode": "control_repeat_until",
+      "next": "aqY",
+      "parent": "cEi",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cEj"
+        ],
+        "SUBSTACK": [
+          2,
+          "fyM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEj": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "iw",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aqZ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aqZ": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "cEj",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "fyN",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "fyO",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyN": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aqZ",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyO": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aqZ",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "2d[83GV)e%1IgYkAV](x"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyM": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "iw",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "2d[83GV)e%1IgYkAV](x"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aqY": {
+      "opcode": "data_insertatlist",
+      "next": "cEk",
+      "parent": "iw",
+      "inputs": {
+        "ITEM": [
+          3,
+          "fyP",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "2d[83GV)e%1IgYkAV](x"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyP": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aqY",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEk": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "aqY",
+      "inputs": {
+        "NUM": [
+          3,
+          "fyQ",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyQ": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "cEk",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "2d[83GV)e%1IgYkAV](x"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyR": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fyS",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1181,
+      "y": 64
+    },
+    "fyS": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "fyR",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "10000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "fyT": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fyU",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "delete all clones",
+          "z:v04./Or9rn].hzkx,m"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 793,
+      "y": 64
+    },
+    "fyU": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "fyT",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEl": {
+      "opcode": "procedures_definition",
+      "next": "aq!",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "fyV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 52,
+      "y": 1291
+    },
+    "fyV": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "cEl",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Figure Out bg",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "aq!": {
+      "opcode": "looks_switchcostumeto",
+      "next": "cEm",
+      "parent": "cEl",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "fyW"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyW": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aq!",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "DOT",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cEm": {
+      "opcode": "looks_show",
+      "next": "vc",
+      "parent": "aq!",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "vc": {
+      "opcode": "control_repeat",
+      "next": "fyX",
+      "parent": "cEm",
+      "inputs": {
+        "TIMES": [
+          3,
+          "fyY",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "cEn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyY": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "vc",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEn": {
+      "opcode": "looks_nextcostume",
+      "next": "aq#",
+      "parent": "vc",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq#": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "cEn",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cEo"
+        ],
+        "SUBSTACK": [
+          2,
+          "vd"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEo": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aq#",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "cEp",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEp": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "cEo",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          "fyZ",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            ","
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fyZ": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cEp",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "vd": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "aq#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cEq"
+        ],
+        "SUBSTACK": [
+          2,
+          "aq%"
+        ],
+        "SUBSTACK2": [
+          2,
+          "fy!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEq": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "vd",
+      "inputs": {
+        "STRING1": [
+          3,
+          "fy#",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "###"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fy#": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cEq",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq%": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "vd",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aq("
+        ],
+        "SUBSTACK": [
+          2,
+          "fy%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq(": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aq%",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "cEr",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "cEs",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEr": {
+      "opcode": "qxsckvarandlist_getVar",
+      "next": null,
+      "parent": "aq(",
+      "inputs": {
+        "VAR": [
+          3,
+          "cEt",
+          [
+            10,
+            "window broken?"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEt": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "cEr",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          "cEu",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            ","
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEu": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "cEt",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ],
+        "STRING": [
+          3,
+          "fy(",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            "###"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fy(": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cEu",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEs": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "aq(",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ],
+        "STRING": [
+          3,
+          "cEv",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            ","
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cEv": {
+      "opcode": "strings_split",
+      "next": null,
+      "parent": "cEs",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ],
+        "STRING": [
+          3,
+          "fy)",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "SPLIT": [
+          1,
+          [
+            10,
+            "###"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fy)": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "cEv",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fy%": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "aq%",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "this script",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "fy!": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "vd",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "this script",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "fyX": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "vc",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {
+    "hiE": {
+      "blockId": null,
+      "x": -392,
+      "y": 817,
+      "width": 402,
+      "height": 186,
+      "minimized": false,
+      "text": "Room, CoefficientOfLag###VariableName, Value\nRoom, CoefficientOfLag"
+    }
+  },
+  "currentCostume": 4,
+  "costumes": [
+    {
+      "name": ",0.8",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "27beb9aa6e27e87d883092e833d5b7e1",
+      "md5ext": "27beb9aa6e27e87d883092e833d5b7e1.png",
+      "rotationCenterX": -42,
+      "rotationCenterY": 190
+    },
+    {
+      "name": "dining room, 0.8",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2f8ae3ef2c1307393f521e1645eb5e8a",
+      "md5ext": "2f8ae3ef2c1307393f521e1645eb5e8a.png",
+      "rotationCenterX": -41,
+      "rotationCenterY": 190
+    },
+    {
+      "name": "garden, 1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "145ff723fa367d5353cb57439235a1d7",
+      "md5ext": "145ff723fa367d5353cb57439235a1d7.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    },
+    {
+      "name": "ballroom, 0.8",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4d1fec3786b803941666889dfed3f927",
+      "md5ext": "4d1fec3786b803941666889dfed3f927.png",
+      "rotationCenterX": 340,
+      "rotationCenterY": 240
+    },
+    {
+      "name": "DOT",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e37ddc9fbc7ba0c4faffe321dfa1eed6",
+      "md5ext": "e37ddc9fbc7ba0c4faffe321dfa1eed6.svg",
+      "rotationCenterX": 801.859355,
+      "rotationCenterY": 424.5
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 1,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 300,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

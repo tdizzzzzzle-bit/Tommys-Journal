@@ -1,0 +1,832 @@
+{
+  "isStage": false,
+  "name": "Gun//ammo display",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "g~(": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "LI",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 511,
+      "y": 423
+    },
+    "LJ": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "LI",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g~)"
+        ],
+        "SUBSTACK": [
+          2,
+          "dZd"
+        ],
+        "SUBSTACK2": [
+          2,
+          "g~*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~)": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "LJ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "holding?",
+            "@8KT?sT@gGcLmP8W09GT"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "Gun"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZe": {
+      "opcode": "motion_gotoxy",
+      "next": "dZf",
+      "parent": "dZd",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "140"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZf": {
+      "opcode": "looks_show",
+      "next": "dZg",
+      "parent": "dZe",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZg": {
+      "opcode": "text_setFont",
+      "next": "dZh",
+      "parent": "dZf",
+      "inputs": {},
+      "fields": {
+        "FONT": [
+          "Pixel",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZh": {
+      "opcode": "text_setColor",
+      "next": "dZi",
+      "parent": "dZg",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#f5f5f5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZi": {
+      "opcode": "text_setOutlineWidth",
+      "next": "dZj",
+      "parent": "dZh",
+      "inputs": {
+        "WIDTH": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZj": {
+      "opcode": "text_setOutlineColor",
+      "next": "LK",
+      "parent": "dZi",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#000000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "LK": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "dZj",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dZk"
+        ],
+        "SUBSTACK": [
+          2,
+          "dZl"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dZm"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZk": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "LK",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dZn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZn": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dZk",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "dZo",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "Infinity"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZo": {
+      "opcode": "sensing_of",
+      "next": null,
+      "parent": "dZn",
+      "inputs": {
+        "OBJECT": [
+          1,
+          "g~+"
+        ]
+      },
+      "fields": {
+        "PROPERTY": [
+          "ammo",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~+": {
+      "opcode": "sensing_of_object_menu",
+      "next": null,
+      "parent": "dZo",
+      "inputs": {},
+      "fields": {
+        "OBJECT": [
+          "Gun//Gun",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dZl": {
+      "opcode": "text_setText",
+      "next": null,
+      "parent": "LK",
+      "inputs": {
+        "TEXT": [
+          3,
+          "dZp",
+          [
+            10,
+            "Welcome to my project!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZp": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "dZl",
+      "inputs": {
+        "STRING1": [
+          3,
+          "dZq",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "/6"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZq": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "dZp",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Ammo: "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "dZr",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZr": {
+      "opcode": "sensing_of",
+      "next": null,
+      "parent": "dZq",
+      "inputs": {
+        "OBJECT": [
+          1,
+          "g~,"
+        ]
+      },
+      "fields": {
+        "PROPERTY": [
+          "ammo",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~,": {
+      "opcode": "sensing_of_object_menu",
+      "next": null,
+      "parent": "dZr",
+      "inputs": {},
+      "fields": {
+        "OBJECT": [
+          "Gun//Gun",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dZm": {
+      "opcode": "text_setText",
+      "next": null,
+      "parent": "LK",
+      "inputs": {
+        "TEXT": [
+          3,
+          "dZs",
+          [
+            10,
+            "Welcome to my project!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZs": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "dZm",
+      "inputs": {
+        "STRING1": [
+          3,
+          "g~-",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "/6"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~-": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "dZs",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Ammo: "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "∞ "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~*": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "LJ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g~/",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 498,
+      "y": 243
+    },
+    "g~/": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g~.",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~:": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g~;",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "collect music box",
+          "Zd0n(A,|cGDuh]QVWk}g"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 499,
+      "y": 63
+    },
+    "g~;": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g~:",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "LI": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "g~(",
+      "inputs": {
+        "SUBSTACK2": [
+          2,
+          "LJ"
+        ],
+        "CONDITION": [
+          2,
+          "a[{"
+        ],
+        "SUBSTACK": [
+          2,
+          "dZt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~=": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "a[{",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "found",
+            "~Nk~(u|Dhkc$*d@IfO*;"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "HUNT"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZt": {
+      "opcode": "motion_gotoxy",
+      "next": "dZu",
+      "parent": "LI",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "140"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZu": {
+      "opcode": "looks_show",
+      "next": "dZv",
+      "parent": "dZt",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZv": {
+      "opcode": "text_setFont",
+      "next": "dZw",
+      "parent": "dZu",
+      "inputs": {},
+      "fields": {
+        "FONT": [
+          "Pixel",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZw": {
+      "opcode": "text_setColor",
+      "next": "dZx",
+      "parent": "dZv",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#d00000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZx": {
+      "opcode": "text_setOutlineWidth",
+      "next": "dZy",
+      "parent": "dZw",
+      "inputs": {
+        "WIDTH": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZy": {
+      "opcode": "text_setOutlineColor",
+      "next": "dZz",
+      "parent": "dZx",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#000000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZz": {
+      "opcode": "text_setText",
+      "next": "g~?",
+      "parent": "dZy",
+      "inputs": {
+        "TEXT": [
+          3,
+          [
+            12,
+            "HUNTING PHASE //dontsave//",
+            "r%h*52mX0rdos)}(s{0R"
+          ],
+          [
+            10,
+            "Welcome to my project!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a[{": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "LI",
+      "inputs": {
+        "OPERAND2": [
+          2,
+          "g~="
+        ],
+        "OPERAND1": [
+          2,
+          "g~@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hlO": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "found",
+            "~Nk~(u|Dhkc$*d@IfO*;"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1106,
+      "y": 233
+    },
+    "g~@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "a[{",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "found",
+            "~Nk~(u|Dhkc$*d@IfO*;"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "SEEK"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZd": {
+      "opcode": "looks_setsizeto",
+      "next": "dZe",
+      "parent": "LJ",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~?": {
+      "opcode": "looks_setsizeto",
+      "next": null,
+      "parent": "dZz",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hlP": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "!!!!SPIRIT BATTLE!!!!",
+          "uP|2^V[2P^jwANxbsT_p"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1315,
+      "y": 460
+    },
+    "hlQ": [
+      12,
+      "HUNTING PHASE //dontsave//",
+      "r%h*52mX0rdos)}(s{0R",
+      1211,
+      759
+    ]
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+      "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 140,
+  "visible": false,
+  "x": 0,
+  "y": 140,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

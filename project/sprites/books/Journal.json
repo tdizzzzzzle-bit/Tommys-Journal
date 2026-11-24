@@ -1,0 +1,9127 @@
+{
+  "isStage": false,
+  "name": "books//Journal",
+  "variables": {
+    "pqqNQJJ!bM?3`v)du1ta": [
+      "Journal collected",
+      1
+    ],
+    "T)L]y]Wd(eo!AQU(ViNx": [
+      "x",
+      0
+    ],
+    "*?WBUr{GAHK8fL!O}XlL": [
+      "y",
+      0
+    ],
+    "o0~:,f]Mj#qbG+_Z!frB": [
+      "is Visible",
+      true
+    ],
+    "FNFOo!0Vai@3%(K%Tv=N": [
+      "page",
+      "0"
+    ],
+    "Ub|Mg#3n+zw1oid9J{9J": [
+      "I",
+      2
+    ],
+    "Q~nOc#E^F4#Fv$gts!71": [
+      "room changed?",
+      "0"
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "f~L": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aL]",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2262,
+      "y": 2048
+    },
+    "aL]": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "f~L",
+      "inputs": {
+        "-o?vN~d(LcvW%Oj.`;rB": [
+          3,
+          "f~M",
+          [
+            10,
+            ""
+          ]
+        ],
+        "WWrbIw=(`]v80iuK3#sO": [
+          3,
+          "f~N",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Position %s %s",
+        "argumentids": "[\"-o?vN~d(LcvW%Oj.`;rB\",\"WWrbIw=(`]v80iuK3#sO\"]",
+        "warp": "true"
+      }
+    },
+    "f~M": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "aL]",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "x",
+            "T)L]y]Wd(eo!AQU(ViNx"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL X",
+            "9rFp!1FTa10/)2VZ/d]("
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~N": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "aL]",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "y",
+            "*?WBUr{GAHK8fL!O}XlL"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "SCROLL Y",
+            "P3Crb1Eo%$b-|#3/6:~Y"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~O": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "BH",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move Enemy",
+          "cP|BE@D*E(RVFZ}bH5Tl"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 828,
+      "y": 64
+    },
+    "BH": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "f~O",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f~P"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]n"
+        ],
+        "SUBSTACK2": [
+          2,
+          "f~Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~P": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BH",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "is Visible",
+            "o0~:,f]Mj#qbG+_Z!frB"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "true"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]n": {
+      "opcode": "looks_show",
+      "next": "c]o",
+      "parent": "BH",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]o": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "c]n",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f~R"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~R": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c]o",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~Q": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "BH",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~S": {
+      "opcode": "event_whenthisspriteclicked",
+      "next": "BI",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2811,
+      "y": 64
+    },
+    "BI": {
+      "opcode": "control_if",
+      "next": "f~T",
+      "parent": "f~S",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aL^"
+        ],
+        "SUBSTACK": [
+          2,
+          "BJ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aL^": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "BI",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "f~U"
+        ],
+        "OPERAND2": [
+          2,
+          "f~V"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~U": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aL^",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~V": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aL^",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "BJ": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BI",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f~W"
+        ],
+        "SUBSTACK": [
+          2,
+          "BK"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BL"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~W": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BJ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "COLLECTED PAGE //dontsave//",
+            ":x6){WUM4#o*{_sp}q6L"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "BK": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BJ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]p"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]q"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]p": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BK",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~X",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~X": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]p",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]q": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "BK",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f~Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~Y": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "c]q",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BM": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BK",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aL_"
+        ],
+        "SUBSTACK": [
+          2,
+          "aL`"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aL{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aL_": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "BM",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c]r"
+        ],
+        "OPERAND2": [
+          2,
+          "c]s"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]r": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aL_",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~Z",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~Z": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]r",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]s": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "aL_",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~!",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~!": {
+      "opcode": "sensing_mousex",
+      "next": null,
+      "parent": "c]s",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aL`": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "BM",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]t"
+        ],
+        "SUBSTACK": [
+          2,
+          "cY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]t": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aL`",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aL|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aL|": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "c]t",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c]u"
+        ],
+        "OPERAND2": [
+          2,
+          "c]v"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]u": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aL|",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~#",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~#": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]u",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]v": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aL|",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~%",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~%": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]v",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cY": {
+      "opcode": "control_if_else",
+      "next": "BN",
+      "parent": "aL`",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]w"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]x"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c]y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]w": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "cY",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~(",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "_"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~(": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]w",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]x": {
+      "opcode": "data_changevariableby",
+      "next": "aL}",
+      "parent": "cY",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aL}": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aL~",
+      "parent": "c]x",
+      "inputs": {
+        "COSTUME": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          "f~)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~)": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aL}",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page 6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aL~": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "aL}",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c]z",
+          "f~*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]z": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aL~",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "f~+",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~+": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]z",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~*": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aL~",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]y": {
+      "opcode": "data_changevariableby",
+      "next": "aMa",
+      "parent": "cY",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMa": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "c]y",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c]A",
+          "f~,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]A": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMa",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "f~-",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~-": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]A",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~,": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMa",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BN": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "cY",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]B"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMb"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BO"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]B": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "BN",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "f~.",
+          [
+            10,
+            "40"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~.": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "c]B",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMb": {
+      "opcode": "looks_switchcostumeto",
+      "next": "f~/",
+      "parent": "BN",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f~:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~:": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMb",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f~/": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "aMb",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "BO": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BN",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]C"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]D"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]C": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BO",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~;",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~;": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]C",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]D": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BO",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "f~="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~=": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c]D",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Closing-Book-A3-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BP": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BO",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]E"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]F"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aMc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]E": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BP",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~?",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~?": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]E",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]F": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BP",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "f~@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~@": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c]F",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Opening-Book-A2-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMc": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BP",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "f~[",
+          "f~]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~[": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "aMc",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~]": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aMc",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "page-flip-03",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aL{": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "BM",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]G"
+        ],
+        "SUBSTACK": [
+          2,
+          "cZ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]G": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aL{",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aMd"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMd": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "c]G",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c]H"
+        ],
+        "OPERAND2": [
+          2,
+          "c]I"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]H": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMd",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~^",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~^": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]H",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]I": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMd",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~_",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~_": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]I",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cZ": {
+      "opcode": "control_if_else",
+      "next": "BQ",
+      "parent": "aL{",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]J"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]K"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c]L"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]J": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "cZ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f~`",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "_"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~`": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]J",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]K": {
+      "opcode": "data_changevariableby",
+      "next": "aMe",
+      "parent": "cZ",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMe": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "c]K",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c]M",
+          "f~{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]M": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMe",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "f~|",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~|": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]M",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~{": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMe",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]L": {
+      "opcode": "data_changevariableby",
+      "next": "aMf",
+      "parent": "cZ",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMf": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "c]L",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c]N",
+          "f~}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]N": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMf",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "f~~",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~~": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c]N",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~}": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMf",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BQ": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "cZ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMg"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMh"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMg": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "BQ",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c]O"
+        ],
+        "OPERAND2": [
+          2,
+          "c]P"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]O": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMg",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gaa",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaa": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]O",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]P": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMg",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gab",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gab": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]P",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMh": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c]Q",
+      "parent": "BQ",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gac"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gac": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMh",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]Q": {
+      "opcode": "data_setvariableto",
+      "next": "gad",
+      "parent": "aMh",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "COLLECTED PAGE //dontsave//",
+          ":x6){WUM4#o*{_sp}q6L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gad": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c]Q",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "BR": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BQ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]R"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]S"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]R": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BR",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gae",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gae": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]R",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]S": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BR",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gaf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaf": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c]S",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Closing-Book-A3-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BS": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BR",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]T"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]U"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aMi"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]T": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BS",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gag",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gag": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c]T",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]U": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BS",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gah"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gah": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c]U",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Opening-Book-A2-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMi": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "BS",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "gai",
+          "gaj"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gai": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "aMi",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaj": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aMi",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "page-flip-03",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BL": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c]V",
+      "parent": "BJ",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "gak",
+          "gal"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gak": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "BL",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          [
+            12,
+            "COLLECTED PAGE //dontsave//",
+            ":x6){WUM4#o*{_sp}q6L"
+          ],
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gal": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "BL",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]V": {
+      "opcode": "data_setvariableto",
+      "next": "gam",
+      "parent": "BL",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "COLLECTED PAGE //dontsave//",
+            ":x6){WUM4#o*{_sp}q6L"
+          ],
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gam": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c]V",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "COLLECTED PAGE //dontsave//",
+          ":x6){WUM4#o*{_sp}q6L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f~T": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": "BI",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gan": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "NUM1": [
+          3,
+          "gao",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 3573,
+      "y": 1970
+    },
+    "gao": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "gan",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gap": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gaq",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2262,
+      "y": 192
+    },
+    "gaq": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "gap",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "gar": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c]W",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New Page!",
+          "`bhDDsLJL3qo42:*-9ua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2262,
+      "y": 368
+    },
+    "c]W": {
+      "opcode": "looks_gotofrontback",
+      "next": "aMj",
+      "parent": "gar",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMj": {
+      "opcode": "control_repeat",
+      "next": "gas",
+      "parent": "c]W",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "3"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "c]X"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]X": {
+      "opcode": "looks_seteffectto",
+      "next": "c]Y",
+      "parent": "aMj",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]Y": {
+      "opcode": "control_wait",
+      "next": "c]Z",
+      "parent": "c]X",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]Z": {
+      "opcode": "looks_seteffectto",
+      "next": "gat",
+      "parent": "c]Y",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gat": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": "c]Z",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gas": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "aMj",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gau": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "BT",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -446,
+      "y": 223
+    },
+    "BT": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "gau",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMk"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMl"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BU"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMk": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "BT",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c]!"
+        ],
+        "OPERAND2": [
+          2,
+          "gav"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]!": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "aMk",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "c]#",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]#": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": "c]!",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gaw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaw": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "c]#",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "books//Journal",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gav": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMk",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]%": {
+      "opcode": "event_broadcast",
+      "next": "aMm",
+      "parent": "c](",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Journal",
+            "x0^DyB1a@_SVHj|r}GS("
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMl": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "c])",
+      "parent": "BT",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gax"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gax": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aMl",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "books//Journal",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMm": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c]*",
+      "parent": "c]%",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gay"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gay": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMm",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal Icon",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]*": {
+      "opcode": "looks_show",
+      "next": "c]+",
+      "parent": "aMm",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]+": {
+      "opcode": "data_setvariableto",
+      "next": "c],",
+      "parent": "c]*",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Journal collected",
+          "pqqNQJJ!bM?3`v)du1ta"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c],": {
+      "opcode": "looks_setsizeto",
+      "next": "gaz",
+      "parent": "c]+",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaz": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "c],",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "SAVE",
+            "zd~hPB|D39PZ$qqE00Is"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "BU": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BT",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMn"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMo"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMn": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "BU",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gaA"
+        ],
+        "OPERAND2": [
+          2,
+          "gaB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaA": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMn",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "library"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaB": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMn",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMo": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c]-",
+      "parent": "BU",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gaC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaC": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMo",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "on shelf",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]-": {
+      "opcode": "data_setvariableto",
+      "next": "c].",
+      "parent": "aMo",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "x",
+          "T)L]y]Wd(eo!AQU(ViNx"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c].": {
+      "opcode": "data_setvariableto",
+      "next": "gaD",
+      "parent": "c]-",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "y",
+          "*?WBUr{GAHK8fL!O}XlL"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaD": {
+      "opcode": "looks_setsizeto",
+      "next": null,
+      "parent": "c].",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "300"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "BV": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "BU",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gaE"
+        ],
+        "SUBSTACK": [
+          2,
+          "gaF"
+        ],
+        "SUBSTACK2": [
+          2,
+          "gaG"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaE": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BV",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaF": {
+      "opcode": "looks_setsizeto",
+      "next": null,
+      "parent": "BV",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaG": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "BV",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]/": {
+      "opcode": "procedures_definition",
+      "next": "BW",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "aMp"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2763,
+      "y": 3408
+    },
+    "aMp": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c]/",
+      "inputs": {
+        "-o?vN~d(LcvW%Oj.`;rB": [
+          1,
+          "gaH"
+        ],
+        "WWrbIw=(`]v80iuK3#sO": [
+          1,
+          "gaI"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Position %s %s",
+        "argumentids": "[\"-o?vN~d(LcvW%Oj.`;rB\",\"WWrbIw=(`]v80iuK3#sO\"]",
+        "argumentnames": "[\"x\",\"y\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "gaH": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMp",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "x",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gaI": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMp",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "y",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "BW": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "c]/",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gaJ"
+        ],
+        "SUBSTACK": [
+          2,
+          "c]:"
+        ],
+        "SUBSTACK2": [
+          2,
+          "BX"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaJ": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "BW",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]:": {
+      "opcode": "motion_gotoxy",
+      "next": "c];",
+      "parent": "BW",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c];": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c]:",
+      "inputs": {
+        "VALUE": [
+          3,
+          "aMq",
+          [
+            10,
+            "true"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "is Visible",
+          "o0~:,f]Mj#qbG+_Z!frB"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMq": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "c];",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "C"
+        ],
+        "OPERAND2": [
+          2,
+          "gaK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "C": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMq",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!Spirit Battle Mother!!!",
+            "K(6O8$O(z%{ZJ3yb:R~v"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaK": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMq",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!Spirit Battle Father!!!",
+            "M4:;zjZi6UbTj*xaK)ZT"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "BX": {
+      "opcode": "motion_gotoxy",
+      "next": "c]=",
+      "parent": "BW",
+      "inputs": {
+        "X": [
+          3,
+          "gaL",
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          3,
+          "gaM",
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaL": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "BX",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "x",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaM": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "BX",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "y",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]=": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "BX",
+      "inputs": {
+        "VALUE": [
+          3,
+          "aMr",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "is Visible",
+          "o0~:,f]Mj#qbG+_Z!frB"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMr": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "c]=",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gaN"
+        ],
+        "OPERAND2": [
+          2,
+          "aMs"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaN": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMr",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMs": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMr",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gaO"
+        ],
+        "OPERAND2": [
+          2,
+          "aMt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaO": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMs",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "library"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMt": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMs",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "aMu"
+        ],
+        "OPERAND2": [
+          2,
+          "aMv"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMu": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMt",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gaP",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "gaQ",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaP": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMu",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "x",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaQ": {
+      "opcode": "motion_xposition",
+      "next": null,
+      "parent": "aMu",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMv": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMt",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gaR",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "gaS",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaR": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMv",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "y",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaS": {
+      "opcode": "motion_yposition",
+      "next": null,
+      "parent": "aMv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaT": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gaU",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1408
+    },
+    "gaU": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "gaT",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaV": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gaW",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2310,
+      "y": 1768
+    },
+    "gaW": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "gaV",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]?": {
+      "opcode": "procedures_definition",
+      "next": "c]@",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "c]["
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 828,
+      "y": 2264
+    },
+    "c][": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c]?",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "gaX"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "gaX": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "c][",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c]@": {
+      "opcode": "looks_gotofrontback",
+      "next": "c]]",
+      "parent": "c]?",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]]": {
+      "opcode": "data_setvariableto",
+      "next": "BY",
+      "parent": "c]@",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "Ub|Mg#3n+zw1oid9J{9J"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "BY": {
+      "opcode": "control_repeat_until",
+      "next": "aMw",
+      "parent": "c]]",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c]^"
+        ],
+        "SUBSTACK": [
+          2,
+          "gaY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]^": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "BY",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aMx"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMx": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "c]^",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gaZ",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "ga!",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaZ": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMx",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga!": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aMx",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "Ub|Mg#3n+zw1oid9J{9J"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gaY": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "BY",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "Ub|Mg#3n+zw1oid9J{9J"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMw": {
+      "opcode": "data_insertatlist",
+      "next": "c]_",
+      "parent": "BY",
+      "inputs": {
+        "ITEM": [
+          3,
+          "ga#",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "Ub|Mg#3n+zw1oid9J{9J"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga#": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aMw",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]_": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "aMw",
+      "inputs": {
+        "NUM": [
+          3,
+          "ga%",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga%": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c]_",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "Ub|Mg#3n+zw1oid9J{9J"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga(": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ga)",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1930,
+      "y": 1015
+    },
+    "ga)": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "ga(",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "order",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "ga*": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ga+",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "delete all clones",
+          "z:v04./Or9rn].hzkx,m"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2262,
+      "y": 1880
+    },
+    "ga+": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "ga*",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga,": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c]`",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "super cheats",
+          "ohQC@vbt+c.1Ce76:0M@"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1930,
+      "y": 1157
+    },
+    "c]`": {
+      "opcode": "data_deletealloflist",
+      "next": "c]{",
+      "parent": "ga,",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]{": {
+      "opcode": "data_setvariableto",
+      "next": "aMy",
+      "parent": "c]`",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1  #3 //dontsave//",
+          "52Z(Z7O!6?GQHH=/uF#p"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMy": {
+      "opcode": "control_repeat",
+      "next": "c]|",
+      "parent": "c]{",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "44"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "c]}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]}": {
+      "opcode": "data_changevariableby",
+      "next": "ga-",
+      "parent": "aMy",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1  #3 //dontsave//",
+          "52Z(Z7O!6?GQHH=/uF#p"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga-": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "c]}",
+      "inputs": {
+        "ITEM": [
+          3,
+          [
+            12,
+            "+1  #3 //dontsave//",
+            "52Z(Z7O!6?GQHH=/uF#p"
+          ],
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]|": {
+      "opcode": "data_replaceitemoflist",
+      "next": "c]~",
+      "parent": "aMy",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "34"
+          ]
+        ],
+        "ITEM": [
+          1,
+          [
+            10,
+            "34 35"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c]~": {
+      "opcode": "data_replaceitemoflist",
+      "next": "c^a",
+      "parent": "c]|",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "35"
+          ]
+        ],
+        "ITEM": [
+          1,
+          [
+            10,
+            "35 35"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^a": {
+      "opcode": "data_replaceitemoflist",
+      "next": "aMz",
+      "parent": "c]~",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "36"
+          ]
+        ],
+        "ITEM": [
+          1,
+          [
+            10,
+            "36 35"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMz": {
+      "opcode": "looks_switchcostumeto",
+      "next": "ga.",
+      "parent": "c^a",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "ga/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga/": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMz",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal Icon",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ga.": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "aMz",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Journal collected",
+          "pqqNQJJ!bM?3`v)du1ta"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga:": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "BZ",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "bookmark",
+          "4_6y{6X@%PIFB341Us_g"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1188,
+      "y": 2023
+    },
+    "BZ": {
+      "opcode": "control_repeat",
+      "next": "aMA",
+      "parent": "ga:",
+      "inputs": {
+        "TIMES": [
+          3,
+          "c^b",
+          [
+            6,
+            "3"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aMB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^b": {
+      "opcode": "operator_mathop",
+      "next": null,
+      "parent": "BZ",
+      "inputs": {
+        "NUM": [
+          3,
+          "c^c",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {
+        "OPERATOR": [
+          "abs",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^c": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^b",
+      "inputs": {
+        "NUM1": [
+          3,
+          "c^d",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^d": {
+      "opcode": "sensing_of",
+      "next": null,
+      "parent": "c^c",
+      "inputs": {
+        "OBJECT": [
+          1,
+          "ga;"
+        ]
+      },
+      "fields": {
+        "PROPERTY": [
+          "page",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga;": {
+      "opcode": "sensing_of_object_menu",
+      "next": null,
+      "parent": "c^d",
+      "inputs": {},
+      "fields": {
+        "OBJECT": [
+          "books//Bookmark",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMB": {
+      "opcode": "control_wait_until",
+      "next": "aMC",
+      "parent": "BZ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ga="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga=": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMB",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMC": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "aMB",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "ga?",
+          "ga@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga?": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "aMC",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga@": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aMC",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "page-flip-03",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMA": {
+      "opcode": "data_setvariableto",
+      "next": "B!",
+      "parent": "BZ",
+      "inputs": {
+        "VALUE": [
+          3,
+          "c^e",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^e": {
+      "opcode": "sensing_of",
+      "next": null,
+      "parent": "aMA",
+      "inputs": {
+        "OBJECT": [
+          1,
+          "ga["
+        ]
+      },
+      "fields": {
+        "PROPERTY": [
+          "page",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga[": {
+      "opcode": "sensing_of_object_menu",
+      "next": null,
+      "parent": "c^e",
+      "inputs": {},
+      "fields": {
+        "OBJECT": [
+          "books//Bookmark",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B!": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aMD",
+      "parent": "aMA",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "ga]",
+          "ga^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga]": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "B!",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga^": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "B!",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page 6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMD": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "B!",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^f",
+          "ga_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^f": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMD",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "c^g",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^g": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^f",
+      "inputs": {
+        "INDEX": [
+          3,
+          "c^h",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^h": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^g",
+      "inputs": {
+        "NUM1": [
+          3,
+          "ga`",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga`": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^h",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga_": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMD",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ga{": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c^i",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1029,
+      "y": 861
+    },
+    "aME": {
+      "opcode": "control_wait_until",
+      "next": "B#",
+      "parent": "aMF",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ga|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga|": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aME",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "B#": {
+      "opcode": "control_if",
+      "next": "aMG",
+      "parent": "aME",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^j"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMH"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^j": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "B#",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "ga}",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga}": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^j",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMH": {
+      "opcode": "control_wait_until",
+      "next": "aMI",
+      "parent": "B#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMJ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMJ": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMH",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "ga~"
+        ],
+        "OPERAND2": [
+          2,
+          "aMK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ga~": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMJ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMK": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMJ",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gba"
+        ],
+        "OPERAND2": [
+          2,
+          "c^k"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gba": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "aMK",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^k": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aMK",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "c^l"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^l": {
+      "opcode": "sensing_touchingobject",
+      "next": null,
+      "parent": "c^k",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": [
+          1,
+          "gbb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbb": {
+      "opcode": "sensing_touchingobjectmenu",
+      "next": null,
+      "parent": "c^l",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": [
+          "_mouse_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMI": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "aMH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aML"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aML": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMI",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gbc"
+        ],
+        "OPERAND2": [
+          2,
+          "aMN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbc": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aML",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMN": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aML",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gbd"
+        ],
+        "OPERAND2": [
+          2,
+          "c^m"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbd": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "aMN",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^m": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aMN",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "c^n"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^n": {
+      "opcode": "sensing_touchingobject",
+      "next": null,
+      "parent": "c^m",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": [
+          1,
+          "gbe"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbe": {
+      "opcode": "sensing_touchingobjectmenu",
+      "next": null,
+      "parent": "c^n",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": [
+          "_mouse_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMM": {
+      "opcode": "sound_play",
+      "next": "aMO",
+      "parent": "aMI",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gbf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbf": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aMM",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Closing-Book-A3-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMO": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c^o",
+      "parent": "aMM",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gbg"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbg": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMO",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal Icon",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c^o": {
+      "opcode": "data_setvariableto",
+      "next": "gbh",
+      "parent": "aMO",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "COLLECTED PAGE //dontsave//",
+          ":x6){WUM4#o*{_sp}q6L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbh": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c^o",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMG": {
+      "opcode": "control_wait_until",
+      "next": "c^p",
+      "parent": "B#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMP": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aMG",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gbi"
+        ],
+        "OPERAND2": [
+          2,
+          "c^q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbi": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMP",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^q": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "aMP",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbj",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbj": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^q",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^p": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "aMG",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aMQ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMQ": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "c^p",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gbk"
+        ],
+        "OPERAND2": [
+          2,
+          "c^r"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbk": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMQ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^r": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aMQ",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "gbl"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbl": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "c^r",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbm": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gbn",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "first time",
+          "=MC)yeSK?CJ)4OC_8ASV"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1869,
+      "y": 240
+    },
+    "gbn": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "gbm",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Journal collected",
+          "pqqNQJJ!bM?3`v)du1ta"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbo": {
+      "opcode": "event_whenkeypressed",
+      "next": "aMR",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "right arrow",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 3875,
+      "y": 180
+    },
+    "aMR": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "gbo",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^s"
+        ],
+        "SUBSTACK": [
+          2,
+          "c!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^s": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aMR",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aMS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMS": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "c^s",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c^t"
+        ],
+        "OPERAND2": [
+          2,
+          "c^u"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^t": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMS",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbp",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbp": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^t",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^u": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMS",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbq",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbq": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^u",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c!": {
+      "opcode": "control_if_else",
+      "next": "B%",
+      "parent": "aMR",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^v"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^w"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c^x"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^v": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c!",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbr",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "_"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbr": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^v",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^w": {
+      "opcode": "data_changevariableby",
+      "next": "B(",
+      "parent": "c!",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "B(": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aMT",
+      "parent": "c^w",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "gbs",
+          "gbt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbs": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "B(",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbt": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "B(",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page 6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMT": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "B(",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^y",
+          "gbu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^y": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMT",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "c^z",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^z": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^y",
+      "inputs": {
+        "INDEX": [
+          3,
+          "c^A",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^A": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^z",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gbv",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbv": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^A",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbu": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMT",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c^x": {
+      "opcode": "data_changevariableby",
+      "next": "c^B",
+      "parent": "c!",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^B": {
+      "opcode": "looks_nextcostume",
+      "next": "aMU",
+      "parent": "c^x",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMU": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "c^B",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^C",
+          "gbw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^C": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMU",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "c^D",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^D": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^C",
+      "inputs": {
+        "INDEX": [
+          3,
+          "c^E",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^E": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^D",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gbx",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbx": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^E",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbw": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMU",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B%": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "c!",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^F"
+        ],
+        "SUBSTACK": [
+          2,
+          "aMV"
+        ],
+        "SUBSTACK2": [
+          2,
+          "B)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^F": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "B%",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "gby",
+          [
+            10,
+            "40"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gby": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "c^F",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMV": {
+      "opcode": "looks_switchcostumeto",
+      "next": "gbz",
+      "parent": "B%",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gbA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbA": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMV",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gbz": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "aMV",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "B)": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "B%",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^G"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^H"
+        ],
+        "SUBSTACK2": [
+          2,
+          "B*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^G": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "B)",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbB",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbB": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^G",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^H": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B)",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gbC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbC": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c^H",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Closing-Book-A3-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B*": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "B)",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^I"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^J"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aMW"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^I": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "B*",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbD",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbD": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^I",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^J": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B*",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gbE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbE": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c^J",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Opening-Book-A2-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMW": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B*",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "gbF",
+          "gbG"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbF": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "aMW",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbG": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aMW",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "page-flip-03",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gbH": {
+      "opcode": "event_whenkeypressed",
+      "next": "aMX",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "left arrow",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 3925,
+      "y": 1528
+    },
+    "aMX": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "gbH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^K"
+        ],
+        "SUBSTACK": [
+          2,
+          "c#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^K": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aMX",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aMY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMY": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "c^K",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c^L"
+        ],
+        "OPERAND2": [
+          2,
+          "c^M"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^L": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMY",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbI",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbI": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^L",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^M": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMY",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbJ",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbJ": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^M",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c#": {
+      "opcode": "control_if_else",
+      "next": "B+",
+      "parent": "aMX",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^N"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^O"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c^P"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^N": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c#",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbK",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "_"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbK": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^N",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^O": {
+      "opcode": "data_changevariableby",
+      "next": "B,",
+      "parent": "c#",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "B,": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aMZ",
+      "parent": "c^O",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "gbL",
+          "gbM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbL": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "B,",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbM": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "B,",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page 6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aMZ": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "B,",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^Q",
+          "gbN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^Q": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aMZ",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "c^R",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^R": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^Q",
+      "inputs": {
+        "INDEX": [
+          3,
+          "c^S",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^S": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^R",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gbO",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbO": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^S",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbN": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aMZ",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c^P": {
+      "opcode": "data_changevariableby",
+      "next": "B-",
+      "parent": "c#",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "B-": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aM!",
+      "parent": "c^P",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^T",
+          "gbP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^T": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "B-",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gbQ",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbQ": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^T",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbP": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "B-",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page 6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aM!": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "B-",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "c^U",
+          "gbR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^U": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "aM!",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Page "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "c^V",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^V": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "c^U",
+      "inputs": {
+        "INDEX": [
+          3,
+          "c^W",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^W": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c^V",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gbS",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbS": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^W",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbR": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aM!",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Page _",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B+": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "c#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aM#"
+        ],
+        "SUBSTACK": [
+          2,
+          "aM%"
+        ],
+        "SUBSTACK2": [
+          2,
+          "B."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aM#": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "B+",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c^X"
+        ],
+        "OPERAND2": [
+          2,
+          "c^Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^X": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aM#",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbT",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbT": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^X",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^Y": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aM#",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbU",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbU": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^Y",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aM%": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c^Z",
+      "parent": "B+",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gbV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbV": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aM%",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c^Z": {
+      "opcode": "data_setvariableto",
+      "next": "gbW",
+      "parent": "aM%",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "COLLECTED PAGE //dontsave//",
+          ":x6){WUM4#o*{_sp}q6L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbW": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c^Z",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "B.": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "B+",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^!"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^#"
+        ],
+        "SUBSTACK2": [
+          2,
+          "B/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^!": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "B.",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbX",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbX": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^!",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^#": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B.",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gbY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbY": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c^#",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Closing-Book-A3-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B/": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "B.",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c^%"
+        ],
+        "SUBSTACK": [
+          2,
+          "c^("
+        ],
+        "SUBSTACK2": [
+          2,
+          "aM("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^%": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "B/",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gbZ",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gbZ": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c^%",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^(": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B/",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gb!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb!": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "c^(",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Opening-Book-A2-www",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aM(": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "B/",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "gb#",
+          "gb%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb#": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "aM(",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb%": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aM(",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "page-flip-03",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "hke": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "gun"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "holding?",
+          "@8KT?sT@gGcLmP8W09GT"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2340,
+      "y": 2548
+    },
+    "hkf": {
+      "opcode": "localstorage_removeAll",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 283,
+      "y": 207
+    },
+    "gb(": {
+      "opcode": "control_start_as_clone",
+      "next": "c^)",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 431,
+      "y": 625
+    },
+    "c^)": {
+      "opcode": "control_wait",
+      "next": "c^*",
+      "parent": "gb(",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^*": {
+      "opcode": "control_wait",
+      "next": "gb)",
+      "parent": "c^)",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb)": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "c^*",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hkg": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "OPERAND1": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 40,
+      "y": 97
+    },
+    "c^+": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c^,"
+        ],
+        "OPERAND2": [
+          2,
+          "gb*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -90,
+      "y": 148
+    },
+    "c^,": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "c^+",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "c^-",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^-": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": "c^,",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gb+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb+": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "c^-",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "books//Journal",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gb*": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c^+",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hkh": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "page",
+            "FNFOo!0Vai@3%(K%Tv=N"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "pages of journal",
+          "T)8(t.1Wn`BcUqqPkYm/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 3510,
+      "y": 1767
+    },
+    "c^.": {
+      "opcode": "procedures_definition",
+      "next": "B:",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "gb,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2378,
+      "y": 912
+    },
+    "gb,": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c^.",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "order",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "B:": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "c^.",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gb-"
+        ],
+        "SUBSTACK": [
+          2,
+          "gb."
+        ],
+        "SUBSTACK2": [
+          2,
+          "gb/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb-": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "B:",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb.": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "B:",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-9999"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "gb/": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "B:",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "gb:": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c^/",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "reset game",
+          "WuZe2~l-i+^nTtamOsy}"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1361,
+      "y": 577
+    },
+    "c^/": {
+      "opcode": "data_setvariableto",
+      "next": "c^:",
+      "parent": "gb:",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Journal collected",
+          "pqqNQJJ!bM?3`v)du1ta"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^:": {
+      "opcode": "data_setvariableto",
+      "next": "aM)",
+      "parent": "c^/",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "page",
+          "FNFOo!0Vai@3%(K%Tv=N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aM)": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c^;",
+      "parent": "c^:",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gb;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb;": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aM)",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "journal Icon",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "hki": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Journal collected",
+          "pqqNQJJ!bM?3`v)du1ta"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -649,
+      "y": 162
+    },
+    "gb=": {
+      "opcode": "event_broadcast",
+      "next": "gb?",
+      "parent": null,
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "start game",
+            "K_=!lJv?^fFzF*=.9u#R"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 782,
+      "y": 681
+    },
+    "gb?": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "gb=",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "New room",
+            "*Q)B$~LzO0_kwB~Crfww"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^=": {
+      "opcode": "procedures_definition",
+      "next": "aM*",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "c^?"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 522,
+      "y": 907
+    },
+    "c^?": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c^=",
+      "inputs": {
+        "kMXt2L#kZMZ]Cxu`axK)": [
+          1,
+          "gb@"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "run journal UI %s",
+        "argumentids": "[\"kMXt2L#kZMZ]Cxu`axK)\"]",
+        "argumentnames": "[\"collected?\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "false"
+      }
+    },
+    "gb@": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "c^?",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "collected?",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aM*": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "c^=",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "aMF"
+        ],
+        "CONDITION": [
+          2,
+          "c^@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb[": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "c^[",
+      "inputs": {
+        "kMXt2L#kZMZ]Cxu`axK)": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "run journal UI %s",
+        "argumentids": "[\"kMXt2L#kZMZ]Cxu`axK)\"]",
+        "warp": "false"
+      }
+    },
+    "c^@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aM*",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gb]",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb]": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "c^@",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "collected?",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aMF": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "aM*",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "aME"
+        ],
+        "CONDITION": [
+          2,
+          "gb^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^[": {
+      "opcode": "data_setvariableto",
+      "next": "gb[",
+      "parent": "c^i",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "room changed?",
+          "Q~nOc#E^F4#Fv$gts!71"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^i": {
+      "opcode": "data_setvariableto",
+      "next": "c^[",
+      "parent": "ga{",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "room changed?",
+          "Q~nOc#E^F4#Fv$gts!71"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb^": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aMF",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "room changed?",
+            "Q~nOc#E^F4#Fv$gts!71"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "v": {
+      "opcode": "lmsMoreEvents_whenValueChanged",
+      "next": "x",
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          2,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1804,
+      "y": 412
+    },
+    "x": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "v",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^;": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "c^]",
+      "parent": "aM)",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Sister//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^]": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "gb_",
+      "parent": "c^;",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "mother//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb_": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": null,
+      "parent": "c^]",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "father//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c])": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "c](",
+      "parent": "aMl",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "mother//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c](": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "c]%",
+      "parent": "c])",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "father//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^^": {
+      "opcode": "lmsMoreEvents_whenTrueFalse",
+      "next": "gb`",
+      "parent": null,
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gb{"
+        ]
+      },
+      "fields": {
+        "STATE": [
+          "true",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1349,
+      "y": 1052
+    },
+    "gb{": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c^^",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb`": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "c^^",
+      "inputs": {
+        "kMXt2L#kZMZ]Cxu`axK)": [
+          3,
+          [
+            12,
+            "Journal collected",
+            "pqqNQJJ!bM?3`v)du1ta"
+          ],
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "run journal UI %s",
+        "argumentids": "[\"kMXt2L#kZMZ]Cxu`axK)\"]",
+        "warp": "false"
+      }
+    },
+    "gb|": {
+      "opcode": "lmsMoreEvents_whenValueChanged",
+      "next": "c^_",
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          2,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 140,
+      "y": 1778
+    },
+    "c^_": {
+      "opcode": "data_setvariableto",
+      "next": "c^`",
+      "parent": "gb|",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "room changed?",
+          "Q~nOc#E^F4#Fv$gts!71"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gb}": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "c^`",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "room changed?",
+          "Q~nOc#E^F4#Fv$gts!71"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c^`": {
+      "opcode": "control_wait",
+      "next": "gb}",
+      "parent": "c^_",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hkj": [
+      12,
+      "Journal collected",
+      "pqqNQJJ!bM?3`v)du1ta",
+      115,
+      8
+    ],
+    "hkk": [
+      12,
+      "page",
+      "FNFOo!0Vai@3%(K%Tv=N",
+      3618,
+      604
+    ],
+    "hkl": [
+      12,
+      "Journal collected",
+      "pqqNQJJ!bM?3`v)du1ta",
+      1599,
+      514
+    ]
+  },
+  "comments": {},
+  "currentCostume": 1,
+  "costumes": [
+    {
+      "name": "on shelf",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "ce77daa54a18f617242bae9e1310bc73",
+      "md5ext": "ce77daa54a18f617242bae9e1310bc73.png",
+      "rotationCenterX": 75,
+      "rotationCenterY": 75
+    },
+    {
+      "name": "journal Icon",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "480c13355b50de4f730fc27d907e3ea7",
+      "md5ext": "480c13355b50de4f730fc27d907e3ea7.svg",
+      "rotationCenterX": 236.79619499999995,
+      "rotationCenterY": -146.74739400428246
+    },
+    {
+      "name": "journal 1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c2a156a34039b2dac0e0337ae00ab950",
+      "md5ext": "c2a156a34039b2dac0e0337ae00ab950.svg",
+      "rotationCenterX": 102.54533,
+      "rotationCenterY": 131.7498886509636
+    },
+    {
+      "name": "Page 1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "5db2905d2059c976c51c120f3aa70e86",
+      "md5ext": "5db2905d2059c976c51c120f3aa70e86.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "66cd752e539ea05bbc0c49111f3ff2d9",
+      "md5ext": "66cd752e539ea05bbc0c49111f3ff2d9.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130.0000083333333
+    },
+    {
+      "name": "Page 3",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "4e63c3d2095ecee7f212f28a83522863",
+      "md5ext": "4e63c3d2095ecee7f212f28a83522863.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 129.99998
+    },
+    {
+      "name": "Page 4",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "a9c2bd3bdd4f7eef9f0e4fe834bcabfe",
+      "md5ext": "a9c2bd3bdd4f7eef9f0e4fe834bcabfe.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 129.99999808626666
+    },
+    {
+      "name": "Page 5",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "a512ed46409607828dbe9682c05f344c",
+      "md5ext": "a512ed46409607828dbe9682c05f344c.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 6",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "47b4ccd96e594a32be19699f8ebb2250",
+      "md5ext": "47b4ccd96e594a32be19699f8ebb2250.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 7",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c964d47a811e952fec7d5a4efe32a94a",
+      "md5ext": "c964d47a811e952fec7d5a4efe32a94a.svg",
+      "rotationCenterX": 205.49998,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 8",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "028d126b746d3f4370666bff84a887fb",
+      "md5ext": "028d126b746d3f4370666bff84a887fb.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 9",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "934158c4443fad28444ac82cbefc2b3c",
+      "md5ext": "934158c4443fad28444ac82cbefc2b3c.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 10",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "5766bcf058fb14c46dbb078f6b37b363",
+      "md5ext": "5766bcf058fb14c46dbb078f6b37b363.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 11",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c294ff97c8a7ca0c629f1da375c82d54",
+      "md5ext": "c294ff97c8a7ca0c629f1da375c82d54.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 12",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3f4722220c262c3f9bc6c7f5d85f2b2b",
+      "md5ext": "3f4722220c262c3f9bc6c7f5d85f2b2b.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 13",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "dc054a45ed9051b1e1d80ca0026c07b5",
+      "md5ext": "dc054a45ed9051b1e1d80ca0026c07b5.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 14",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f2edff92c6dfef59336831f29c899544",
+      "md5ext": "f2edff92c6dfef59336831f29c899544.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 15",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "d17b3441cf9150a94a33723c393af289",
+      "md5ext": "d17b3441cf9150a94a33723c393af289.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 16",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "785bb4ea757cb47e8c4363776a536f13",
+      "md5ext": "785bb4ea757cb47e8c4363776a536f13.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 17",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3672087e446c4ea6b363f6f9d3c4b754",
+      "md5ext": "3672087e446c4ea6b363f6f9d3c4b754.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 18",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "5e1876a6b7e5138b05d1a61642c74e0c",
+      "md5ext": "5e1876a6b7e5138b05d1a61642c74e0c.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 19",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "a0e083dd67cd837d29b536de5b92d489",
+      "md5ext": "a0e083dd67cd837d29b536de5b92d489.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 20",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "4c178711ae80751596b7a967e32e8583",
+      "md5ext": "4c178711ae80751596b7a967e32e8583.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 21",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3a126a487eaf2ffc4ee7fef1c4c3c5e6",
+      "md5ext": "3a126a487eaf2ffc4ee7fef1c4c3c5e6.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 22",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "066efb3cfa2e295b766012fbed59bdfb",
+      "md5ext": "066efb3cfa2e295b766012fbed59bdfb.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 23",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e644d3146b64f7adfbc0fa0f877de555",
+      "md5ext": "e644d3146b64f7adfbc0fa0f877de555.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 24",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "0b9ee81582ab24dba0bc65fe99658d49",
+      "md5ext": "0b9ee81582ab24dba0bc65fe99658d49.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 25",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e06e2cded1bb10f919ef6f379957b652",
+      "md5ext": "e06e2cded1bb10f919ef6f379957b652.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 26",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "b1864fdbf31587a5bfbe9dd3ff371829",
+      "md5ext": "b1864fdbf31587a5bfbe9dd3ff371829.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 27",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "1f39e0c81ecd5e38ac888bfe71fbfd6c",
+      "md5ext": "1f39e0c81ecd5e38ac888bfe71fbfd6c.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 28",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "d3381b2f2dd29f63e44cc87d5ae7b95f",
+      "md5ext": "d3381b2f2dd29f63e44cc87d5ae7b95f.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 29",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "eba9cd30d6b7a7987293e1a8804b6ec8",
+      "md5ext": "eba9cd30d6b7a7987293e1a8804b6ec8.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 30",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "fea97be8816b87de5e8be7f75ac3bb02",
+      "md5ext": "fea97be8816b87de5e8be7f75ac3bb02.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 31",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "68c9625c7057281c4d365804c0469219",
+      "md5ext": "68c9625c7057281c4d365804c0469219.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 32",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "992b4bcf89beaaecb426b32db44561ae",
+      "md5ext": "992b4bcf89beaaecb426b32db44561ae.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 33",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "dd751973bd49238f8c3e235549ac5036",
+      "md5ext": "dd751973bd49238f8c3e235549ac5036.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 34 35",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "12f2a1dd3c751d1e312cb768687fcb04",
+      "md5ext": "12f2a1dd3c751d1e312cb768687fcb04.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 34 _",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "1252e52acd886bc8fe421bff765538c7",
+      "md5ext": "1252e52acd886bc8fe421bff765538c7.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 35 35",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "42ae378fbf221d6d24740a0f42bcd458",
+      "md5ext": "42ae378fbf221d6d24740a0f42bcd458.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 35 _",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e364c21e663e2cc750af29b305328c14",
+      "md5ext": "e364c21e663e2cc750af29b305328c14.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 36 35",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "1054aeaab883d23b44bed149ef6eb087",
+      "md5ext": "1054aeaab883d23b44bed149ef6eb087.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 36 _",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "46eab616bbe16132b0b9c651460bbdbb",
+      "md5ext": "46eab616bbe16132b0b9c651460bbdbb.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 37",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c3b8d450efd3f6f54b6c0ae18eeb26b1",
+      "md5ext": "c3b8d450efd3f6f54b6c0ae18eeb26b1.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 38",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c5a5e41ea3a6393e3fdc6587f51d02fc",
+      "md5ext": "c5a5e41ea3a6393e3fdc6587f51d02fc.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 39",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f39ca449a2d3922cd2e127722816bda2",
+      "md5ext": "f39ca449a2d3922cd2e127722816bda2.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 40",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "51203b1a67850ef327a96d7ad6264484",
+      "md5ext": "51203b1a67850ef327a96d7ad6264484.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 41",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "8e175ffa7c36fd2938dd0c11b9c2e7b9",
+      "md5ext": "8e175ffa7c36fd2938dd0c11b9c2e7b9.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 42",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "9257f844e4fae1150b293410799427a3",
+      "md5ext": "9257f844e4fae1150b293410799427a3.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 43",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "d85a0e3fce94294cd4216f7d64f04c01",
+      "md5ext": "d85a0e3fce94294cd4216f7d64f04c01.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page 44",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f87448971301049d61eadea5dbfbd251",
+      "md5ext": "f87448971301049d61eadea5dbfbd251.svg",
+      "rotationCenterX": 205.5,
+      "rotationCenterY": 130
+    },
+    {
+      "name": "Page _",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f2d994fb5b5067e51542a556583d9c3",
+      "md5ext": "0f2d994fb5b5067e51542a556583d9c3.png",
+      "rotationCenterX": 411,
+      "rotationCenterY": 260
+    },
+    {
+      "name": "black and white 5c9e199d-63aa-4d18-9354-6964b7b7e430",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d1ba51a30a806aa639aab33d31885b3e",
+      "md5ext": "d1ba51a30a806aa639aab33d31885b3e.png",
+      "rotationCenterX": 71,
+      "rotationCenterY": 225
+    },
+    {
+      "name": "black and white 5c9e199d-63aa-4d18-9354-6964b7b7e2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0283e8fbcba79fc5a5208afc89210d63",
+      "md5ext": "0283e8fbcba79fc5a5208afc89210d63.png",
+      "rotationCenterX": -3,
+      "rotationCenterY": 225
+    },
+    {
+      "name": "costume1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9d22a8d2363cde73cf18fc6b97ff803e",
+      "md5ext": "9d22a8d2363cde73cf18fc6b97ff803e.png",
+      "rotationCenterX": 363,
+      "rotationCenterY": 221
+    }
+  ],
+  "sounds": [
+    {
+      "name": "page-flip-01",
+      "assetId": "1cfd0bef8a90785a50a48b93121125ae",
+      "dataFormat": "wav",
+      "rate": 48000,
+      "sampleCount": 28672,
+      "md5ext": "1cfd0bef8a90785a50a48b93121125ae.wav"
+    },
+    {
+      "name": "page-flip-02",
+      "assetId": "dc340823afa7dd2ccb138e86fd46eacd",
+      "dataFormat": "wav",
+      "rate": 48000,
+      "sampleCount": 32033,
+      "md5ext": "dc340823afa7dd2ccb138e86fd46eacd.wav"
+    },
+    {
+      "name": "page-flip-03",
+      "assetId": "bce8ffc9a92e2c1f20cefe89ab41f403",
+      "dataFormat": "wav",
+      "rate": 48000,
+      "sampleCount": 44032,
+      "md5ext": "bce8ffc9a92e2c1f20cefe89ab41f403.wav"
+    },
+    {
+      "name": "page-flip-04",
+      "assetId": "53b0e393ec0cc49678040816bdda9164",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 46668,
+      "md5ext": "53b0e393ec0cc49678040816bdda9164.wav"
+    },
+    {
+      "name": "page-flip-05",
+      "assetId": "5e3cc9dc72c0ddcaa5c3347ebfde3e05",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 37307,
+      "md5ext": "5e3cc9dc72c0ddcaa5c3347ebfde3e05.wav"
+    },
+    {
+      "name": "page-flip-06",
+      "assetId": "f8dfc0dc26cb895290b5c4c2fec0c24f",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 40266,
+      "md5ext": "f8dfc0dc26cb895290b5c4c2fec0c24f.wav"
+    },
+    {
+      "name": "page-flip-07",
+      "assetId": "c1114bb01d3203f820fc9fdcacfc1309",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 45269,
+      "md5ext": "c1114bb01d3203f820fc9fdcacfc1309.wav"
+    },
+    {
+      "name": "page-flip-08",
+      "assetId": "bd74c222aac9510fc3d544f7c7d823c7",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 32994,
+      "md5ext": "bd74c222aac9510fc3d544f7c7d823c7.wav"
+    },
+    {
+      "name": "Closing-Book-A3-www",
+      "assetId": "207d1b398da473f841899423837c502a",
+      "dataFormat": "mp3",
+      "rate": 48000,
+      "sampleCount": 67968,
+      "md5ext": "207d1b398da473f841899423837c502a.mp3"
+    },
+    {
+      "name": "Opening-Book-A2-www",
+      "assetId": "6a875f78834a08f1b2f1b7e27dd14473",
+      "dataFormat": "mp3",
+      "rate": 48000,
+      "sampleCount": 50688,
+      "md5ext": "6a875f78834a08f1b2f1b7e27dd14473.mp3"
+    }
+  ],
+  "volume": 75,
+  "layerOrder": 84,
+  "visible": true,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

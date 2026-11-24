@@ -1,0 +1,4585 @@
+{
+  "isStage": false,
+  "name": "Dialogue//You dialogue",
+  "variables": {
+    "M[Mf9!z{8+eRwgtflt}!": [
+      "dialogue",
+      "I HATE those demons! They made me do it!"
+    ],
+    "1f_q}^,E~A1]6DR%4WA.": [
+      "+1 dummy variable",
+      14
+    ],
+    "zj;Owk*NBs[yzoI^KMCO": [
+      "I",
+      1
+    ],
+    "6={cUab^V1=:oJ=}]de@": [
+      "y",
+      0
+    ]
+  },
+  "lists": {
+    "8^*`#cB#sj7p}R9j9!Q-": [
+      "new dialogue",
+      [
+        "W",
+        "H",
+        "A",
+        "T",
+        " ",
+        "T",
+        "H",
+        "E",
+        " ",
+        "H",
+        "E",
+        "L",
+        "L",
+        "?"
+      ]
+    ]
+  },
+  "broadcasts": {},
+  "blocks": {
+    "gt.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aT,",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Me say something",
+          "GA`-o(--AtgQe(bY2G(z"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -149,
+      "y": -195
+    },
+    "aT,": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "aT-",
+      "parent": "gt.",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gt/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt/": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aT,",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "You dialogue2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aT-": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dgF",
+      "parent": "aT,",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gt:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt:": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aT-",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dgF": {
+      "opcode": "looks_setsizeto",
+      "next": "aT.",
+      "parent": "aT-",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT.": {
+      "opcode": "control_create_clone_of",
+      "next": "dgG",
+      "parent": "dgF",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "gt;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt;": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "aT.",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dgG": {
+      "opcode": "looks_show",
+      "next": "aT/",
+      "parent": "aT.",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT/": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dgH",
+      "parent": "dgG",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gt="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt=": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aT/",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dgH": {
+      "opcode": "motion_gotoxy",
+      "next": "dgI",
+      "parent": "aT/",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-112"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgI": {
+      "opcode": "looks_setsizeto",
+      "next": "aT:",
+      "parent": "dgH",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "250"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT:": {
+      "opcode": "control_wait_until",
+      "next": "aT;",
+      "parent": "dgI",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT=": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT:",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gt?"
+        ],
+        "OPERAND2": [
+          2,
+          "gt@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt?": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT=",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT=",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT;": {
+      "opcode": "control_wait_until",
+      "next": "aT?",
+      "parent": "aT:",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT@": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT;",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gt["
+        ],
+        "OPERAND2": [
+          2,
+          "gt]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt[": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT@",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt]": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT@",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT?": {
+      "opcode": "control_wait_until",
+      "next": "aT[",
+      "parent": "aT;",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT]": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT?",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dgJ"
+        ],
+        "OPERAND2": [
+          2,
+          "gt^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgJ": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aT]",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dgK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgK": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dgJ",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gt_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt_": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dgK",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gt^": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT]",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT[": {
+      "opcode": "control_wait_until",
+      "next": "aT^",
+      "parent": "aT?",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT_": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT[",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dgL"
+        ],
+        "OPERAND2": [
+          2,
+          "gt`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgL": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "aT_",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gt{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt{": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dgL",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gt`": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT_",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT^": {
+      "opcode": "control_wait_until",
+      "next": "gt|",
+      "parent": "aT[",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT`": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT^",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dgM"
+        ],
+        "OPERAND2": [
+          2,
+          "gt}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgM": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aT`",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dgN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgN": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dgM",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gt~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt~": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dgN",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gt}": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT`",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gt|": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "aT^",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gua": {
+      "opcode": "control_start_as_clone",
+      "next": "dgO",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2010,
+      "y": 64
+    },
+    "dgO": {
+      "opcode": "motion_gotoxy",
+      "next": "aT{",
+      "parent": "gua",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "15"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-105"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT{": {
+      "opcode": "control_wait_until",
+      "next": "dgP",
+      "parent": "dgO",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aT|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT|": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aT{",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dgQ"
+        ],
+        "OPERAND2": [
+          2,
+          "gub"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgQ": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aT|",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dgR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgR": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dgQ",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "guc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guc": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dgR",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gub": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aT|",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgP": {
+      "opcode": "text_setColor",
+      "next": "dgS",
+      "parent": "aT{",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#ff0000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgS": {
+      "opcode": "looks_show",
+      "next": "dgT",
+      "parent": "dgP",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgT": {
+      "opcode": "looks_gotofrontback",
+      "next": "aT}",
+      "parent": "dgS",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT}": {
+      "opcode": "text_setWidthInput",
+      "next": "c;",
+      "parent": "dgT",
+      "inputs": {
+        "WIDTH": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ],
+        "ALIGN": [
+          1,
+          "gud"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gud": {
+      "opcode": "text_menu_twAlign",
+      "next": null,
+      "parent": "aT}",
+      "inputs": {},
+      "fields": {
+        "twAlign": [
+          "left",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c;": {
+      "opcode": "control_if_else",
+      "next": "aT~",
+      "parent": "aT}",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dgU"
+        ],
+        "SUBSTACK": [
+          2,
+          "gue"
+        ],
+        "SUBSTACK2": [
+          2,
+          "guf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgU": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c;",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gug",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "@"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gug": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "dgU",
+      "inputs": {
+        "LETTER": [
+          1,
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gue": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "c;",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            ".3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guf": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "c;",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.05"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT~": {
+      "opcode": "text_setFontInput",
+      "next": "dgV",
+      "parent": "c;",
+      "inputs": {
+        "FONT": [
+          1,
+          "guh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guh": {
+      "opcode": "text_menu_twFont",
+      "next": null,
+      "parent": "aT~",
+      "inputs": {},
+      "fields": {
+        "twFont": [
+          "Pixel",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dgV": {
+      "opcode": "looks_setsizeto",
+      "next": "dgW",
+      "parent": "aT~",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "40"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgW": {
+      "opcode": "data_setvariableto",
+      "next": "c=",
+      "parent": "dgV",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "dialogue",
+          "M[Mf9!z{8+eRwgtflt}!"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c=": {
+      "opcode": "control_if_else",
+      "next": "aUa",
+      "parent": "dgW",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dgX"
+        ],
+        "SUBSTACK": [
+          2,
+          "dgY"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dgZ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgX": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c=",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gui",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "@"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gui": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "dgX",
+      "inputs": {
+        "LETTER": [
+          1,
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "dialogue",
+            "M[Mf9!z{8+eRwgtflt}!"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgY": {
+      "opcode": "procedures_call",
+      "next": "dg!",
+      "parent": "c=",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "new dialogue",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "dg!": {
+      "opcode": "data_setvariableto",
+      "next": "dg#",
+      "parent": "dgY",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "dialogue",
+          "M[Mf9!z{8+eRwgtflt}!"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg#": {
+      "opcode": "text_setText",
+      "next": "aUb",
+      "parent": "dg!",
+      "inputs": {
+        "TEXT": [
+          3,
+          [
+            12,
+            "dialogue",
+            "M[Mf9!z{8+eRwgtflt}!"
+          ],
+          [
+            10,
+            "I didn't want to kill them."
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUb": {
+      "opcode": "text_startAnimate",
+      "next": "guj",
+      "parent": "dg#",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "guk"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guk": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "aUb",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "guj": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "aUb",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dgZ": {
+      "opcode": "data_setvariableto",
+      "next": "dg%",
+      "parent": "c=",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "dialogue",
+          "M[Mf9!z{8+eRwgtflt}!"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg%": {
+      "opcode": "text_setText",
+      "next": "aUc",
+      "parent": "dgZ",
+      "inputs": {
+        "TEXT": [
+          3,
+          [
+            12,
+            "dialogue",
+            "M[Mf9!z{8+eRwgtflt}!"
+          ],
+          [
+            10,
+            "I didn't want to kill them."
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUc": {
+      "opcode": "text_startAnimate",
+      "next": "aUd",
+      "parent": "dg%",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "gul"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gul": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "aUc",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aUd": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "aUc",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg("
+        ],
+        "SUBSTACK": [
+          2,
+          "aUe"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg(": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUd",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "gum"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gum": {
+      "opcode": "text_isAnimating",
+      "next": null,
+      "parent": "dg(",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUe": {
+      "opcode": "control_wait_until",
+      "next": "Ei",
+      "parent": "aUd",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gun"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gun": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUe",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ei": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "aUe",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg)"
+        ],
+        "SUBSTACK": [
+          2,
+          "dg*"
+        ],
+        "SUBSTACK2": [
+          2,
+          "guo"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg)": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "Ei",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gup"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gup": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dg)",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dg*": {
+      "opcode": "text_setText",
+      "next": "aUf",
+      "parent": "Ei",
+      "inputs": {
+        "TEXT": [
+          3,
+          [
+            12,
+            "dialogue",
+            "M[Mf9!z{8+eRwgtflt}!"
+          ],
+          [
+            10,
+            "Welcome to my project!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUf": {
+      "opcode": "control_wait_until",
+      "next": "dg+",
+      "parent": "dg*",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "guq"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guq": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUf",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg+": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "aUf",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg,": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "dg+",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "gur"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gur": {
+      "opcode": "text_isAnimating",
+      "next": null,
+      "parent": "dg,",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guo": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "Ei",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            ".05"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUa": {
+      "opcode": "control_wait_until",
+      "next": "aUg",
+      "parent": "c=",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUh": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUa",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dg-"
+        ],
+        "OPERAND2": [
+          2,
+          "gus"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg-": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUh",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dg."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg.": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dg-",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gut"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gut": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dg.",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gus": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUh",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUg": {
+      "opcode": "control_wait_until",
+      "next": "dg/",
+      "parent": "aUa",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUi"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUi": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUg",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dg:"
+        ],
+        "OPERAND2": [
+          2,
+          "guu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg:": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "aUi",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "guv"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guv": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dg:",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "guu": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUi",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg/": {
+      "opcode": "event_broadcast",
+      "next": "dg;",
+      "parent": "aUg",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg;": {
+      "opcode": "control_wait",
+      "next": "guw",
+      "parent": "dg/",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guw": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "dg;",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gux": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dg=",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "stop saying something",
+          "R%X(@$)du68aEakc4X7+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 416
+    },
+    "dg=": {
+      "opcode": "looks_hide",
+      "next": "guy",
+      "parent": "gux",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guy": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "dg=",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guz": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c?",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Me say something",
+          "GA`-o(--AtgQe(bY2G(z"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1239,
+      "y": 64
+    },
+    "c?": {
+      "opcode": "control_if_else",
+      "next": "guA",
+      "parent": "guz",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg?"
+        ],
+        "SUBSTACK": [
+          2,
+          "guB"
+        ],
+        "SUBSTACK2": [
+          2,
+          "guC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg?": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c?",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "guD",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "@"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guD": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "dg?",
+      "inputs": {
+        "LETTER": [
+          1,
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guB": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "c?",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guC": {
+      "opcode": "text_setTypeDelay",
+      "next": null,
+      "parent": "c?",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.05"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guA": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "c?",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guE": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "guF",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "reset game",
+          "WuZe2~l-i+^nTtamOsy}"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 896
+    },
+    "guF": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "guE",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guG": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "guH",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 64
+    },
+    "guH": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "guG",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guI": {
+      "opcode": "event_whenflagclicked",
+      "next": "dg@",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 240
+    },
+    "guJ": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dg@",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guK": {
+      "opcode": "control_start_as_clone",
+      "next": "aUj",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1239,
+      "y": 472
+    },
+    "aUj": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "guK",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg["
+        ],
+        "SUBSTACK2": [
+          2,
+          "aUk"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg[": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUj",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "guL",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "@"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guL": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "dg[",
+      "inputs": {
+        "LETTER": [
+          1,
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUk": {
+      "opcode": "control_wait_until",
+      "next": "aUl",
+      "parent": "aUj",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "guM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guM": {
+      "opcode": "text_isAnimating",
+      "next": null,
+      "parent": "aUk",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUl": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "aUk",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dg]"
+        ],
+        "SUBSTACK": [
+          2,
+          "aUm"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg]": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUl",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "guN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guN": {
+      "opcode": "text_isAnimating",
+      "next": null,
+      "parent": "dg]",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUm": {
+      "opcode": "control_wait_until",
+      "next": "dg^",
+      "parent": "aUl",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "guO"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guO": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUm",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg^": {
+      "opcode": "sound_setvolumeto",
+      "next": "dg_",
+      "parent": "aUm",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg_": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": "dg^",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "guP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guP": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "dg_",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "tone",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "guQ": {
+      "opcode": "control_start_as_clone",
+      "next": "dg`",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1239,
+      "y": 1584
+    },
+    "dg`": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "guQ",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "aUn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUn": {
+      "opcode": "control_wait_until",
+      "next": "Ej",
+      "parent": "dg`",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "guR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guR": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUn",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ej": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "aUn",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "guS"
+        ],
+        "SUBSTACK": [
+          2,
+          "guT"
+        ],
+        "SUBSTACK2": [
+          2,
+          "guU"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guS": {
+      "opcode": "text_isAnimating",
+      "next": null,
+      "parent": "Ej",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guT": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "Ej",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "animating (dialogue) //dontsave//",
+          "IhsZ/*t,(}_2,y2pd-xb"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "guU": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "Ej",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "animating (dialogue) //dontsave//",
+          "IhsZ/*t,(}_2,y2pd-xb"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg{": {
+      "opcode": "procedures_definition",
+      "next": "dg|",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "guV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1239,
+      "y": 1056
+    },
+    "guV": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dg{",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "new dialogue",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "dg|": {
+      "opcode": "data_deletealloflist",
+      "next": "dg}",
+      "parent": "dg{",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "8^*`#cB#sj7p}R9j9!Q-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg}": {
+      "opcode": "data_setvariableto",
+      "next": "Ek",
+      "parent": "dg|",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1 dummy variable",
+          "1f_q}^,E~A1]6DR%4WA."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ek": {
+      "opcode": "control_repeat",
+      "next": "dg~",
+      "parent": "dg}",
+      "inputs": {
+        "TIMES": [
+          3,
+          "guW",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "dha"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "guW": {
+      "opcode": "operator_length",
+      "next": null,
+      "parent": "Ek",
+      "inputs": {
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dha": {
+      "opcode": "data_changevariableby",
+      "next": "dhb",
+      "parent": "Ek",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1 dummy variable",
+          "1f_q}^,E~A1]6DR%4WA."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhb": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "dha",
+      "inputs": {
+        "ITEM": [
+          3,
+          "guX",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "8^*`#cB#sj7p}R9j9!Q-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "guX": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "dhb",
+      "inputs": {
+        "LETTER": [
+          3,
+          [
+            12,
+            "+1 dummy variable",
+            "1f_q}^,E~A1]6DR%4WA."
+          ],
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg~": {
+      "opcode": "data_deleteoflist",
+      "next": "guY",
+      "parent": "Ek",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "8^*`#cB#sj7p}R9j9!Q-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "guY": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "dg~",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            13,
+            "new dialogue",
+            "8^*`#cB#sj7p}R9j9!Q-"
+          ],
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "the thing to say (me) //dontsave//",
+          "g92!A/rDZbzbUWTm0T]+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "guZ": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dhc",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 632
+    },
+    "dhc": {
+      "opcode": "looks_hide",
+      "next": "dhd",
+      "parent": "guZ",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhd": {
+      "opcode": "data_setvariableto",
+      "next": "gu!",
+      "parent": "dhc",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "saying stuff //dontsave//",
+          "fc$|4|RH?l%D32(IPGby"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu!": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "dhd",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu#": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aUo",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "spooky say somthing",
+          "W,9sqg,8m]swtm2I!8._"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1824
+    },
+    "aUo": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "aUp",
+      "parent": "gu#",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gu%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu%": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aUo",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "You dialogue2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aUp": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dhe",
+      "parent": "aUo",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gu("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu(": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aUp",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhe": {
+      "opcode": "looks_setsizeto",
+      "next": "aUq",
+      "parent": "aUp",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUq": {
+      "opcode": "control_create_clone_of",
+      "next": "dhf",
+      "parent": "dhe",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "gu)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu)": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "aUq",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhf": {
+      "opcode": "looks_show",
+      "next": "aUr",
+      "parent": "aUq",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUr": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dhg",
+      "parent": "dhf",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gu*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu*": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aUr",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume3",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhg": {
+      "opcode": "motion_gotoxy",
+      "next": "dhh",
+      "parent": "aUr",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-112"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhh": {
+      "opcode": "looks_setsizeto",
+      "next": "aUs",
+      "parent": "dhg",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "250"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUs": {
+      "opcode": "control_wait_until",
+      "next": "aUt",
+      "parent": "dhh",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUu": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUs",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gu+"
+        ],
+        "OPERAND2": [
+          2,
+          "gu,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu+": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUu",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu,": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUu",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUt": {
+      "opcode": "control_wait_until",
+      "next": "aUv",
+      "parent": "aUs",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUw": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUt",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gu-"
+        ],
+        "OPERAND2": [
+          2,
+          "gu."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu-": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUw",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu.": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUw",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUv": {
+      "opcode": "control_wait_until",
+      "next": "aUx",
+      "parent": "aUt",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUy"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUy": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUv",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dhi"
+        ],
+        "OPERAND2": [
+          2,
+          "gu/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhi": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUy",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dhj"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhj": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dhi",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gu:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu:": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dhj",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gu/": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUy",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUx": {
+      "opcode": "control_wait_until",
+      "next": "aUz",
+      "parent": "aUv",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUA": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUx",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dhk"
+        ],
+        "OPERAND2": [
+          2,
+          "gu;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhk": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "aUA",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gu="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu=": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dhk",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gu;": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUA",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUz": {
+      "opcode": "control_wait_until",
+      "next": "gu?",
+      "parent": "aUx",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUB": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUz",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dhl"
+        ],
+        "OPERAND2": [
+          2,
+          "gu@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhl": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUB",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dhm"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhm": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dhl",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gu["
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu[": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dhm",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gu@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUB",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu?": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "aUz",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu]": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aUC",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "cop say",
+          "$wd{+T5+;N]94EMY@W8#"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 944
+    },
+    "aUC": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "aUD",
+      "parent": "gu]",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gu^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu^": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aUC",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "You dialogue2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aUD": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dhn",
+      "parent": "aUC",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gu_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu_": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aUD",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhn": {
+      "opcode": "looks_setsizeto",
+      "next": "aUE",
+      "parent": "aUD",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUE": {
+      "opcode": "control_create_clone_of",
+      "next": "dho",
+      "parent": "dhn",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "gu`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu`": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "aUE",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dho": {
+      "opcode": "looks_show",
+      "next": "aUF",
+      "parent": "aUE",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUF": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dhp",
+      "parent": "dho",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "gu{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu{": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aUF",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume4",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhp": {
+      "opcode": "motion_gotoxy",
+      "next": "dhq",
+      "parent": "aUF",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-112"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhq": {
+      "opcode": "looks_setsizeto",
+      "next": "aUG",
+      "parent": "dhp",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "250"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUG": {
+      "opcode": "control_wait_until",
+      "next": "aUH",
+      "parent": "dhq",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUI"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUI": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUG",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gu|"
+        ],
+        "OPERAND2": [
+          2,
+          "gu}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu|": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUI",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu}": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUI",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUH": {
+      "opcode": "control_wait_until",
+      "next": "aUJ",
+      "parent": "aUG",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUK": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUH",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gu~"
+        ],
+        "OPERAND2": [
+          2,
+          "gva"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gu~": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUK",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gva": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUK",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUJ": {
+      "opcode": "control_wait_until",
+      "next": "aUL",
+      "parent": "aUH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUM": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUJ",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dhr"
+        ],
+        "OPERAND2": [
+          2,
+          "gvb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhr": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUM",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dhs"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhs": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dhr",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gvc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvc": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dhs",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gvb": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUM",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUL": {
+      "opcode": "control_wait_until",
+      "next": "aUN",
+      "parent": "aUJ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUO"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUO": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUL",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dht"
+        ],
+        "OPERAND2": [
+          2,
+          "gvd"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dht": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "aUO",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gve"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gve": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dht",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gvd": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUO",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUN": {
+      "opcode": "control_wait_until",
+      "next": "gvf",
+      "parent": "aUL",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUP": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUN",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "dhu"
+        ],
+        "OPERAND2": [
+          2,
+          "gvg"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhu": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aUP",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dhv"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhv": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "dhu",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "gvh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvh": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dhv",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gvg": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUP",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvf": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "aUN",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvi": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aUQ",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "skip dialogue",
+          "Tj0Lx?1Q5[_,H@J^@BBE"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -776,
+      "y": 155
+    },
+    "aUQ": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "gvi",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gvj"
+        ],
+        "SUBSTACK": [
+          2,
+          "dhw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvj": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUQ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "skip dialogue? //dontsave//",
+            "VAEbnNnE`!g8R9t-44NR"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhw": {
+      "opcode": "control_stop",
+      "next": "gvk",
+      "parent": "aUQ",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "gvk": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "dhw",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvl": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dhx",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "EXIT",
+          "AJHOfe~MbM,vTkK~-UM|"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -750,
+      "y": 683
+    },
+    "dhx": {
+      "opcode": "event_broadcast",
+      "next": "dhy",
+      "parent": "gvl",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "stop saying something",
+            "R%X(@$)du68aEakc4X7+"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dhy": {
+      "opcode": "looks_hide",
+      "next": "gvm",
+      "parent": "dhx",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvm": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "dhy",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvn": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dhz",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "say something fast",
+          "Lx{BY^Vr5DCS{$,+p,rk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 187,
+      "y": -293
+    },
+    "aUR": {
+      "opcode": "control_wait_until",
+      "next": "aUS",
+      "parent": "dhz",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aUT"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUT": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aUR",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "gvo"
+        ],
+        "OPERAND2": [
+          2,
+          "gvp"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvo": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUT",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "animating (dialogue) //dontsave//",
+            "IhsZ/*t,(}_2,y2pd-xb"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvp": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aUT",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aUS": {
+      "opcode": "cubesterKeySimulation_pressKey",
+      "next": null,
+      "parent": "aUR",
+      "inputs": {
+        "KEY": [
+          1,
+          "gvq"
+        ],
+        "SECONDS": [
+          1,
+          [
+            4,
+            ".1"
+          ]
+        ],
+        "AND_WAIT": [
+          1,
+          "gvr"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gvq": {
+      "opcode": "cubesterKeySimulation_menu_KEYS",
+      "next": null,
+      "parent": "aUS",
+      "inputs": {},
+      "fields": {
+        "KEYS": [
+          " ",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gvr": {
+      "opcode": "cubesterKeySimulation_menu_AND_WAIT",
+      "next": null,
+      "parent": "aUS",
+      "inputs": {},
+      "fields": {
+        "AND_WAIT": [
+          "without waiting",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dhz": {
+      "opcode": "event_broadcast",
+      "next": "aUR",
+      "parent": "gvn",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dg@": {
+      "opcode": "control_stop",
+      "next": "guJ",
+      "parent": "guI",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "9a8f3bcdea0a0634de876d824dd42479",
+      "md5ext": "9a8f3bcdea0a0634de876d824dd42479.svg",
+      "rotationCenterX": 55.749999999999915,
+      "rotationCenterY": 8.75
+    },
+    {
+      "name": "costume2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3ac5a3e87774d30bf7325ded021f456d",
+      "md5ext": "3ac5a3e87774d30bf7325ded021f456d.svg",
+      "rotationCenterX": 36.99999999999997,
+      "rotationCenterY": 8.34615384615384
+    },
+    {
+      "name": "costume3",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "4f5dde07472ed0de6c5ba515f12899e0",
+      "md5ext": "4f5dde07472ed0de6c5ba515f12899e0.svg",
+      "rotationCenterX": 55.750000000000085,
+      "rotationCenterY": 8.75
+    },
+    {
+      "name": "costume4",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "36bc4f592d450daea8f36b58fea6b84b",
+      "md5ext": "36bc4f592d450daea8f36b58fea6b84b.svg",
+      "rotationCenterX": 55.49999999999997,
+      "rotationCenterY": 8.5
+    }
+  ],
+  "sounds": [
+    {
+      "name": "tone",
+      "assetId": "df754f7319c2409d89d11952282a6ce6",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 3699,
+      "md5ext": "df754f7319c2409d89d11952282a6ce6.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 133,
+  "visible": false,
+  "x": 10,
+  "y": -112,
+  "size": 250,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

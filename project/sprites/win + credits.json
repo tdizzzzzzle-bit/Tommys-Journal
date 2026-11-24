@@ -1,0 +1,5940 @@
+{
+  "isStage": false,
+  "name": "win + credits",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "d.~": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a~T",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "BAD ENDING CREDITS",
+          ";_:@g%)8DOu-Dl6SpF`e"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1999,
+      "y": 64
+    },
+    "a~T": {
+      "opcode": "control_stop",
+      "next": "a~U",
+      "parent": "d.~",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "a~U": {
+      "opcode": "data_setvariableto",
+      "next": "a~V",
+      "parent": "a~T",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~V": {
+      "opcode": "data_setvariableto",
+      "next": "a~W",
+      "parent": "a~U",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "BAD ENDING"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "CUT SCENE //dontsave//",
+          ";6s1_[88CjAsP;P5XI0N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~W": {
+      "opcode": "event_broadcast",
+      "next": "Pm",
+      "parent": "a~V",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "game over",
+            "L1(/.F+%8O1{lVW}BIp0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Pm": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "a~X",
+      "parent": "a~W",
+      "inputs": {
+        "INPUT": [
+          1,
+          "d/a"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/a": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "Pm",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "win + credits",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a~X": {
+      "opcode": "motion_gotoxy",
+      "next": "a~Y",
+      "parent": "Pm",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~Y": {
+      "opcode": "data_setvariableto",
+      "next": "a~Z",
+      "parent": "a~X",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "BAD ENDING"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "CUT SCENE //dontsave//",
+          ";6s1_[88CjAsP;P5XI0N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~Z": {
+      "opcode": "sound_stopallsounds",
+      "next": "a~!",
+      "parent": "a~Y",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~!": {
+      "opcode": "control_wait",
+      "next": "Pn",
+      "parent": "a~Z",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Pn": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "a~#",
+      "parent": "a~!",
+      "inputs": {
+        "INPUT": [
+          1,
+          "d/b"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/b": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "Pn",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "win + credits",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a~#": {
+      "opcode": "data_setvariableto",
+      "next": "d/c",
+      "parent": "Pn",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/c": {
+      "opcode": "event_broadcastandwait",
+      "next": null,
+      "parent": "a~#",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "slide show",
+            "UWn+|?2~]]MbnPd3zzcr"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/d": {
+      "opcode": "event_whenflagclicked",
+      "next": "a~%",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1630,
+      "y": 64
+    },
+    "a~%": {
+      "opcode": "motion_gotoxy",
+      "next": "a~(",
+      "parent": "d/d",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~(": {
+      "opcode": "looks_hide",
+      "next": "d/e",
+      "parent": "a~%",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/e": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "a~(",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/f": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "d/g",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "crooked jester",
+          "91=imy*:$sAOdUxS5,+!"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1630,
+      "y": 888
+    },
+    "d/g": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "d/f",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/h": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "d/i",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "show again",
+          "P|0GwN;5Hx?;^Y*42cn*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1630,
+      "y": 1064
+    },
+    "d/i": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "d/h",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/j": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a~)",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1630,
+      "y": 328
+    },
+    "a~)": {
+      "opcode": "control_stop",
+      "next": "a~*",
+      "parent": "d/j",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "a~*": {
+      "opcode": "motion_gotoxy",
+      "next": "a~+",
+      "parent": "a~)",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~+": {
+      "opcode": "looks_hide",
+      "next": "d/k",
+      "parent": "a~*",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/k": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "a~+",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/l": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "Po",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "change slide",
+          ".O}[!PF0.9FaDZpVkR[h"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "Po": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "d/l",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "a~,"
+        ],
+        "SUBSTACK": [
+          2,
+          "a~-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~,": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "Po",
+      "inputs": {
+        "STRING1": [
+          3,
+          "d/m",
+          [
+            10,
+            "picture"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "picture"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/m": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "a~,",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~-": {
+      "opcode": "looks_nextcostume",
+      "next": "Pp",
+      "parent": "Po",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Pp": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "a~-",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "a~."
+        ],
+        "SUBSTACK": [
+          2,
+          "a~/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~.": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Pp",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "a~:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~:": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "a~.",
+      "inputs": {
+        "STRING1": [
+          3,
+          "d/n",
+          [
+            10,
+            "picture"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "picture"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/n": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "a~:",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~/": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "Pp",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d/o"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/o": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a~/",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "picture 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "d/p": {
+      "opcode": "control_start_as_clone",
+      "next": "Pq",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 472
+    },
+    "Pq": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "d/p",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "a~;"
+        ],
+        "SUBSTACK": [
+          2,
+          "d/q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~;": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "Pq",
+      "inputs": {
+        "STRING1": [
+          3,
+          "d/r",
+          [
+            10,
+            "picture"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "picture"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/r": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "a~;",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/q": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "Pq",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hfx": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1999,
+      "y": 768
+    },
+    "hfy": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1999,
+      "y": 952,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "d/s": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a~=",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "slide show",
+          "UWn+|?2~]]MbnPd3zzcr"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1630,
+      "y": 640
+    },
+    "a~=": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "d/s",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "d/t"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/t": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "a~=",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "show me clones",
+            "Fpc[5i6`Yp2C2KDxm@i-"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/u": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a~?",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "slide show",
+          "UWn+|?2~]]MbnPd3zzcr"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 694,
+      "y": 64
+    },
+    "a~?": {
+      "opcode": "looks_gotofrontback",
+      "next": "a~@",
+      "parent": "d/u",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~@": {
+      "opcode": "motion_gotoxy",
+      "next": "Pr",
+      "parent": "a~?",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Pr": {
+      "opcode": "looks_switchcostumeto",
+      "next": "Ps",
+      "parent": "a~@",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d/v"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/v": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "Pr",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "Ps": {
+      "opcode": "control_create_clone_of",
+      "next": "Pt",
+      "parent": "Pr",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "d/w"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/w": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "Ps",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "Pt": {
+      "opcode": "looks_switchcostumeto",
+      "next": "Pu",
+      "parent": "Ps",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d/x"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/x": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "Pt",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "picture 1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "Pu": {
+      "opcode": "control_create_clone_of",
+      "next": "a~[",
+      "parent": "Pt",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "d/y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/y": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "Pu",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a~[": {
+      "opcode": "motion_gotoxy",
+      "next": "Pv",
+      "parent": "Pu",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "-60"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Pv": {
+      "opcode": "looks_switchcostumeto",
+      "next": "Pw",
+      "parent": "a~[",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d/z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/z": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "Pv",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "words",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "Pw": {
+      "opcode": "text_setAlignment",
+      "next": "a~]",
+      "parent": "Pv",
+      "inputs": {
+        "ALIGN": [
+          1,
+          "d/A"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/A": {
+      "opcode": "text_menu_twAlign",
+      "next": null,
+      "parent": "Pw",
+      "inputs": {},
+      "fields": {
+        "twAlign": [
+          "left",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a~]": {
+      "opcode": "text_setTypeDelay",
+      "next": "a~^",
+      "parent": "Pw",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.08"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~^": {
+      "opcode": "looks_gotofrontback",
+      "next": "a~_",
+      "parent": "a~]",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~_": {
+      "opcode": "looks_show",
+      "next": "a~`",
+      "parent": "a~^",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~`": {
+      "opcode": "text_setFont",
+      "next": "Px",
+      "parent": "a~_",
+      "inputs": {},
+      "fields": {
+        "FONT": [
+          "Serif",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Px": {
+      "opcode": "sound_play",
+      "next": "a~{",
+      "parent": "a~`",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/B"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/B": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "Px",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a~{": {
+      "opcode": "text_setColor",
+      "next": "a~|",
+      "parent": "Px",
+      "inputs": {
+        "COLOR": [
+          1,
+          [
+            9,
+            "#bf0000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~|": {
+      "opcode": "text_setWidthValue",
+      "next": "a~}",
+      "parent": "a~{",
+      "inputs": {
+        "WIDTH": [
+          1,
+          [
+            4,
+            "300"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~}": {
+      "opcode": "text_setText",
+      "next": "a~~",
+      "parent": "a~|",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Code"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a~~": {
+      "opcode": "text_addLine",
+      "next": "baa",
+      "parent": "a~}",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baa": {
+      "opcode": "text_addLine",
+      "next": "bab",
+      "parent": "a~~",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bab": {
+      "opcode": "text_addLine",
+      "next": "Py",
+      "parent": "baa",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "More than 40,000 blocks"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Py": {
+      "opcode": "text_animateUntilDone",
+      "next": "Pz",
+      "parent": "bab",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/C"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/C": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "Py",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "Pz": {
+      "opcode": "control_wait_until",
+      "next": "bac",
+      "parent": "Py",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bad"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bad": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Pz",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bae"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bae": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bad",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/D"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/D": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bae",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bac": {
+      "opcode": "event_broadcast",
+      "next": "PA",
+      "parent": "Pz",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PA": {
+      "opcode": "sound_play",
+      "next": "baf",
+      "parent": "bac",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/E": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PA",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baf": {
+      "opcode": "text_setText",
+      "next": "bag",
+      "parent": "PA",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Sound Design"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bag": {
+      "opcode": "text_addLine",
+      "next": "bah",
+      "parent": "baf",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bah": {
+      "opcode": "text_addLine",
+      "next": "bai",
+      "parent": "bag",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bai": {
+      "opcode": "text_addLine",
+      "next": "baj",
+      "parent": "bah",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Keegan Hatch"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baj": {
+      "opcode": "text_addLine",
+      "next": "PB",
+      "parent": "bai",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Elias Sanchez"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PB": {
+      "opcode": "text_animateUntilDone",
+      "next": "PC",
+      "parent": "baj",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/F"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/F": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PB",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PC": {
+      "opcode": "control_wait_until",
+      "next": "bak",
+      "parent": "PB",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bal"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bal": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PC",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bam"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bam": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bal",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/G"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/G": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bam",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bak": {
+      "opcode": "event_broadcast",
+      "next": "PD",
+      "parent": "PC",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PD": {
+      "opcode": "sound_play",
+      "next": "ban",
+      "parent": "bak",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/H"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/H": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PD",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy3",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ban": {
+      "opcode": "text_setTypeDelay",
+      "next": "bao",
+      "parent": "PD",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.05"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bao": {
+      "opcode": "text_setText",
+      "next": "bap",
+      "parent": "ban",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Music"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bap": {
+      "opcode": "text_addLine",
+      "next": "baq",
+      "parent": "bao",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baq": {
+      "opcode": "text_addLine",
+      "next": "bar",
+      "parent": "bap",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bar": {
+      "opcode": "text_addLine",
+      "next": "bas",
+      "parent": "baq",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Oliver Tatari"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bas": {
+      "opcode": "text_addLine",
+      "next": "bat",
+      "parent": "bar",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Conner McLellan"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bat": {
+      "opcode": "text_addLine",
+      "next": "bau",
+      "parent": "bas",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Ludwig van Beethoven"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bau": {
+      "opcode": "text_addLine",
+      "next": "bav",
+      "parent": "bat",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Frederic Chopin"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bav": {
+      "opcode": "text_addLine",
+      "next": "PE",
+      "parent": "bau",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Wolfgang A. Motzart"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PE": {
+      "opcode": "text_animateUntilDone",
+      "next": "PF",
+      "parent": "bav",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/I"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/I": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PE",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PF": {
+      "opcode": "control_wait_until",
+      "next": "baw",
+      "parent": "PE",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bax"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bax": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PF",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bay"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bay": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bax",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/J"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/J": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bay",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy3",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baw": {
+      "opcode": "text_setTypeDelay",
+      "next": "baz",
+      "parent": "PF",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.08"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baz": {
+      "opcode": "event_broadcast",
+      "next": "PG",
+      "parent": "baw",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PG": {
+      "opcode": "sound_play",
+      "next": "baA",
+      "parent": "baz",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/K"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/K": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PG",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy4",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baA": {
+      "opcode": "text_setText",
+      "next": "baB",
+      "parent": "PG",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Art"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baB": {
+      "opcode": "text_addLine",
+      "next": "baC",
+      "parent": "baA",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baC": {
+      "opcode": "text_addLine",
+      "next": "PH",
+      "parent": "baB",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PH": {
+      "opcode": "text_animateUntilDone",
+      "next": "PI",
+      "parent": "baC",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/L"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/L": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PH",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PI": {
+      "opcode": "control_wait_until",
+      "next": "baD",
+      "parent": "PH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "baE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baE": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PI",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "baF"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baF": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "baE",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/M"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/M": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "baF",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy4",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baD": {
+      "opcode": "event_broadcast",
+      "next": "PJ",
+      "parent": "PI",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PJ": {
+      "opcode": "sound_play",
+      "next": "baG",
+      "parent": "baD",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/N"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/N": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PJ",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy5",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baG": {
+      "opcode": "text_setTypeDelay",
+      "next": "baH",
+      "parent": "PJ",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.04"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baH": {
+      "opcode": "text_setText",
+      "next": "baI",
+      "parent": "baG",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Rotoscopes"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baI": {
+      "opcode": "text_addLine",
+      "next": "baJ",
+      "parent": "baH",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baJ": {
+      "opcode": "text_addLine",
+      "next": "baK",
+      "parent": "baI",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baK": {
+      "opcode": "text_addLine",
+      "next": "baL",
+      "parent": "baJ",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Elias Sanchez"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baL": {
+      "opcode": "text_addLine",
+      "next": "PK",
+      "parent": "baK",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Keegan Hatch"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PK": {
+      "opcode": "text_animateUntilDone",
+      "next": "PL",
+      "parent": "baL",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/O"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/O": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PK",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PL": {
+      "opcode": "control_wait_until",
+      "next": "baM",
+      "parent": "PK",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "baN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baN": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PL",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "baO"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baO": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "baN",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/P"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/P": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "baO",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy5",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baM": {
+      "opcode": "event_broadcast",
+      "next": "PM",
+      "parent": "PL",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PM": {
+      "opcode": "sound_play",
+      "next": "baP",
+      "parent": "baM",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/Q": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PM",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baP": {
+      "opcode": "text_setText",
+      "next": "baQ",
+      "parent": "PM",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Boss Fights"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baQ": {
+      "opcode": "text_addLine",
+      "next": "baR",
+      "parent": "baP",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baR": {
+      "opcode": "text_addLine",
+      "next": "baS",
+      "parent": "baQ",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baS": {
+      "opcode": "text_addLine",
+      "next": "PN",
+      "parent": "baR",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Noah Williams"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PN": {
+      "opcode": "text_animateUntilDone",
+      "next": "PO",
+      "parent": "baS",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/R"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/R": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PN",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "shake",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PO": {
+      "opcode": "control_wait_until",
+      "next": "baT",
+      "parent": "PN",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "baU"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baU": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PO",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "baV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baV": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "baU",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/S"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/S": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "baV",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy6",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baT": {
+      "opcode": "event_broadcast",
+      "next": "PP",
+      "parent": "PO",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PP": {
+      "opcode": "sound_play",
+      "next": "baW",
+      "parent": "baT",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/T"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/T": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PP",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy7",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "baW": {
+      "opcode": "text_setText",
+      "next": "baX",
+      "parent": "PP",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Concept art"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baX": {
+      "opcode": "text_addLine",
+      "next": "baY",
+      "parent": "baW",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baY": {
+      "opcode": "text_addLine",
+      "next": "baZ",
+      "parent": "baX",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "baZ": {
+      "opcode": "text_addLine",
+      "next": "PQ",
+      "parent": "baY",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Sleep paralysis demons"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PQ": {
+      "opcode": "text_animateUntilDone",
+      "next": "PR",
+      "parent": "baZ",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/U"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/U": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PQ",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PR": {
+      "opcode": "control_wait_until",
+      "next": "ba!",
+      "parent": "PQ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ba#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba#": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PR",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "ba%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba%": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "ba#",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/V"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/V": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "ba%",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy7",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ba!": {
+      "opcode": "event_broadcast",
+      "next": "PS",
+      "parent": "PR",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PS": {
+      "opcode": "sound_play",
+      "next": "ba(",
+      "parent": "ba!",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/W"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/W": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PS",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy8",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ba(": {
+      "opcode": "text_setText",
+      "next": "ba)",
+      "parent": "PS",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Concepts and Lore"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba)": {
+      "opcode": "text_addLine",
+      "next": "ba*",
+      "parent": "ba(",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba*": {
+      "opcode": "text_addLine",
+      "next": "ba+",
+      "parent": "ba)",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Tanner Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba+": {
+      "opcode": "text_addLine",
+      "next": "ba,",
+      "parent": "ba*",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Zachary Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba,": {
+      "opcode": "text_addLine",
+      "next": "ba-",
+      "parent": "ba+",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Maxon Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba-": {
+      "opcode": "text_addLine",
+      "next": "ba.",
+      "parent": "ba,",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Keegan Hatch"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba.": {
+      "opcode": "text_addLine",
+      "next": "ba/",
+      "parent": "ba-",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Austyn Penick"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba/": {
+      "opcode": "text_addLine",
+      "next": "ba:",
+      "parent": "ba.",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Jason Padilla"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba:": {
+      "opcode": "text_addLine",
+      "next": "PT",
+      "parent": "ba/",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "The Holy Bible"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PT": {
+      "opcode": "text_animateUntilDone",
+      "next": "PU",
+      "parent": "ba:",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/X"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/X": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PT",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PU": {
+      "opcode": "control_wait_until",
+      "next": "PV",
+      "parent": "PT",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ba;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba;": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PU",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "ba="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba=": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "ba;",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/Y": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "ba=",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy8",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PV": {
+      "opcode": "sound_play",
+      "next": "ba?",
+      "parent": "PU",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/Z": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PV",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy9",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ba?": {
+      "opcode": "event_broadcast",
+      "next": "ba@",
+      "parent": "PV",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba@": {
+      "opcode": "text_setText",
+      "next": "ba[",
+      "parent": "ba?",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Test Players"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba[": {
+      "opcode": "text_addLine",
+      "next": "ba]",
+      "parent": "ba@",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba]": {
+      "opcode": "text_addLine",
+      "next": "ba^",
+      "parent": "ba[",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Zachary Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba^": {
+      "opcode": "text_addLine",
+      "next": "ba_",
+      "parent": "ba]",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Maxon Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba_": {
+      "opcode": "text_addLine",
+      "next": "ba`",
+      "parent": "ba^",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Adam Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba`": {
+      "opcode": "text_addLine",
+      "next": "ba{",
+      "parent": "ba_",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Keegan Hatch"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba{": {
+      "opcode": "text_addLine",
+      "next": "ba|",
+      "parent": "ba`",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Austyn Penick"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba|": {
+      "opcode": "text_addLine",
+      "next": "ba}",
+      "parent": "ba{",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Diego Escobar"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba}": {
+      "opcode": "text_addLine",
+      "next": "ba~",
+      "parent": "ba|",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Emiliano Escobar"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ba~": {
+      "opcode": "text_addLine",
+      "next": "PW",
+      "parent": "ba}",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Anastasia Escobar"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PW": {
+      "opcode": "text_animateUntilDone",
+      "next": "PX",
+      "parent": "ba~",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/!": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PW",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "PX": {
+      "opcode": "control_wait_until",
+      "next": "bba",
+      "parent": "PW",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbb": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "PX",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bbc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbc": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbb",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/#": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bbc",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy9",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bba": {
+      "opcode": "event_broadcast",
+      "next": "PY",
+      "parent": "PX",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PY": {
+      "opcode": "sound_play",
+      "next": "bbd",
+      "parent": "bba",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/%": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "PY",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy10",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbd": {
+      "opcode": "text_setText",
+      "next": "bbe",
+      "parent": "PY",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Test Players (continued)"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbe": {
+      "opcode": "text_addLine",
+      "next": "bbf",
+      "parent": "bbd",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/(": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "d/)",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "show me clones",
+          "Fpc[5i6`Yp2C2KDxm@i-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 736
+    },
+    "d/)": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "d/(",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbf": {
+      "opcode": "text_addLine",
+      "next": "bbg",
+      "parent": "bbe",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Carson Moody"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbg": {
+      "opcode": "text_addLine",
+      "next": "bbh",
+      "parent": "bbf",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Kendal Ackron"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbh": {
+      "opcode": "text_addLine",
+      "next": "bbi",
+      "parent": "bbg",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Alexander McGee"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbi": {
+      "opcode": "text_addLine",
+      "next": "bbj",
+      "parent": "bbh",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Ethan Higgins"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbj": {
+      "opcode": "text_addLine",
+      "next": "bbk",
+      "parent": "bbi",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Logan Dudar"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbk": {
+      "opcode": "text_addLine",
+      "next": "bbl",
+      "parent": "bbj",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Josh Lindner"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbl": {
+      "opcode": "text_addLine",
+      "next": "bbm",
+      "parent": "bbk",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Sebastian King"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbm": {
+      "opcode": "text_addLine",
+      "next": "PZ",
+      "parent": "bbl",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Elias Sanchez"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "PZ": {
+      "opcode": "text_animateUntilDone",
+      "next": "P!",
+      "parent": "bbm",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/*": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "PZ",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P!": {
+      "opcode": "control_wait_until",
+      "next": "bbn",
+      "parent": "PZ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbo"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbo": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P!",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bbp"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbp": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbo",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/+": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bbp",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy10",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbn": {
+      "opcode": "event_broadcast",
+      "next": "P#",
+      "parent": "P!",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P#": {
+      "opcode": "sound_play",
+      "next": "bbq",
+      "parent": "bbn",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/,": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P#",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy11",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbq": {
+      "opcode": "text_setText",
+      "next": "bbr",
+      "parent": "P#",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Test Players (continued)"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbr": {
+      "opcode": "text_addLine",
+      "next": "bbs",
+      "parent": "bbq",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbs": {
+      "opcode": "text_addLine",
+      "next": "bbt",
+      "parent": "bbr",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Noah Williams"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbt": {
+      "opcode": "text_addLine",
+      "next": "bbu",
+      "parent": "bbs",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Lucas Williams"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbu": {
+      "opcode": "text_addLine",
+      "next": "bbv",
+      "parent": "bbt",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Alex Segrest"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbv": {
+      "opcode": "text_addLine",
+      "next": "P%",
+      "parent": "bbu",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Liam Vaghy-Robillard"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P%": {
+      "opcode": "text_animateUntilDone",
+      "next": "P(",
+      "parent": "bbv",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/-": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P%",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P(": {
+      "opcode": "control_wait_until",
+      "next": "bbw",
+      "parent": "P%",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbx"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbx": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P(",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bby"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bby": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbx",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/.": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bby",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy11",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbw": {
+      "opcode": "text_setTypeDelay",
+      "next": "bbz",
+      "parent": "P(",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.08"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbz": {
+      "opcode": "event_broadcast",
+      "next": "P)",
+      "parent": "bbw",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P)": {
+      "opcode": "sound_play",
+      "next": "bbA",
+      "parent": "bbz",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d//"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d//": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P)",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy12",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbA": {
+      "opcode": "text_setText",
+      "next": "bbB",
+      "parent": "P)",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Baby In the Oven"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbB": {
+      "opcode": "text_addLine",
+      "next": "bbC",
+      "parent": "bbA",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbC": {
+      "opcode": "text_addLine",
+      "next": "P*",
+      "parent": "bbB",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Zachary Donaldson"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P*": {
+      "opcode": "text_animateUntilDone",
+      "next": "P+",
+      "parent": "bbC",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/:": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P*",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "shake",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P+": {
+      "opcode": "control_wait_until",
+      "next": "bbD",
+      "parent": "P*",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbE": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P+",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bbF"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbF": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbE",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/;": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bbF",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy12",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbD": {
+      "opcode": "event_broadcast",
+      "next": "P,",
+      "parent": "P+",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P,": {
+      "opcode": "sound_play",
+      "next": "bbG",
+      "parent": "bbD",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/=": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P,",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy13",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbG": {
+      "opcode": "text_setText",
+      "next": "bbH",
+      "parent": "P,",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Physics Teacher"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbH": {
+      "opcode": "text_addLine",
+      "next": "bbI",
+      "parent": "bbG",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbI": {
+      "opcode": "text_addLine",
+      "next": "P-",
+      "parent": "bbH",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Lord Jack (top G the \"Σ\") Cadman"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P-": {
+      "opcode": "text_animateUntilDone",
+      "next": "P.",
+      "parent": "bbI",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/?"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/?": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P-",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P.": {
+      "opcode": "control_wait_until",
+      "next": "bbJ",
+      "parent": "P-",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbK": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P.",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bbL"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbL": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbK",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/@": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bbL",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy13",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbJ": {
+      "opcode": "event_broadcast",
+      "next": "P/",
+      "parent": "P.",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P/": {
+      "opcode": "sound_play",
+      "next": "bbM",
+      "parent": "bbJ",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/["
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/[": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P/",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy14",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbM": {
+      "opcode": "text_setText",
+      "next": "bbN",
+      "parent": "P/",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Inspired By"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbN": {
+      "opcode": "text_addLine",
+      "next": "bbO",
+      "parent": "bbM",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbO": {
+      "opcode": "text_addLine",
+      "next": "bbP",
+      "parent": "bbN",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Bark Bark Games: House"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbP": {
+      "opcode": "text_addLine",
+      "next": "bbQ",
+      "parent": "bbO",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Airdorf Games: Faith"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbQ": {
+      "opcode": "text_addLine",
+      "next": "bbR",
+      "parent": "bbP",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Sleep Paralysis"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbR": {
+      "opcode": "text_addLine",
+      "next": "bbS",
+      "parent": "bbQ",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Vivid Nightmares"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbS": {
+      "opcode": "text_addLine",
+      "next": "P:",
+      "parent": "bbR",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "The Holy Bible"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P:": {
+      "opcode": "text_animateUntilDone",
+      "next": "P;",
+      "parent": "bbS",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/]": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P:",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P;": {
+      "opcode": "control_wait_until",
+      "next": "bbT",
+      "parent": "P:",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bbU"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbU": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P;",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bbV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbV": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bbU",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/^": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bbV",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy14",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbT": {
+      "opcode": "event_broadcast",
+      "next": "P=",
+      "parent": "P;",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P=": {
+      "opcode": "sound_play",
+      "next": "bbW",
+      "parent": "bbT",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/_": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P=",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy15",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bbW": {
+      "opcode": "text_setText",
+      "next": "bbX",
+      "parent": "P=",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Never"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbX": {
+      "opcode": "text_addLine",
+      "next": "bbY",
+      "parent": "bbW",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbY": {
+      "opcode": "text_addLine",
+      "next": "bbZ",
+      "parent": "bbX",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Play"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bbZ": {
+      "opcode": "text_addLine",
+      "next": "bb!",
+      "parent": "bbY",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "With"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb!": {
+      "opcode": "text_addLine",
+      "next": "bb#",
+      "parent": "bbZ",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "The "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb#": {
+      "opcode": "text_addLine",
+      "next": "bb%",
+      "parent": "bb!",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Crooked"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb%": {
+      "opcode": "text_addLine",
+      "next": "P?",
+      "parent": "bb#",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Jester"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P?": {
+      "opcode": "text_animateUntilDone",
+      "next": "bb(",
+      "parent": "bb%",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/`": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P?",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "zoom",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb(": {
+      "opcode": "text_setTypeDelay",
+      "next": "bb)",
+      "parent": "P?",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            4,
+            "0.04"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb)": {
+      "opcode": "text_setText",
+      "next": "bb*",
+      "parent": "bb(",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "In Loving Memory"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb*": {
+      "opcode": "text_addLine",
+      "next": "bb+",
+      "parent": "bb)",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb+": {
+      "opcode": "text_addLine",
+      "next": "bb,",
+      "parent": "bb*",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Jason Padilla"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb,": {
+      "opcode": "text_addLine",
+      "next": "bb-",
+      "parent": "bb+",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "May He Rest In Peace"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb-": {
+      "opcode": "text_addLine",
+      "next": "bb.",
+      "parent": "bb,",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "\"'And that is why your mother "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb.": {
+      "opcode": "text_addLine",
+      "next": "bb/",
+      "parent": "bb-",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "doesn't rhyme with beer'          -JFK\" "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb/": {
+      "opcode": "text_addLine",
+      "next": "P@",
+      "parent": "bb.",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "We will always miss you buddy."
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P@": {
+      "opcode": "text_animateUntilDone",
+      "next": "P[",
+      "parent": "bb/",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/{": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P@",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P[": {
+      "opcode": "control_wait_until",
+      "next": "bb:",
+      "parent": "P@",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bb;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb;": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P[",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bb="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb=": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bb;",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d/|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/|": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bb=",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy15",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb:": {
+      "opcode": "event_broadcast",
+      "next": "P]",
+      "parent": "P[",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P]": {
+      "opcode": "sound_play",
+      "next": "bb?",
+      "parent": "bb:",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d/}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/}": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P]",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy16",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb?": {
+      "opcode": "text_setText",
+      "next": "bb@",
+      "parent": "P]",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Entirely made with"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb@": {
+      "opcode": "text_addLine",
+      "next": "bb[",
+      "parent": "bb?",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb[": {
+      "opcode": "text_addLine",
+      "next": "bb]",
+      "parent": "bb@",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Scratch's programing language"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb]": {
+      "opcode": "text_addLine",
+      "next": "bb^",
+      "parent": "bb[",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "TurboWarp"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb^": {
+      "opcode": "text_addLine",
+      "next": "bb_",
+      "parent": "bb]",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "TurboWarp Mods"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb_": {
+      "opcode": "text_addLine",
+      "next": "P^",
+      "parent": "bb^",
+      "inputs": {
+        "TEXT": [
+          1,
+          [
+            10,
+            "Over 40,000 Scratch Blocks"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P^": {
+      "opcode": "text_animateUntilDone",
+      "next": "P_",
+      "parent": "bb_",
+      "inputs": {
+        "ANIMATE": [
+          1,
+          "d/~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d/~": {
+      "opcode": "text_menu_twAnimate",
+      "next": null,
+      "parent": "P^",
+      "inputs": {},
+      "fields": {
+        "twAnimate": [
+          "type",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P_": {
+      "opcode": "control_wait_until",
+      "next": "bb`",
+      "parent": "P^",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "bb{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb{": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P_",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bb|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bb|": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bb{",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d:a"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:a": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bb|",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy16",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb`": {
+      "opcode": "event_broadcast",
+      "next": "P`",
+      "parent": "P_",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "change slide",
+            ".O}[!PF0.9FaDZpVkR[h"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P`": {
+      "opcode": "sound_play",
+      "next": "bb}",
+      "parent": "bb`",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "d:b"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:b": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "P`",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy17",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb}": {
+      "opcode": "motion_gotoxy",
+      "next": "P{",
+      "parent": "P`",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P{": {
+      "opcode": "looks_switchcostumeto",
+      "next": "bb~",
+      "parent": "bb}",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d:c"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:c": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "P{",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "credits2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bb~": {
+      "opcode": "text_clearText",
+      "next": "P|",
+      "parent": "P{",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P|": {
+      "opcode": "control_wait_until",
+      "next": "P}",
+      "parent": "bb~",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "P~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "P~": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "P|",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "bca"
+        ],
+        "OPERAND2": [
+          2,
+          "bcb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bca": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P~",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bcc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bcc": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "bca",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "d:d"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:d": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "bcc",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bcb": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "P~",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bcd"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bcd": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bcb",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d:e"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:e": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bcd",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy17",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "P}": {
+      "opcode": "control_wait_until",
+      "next": "bce",
+      "parent": "P|",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "Qa"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Qa": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": "P}",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "bcf"
+        ],
+        "OPERAND2": [
+          2,
+          "bcg"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bcf": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "Qa",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "d:f"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:f": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "bcf",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "space",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bcg": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Qa",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "bch"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "bch": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "bcg",
+      "inputs": {
+        "SOUND": [
+          1,
+          "d:g"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:g": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "bch",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "The Troubled boy17",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "bce": {
+      "opcode": "data_setvariableto",
+      "next": "Qb",
+      "parent": "P}",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Qb": {
+      "opcode": "cubesterKeySimulation_pressKey",
+      "next": null,
+      "parent": "bce",
+      "inputs": {
+        "KEY": [
+          1,
+          "d:h"
+        ],
+        "SECONDS": [
+          1,
+          [
+            4,
+            "0.1"
+          ]
+        ],
+        "AND_WAIT": [
+          1,
+          "d:i"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d:h": {
+      "opcode": "cubesterKeySimulation_menu_KEYS",
+      "next": null,
+      "parent": "Qb",
+      "inputs": {},
+      "fields": {
+        "KEYS": [
+          " ",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "d:i": {
+      "opcode": "cubesterKeySimulation_menu_AND_WAIT",
+      "next": null,
+      "parent": "Qb",
+      "inputs": {},
+      "fields": {
+        "AND_WAIT": [
+          "without waiting",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    }
+  },
+  "comments": {
+    "hfz": {
+      "blockId": null,
+      "x": -106,
+      "y": 965,
+      "width": 178,
+      "height": 144,
+      "minimized": false,
+      "text": "Slide1:\nAn indie game by\nTanner Donaldson\n"
+    },
+    "hfA": {
+      "blockId": null,
+      "x": -103,
+      "y": 1128,
+      "width": 169,
+      "height": 248,
+      "minimized": false,
+      "text": "Slide 2:\n\nProgramming\nSound design\nMusic Production\nand Digital Art\ndone by\n\nTanner Donaldson"
+    },
+    "hfB": {
+      "blockId": null,
+      "x": -106,
+      "y": 1897,
+      "width": 169,
+      "height": 248,
+      "minimized": false,
+      "text": "Slide 8:\ncontinued\n\nEmiliano Escobar\nAnastasia Escobar\nCarson Moody\nJosh Lindner\nElias Sanchez\nLogan Dudar"
+    },
+    "hfC": {
+      "blockId": null,
+      "x": 100,
+      "y": 963,
+      "width": 234,
+      "height": 186,
+      "minimized": false,
+      "text": "Slide 3: Sound design\n\nElias Sanchez\nMax Donaldson\nTanner Donaldson\nAdam Donaldson"
+    },
+    "hfD": {
+      "blockId": null,
+      "x": 100,
+      "y": 1177,
+      "width": 232,
+      "height": 200,
+      "minimized": false,
+      "text": "Slide 4:\nMusic production\n\nOliver Tatari\nTanner Donaldson"
+    },
+    "hfE": {
+      "blockId": null,
+      "x": -104,
+      "y": 1414,
+      "width": 211,
+      "height": 225,
+      "minimized": false,
+      "text": "Slide 4:\nArt and Rotoscoping crew\n\nTanner Donaldson\nMax Donaldson\nElias Sanchez\nKeegan Hatch\n"
+    },
+    "hfF": {
+      "blockId": null,
+      "x": 134,
+      "y": 1414,
+      "width": 200,
+      "height": 225,
+      "minimized": false,
+      "text": "Slide 5:\nConcepts and Lore\n\nTanner Donaldson\nKeegan Hatch\nZachary Donaldson\nMax Donaldson\nJason Padilla"
+    },
+    "hfG": {
+      "blockId": null,
+      "x": 119,
+      "y": 1665,
+      "width": 222,
+      "height": 228,
+      "minimized": false,
+      "text": "Slide 7:\nPrerelease test players\n\nZachary Donaldson\nMaxon Donaldson\nAdam Donaldson\nAustyn Penick\nDiego Escobar\n"
+    },
+    "hfH": {
+      "blockId": null,
+      "x": -104,
+      "y": 1671,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "Slide 6:\nMade Entirely using\n\nScratch + Turbowarp\n\n(40k+ blocks)"
+    },
+    "hfI": {
+      "blockId": null,
+      "x": 87.75265775034293,
+      "y": 1919.4870541838131,
+      "width": 254.1981201171875,
+      "height": 225.49481201171875,
+      "minimized": false,
+      "text": "Slide 9:\nbeta testers\n\nAlex Sitarz\nThomas Spencer\nLennon Sanders\nTaylor Lindner"
+    },
+    "hfJ": {
+      "blockId": null,
+      "x": -104.98517743483058,
+      "y": 2170.0663953233284,
+      "width": 222.50518798828125,
+      "height": 426.65899658203125,
+      "minimized": false,
+      "text": "Slide 10:\nOddly specific things\n\nBaby in the oven - Zachary Donaldson\n\n\"piece of corn...\" - \nalso Zac\n\nChess piece statues - \nAdam Donaldson\n\nRosie's Chase refinement -\nMax Donaldson\n\nPhysics Teacher - \nLord Jack (top G the \"Σ\") Cadman\n\n"
+    },
+    "hfK": {
+      "blockId": null,
+      "x": 142.64197530864197,
+      "y": 2174.0282921810704,
+      "width": 205.9248046875,
+      "height": 427.6075134277344,
+      "minimized": false,
+      "text": "Slide 11:\nIn honor of one of the original founders of this game and one of my best friends:\n\n\"you should put the quote\n'and that's why your mother doesn't rhyme with beer' - JFK in your game\"\n\n-Jason Padilla\n\nI will always miss you buddy."
+    },
+    "hfL": {
+      "blockId": null,
+      "x": -104.39248971193449,
+      "y": 2616.954255405673,
+      "width": 450.77166748046875,
+      "height": 259.47784423828125,
+      "minimized": false,
+      "text": "Slide 12:\nConcept art and animation Inspired by:\n\nMy sleep paralysis\nNight terrors\nThe Holy Bible\nThe Lesser Key Of Solomon\nFaith: the Unholy Trinity - Airdorf games\nHouse: Barkbark games\n"
+    },
+    "hfM": {
+      "blockId": null,
+      "x": -104.39248971193449,
+      "y": 2896.6610455291298,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "Slide 13:\nSpecial Shoutouts:\n\nMarkiplier - inspired me into making horror games via 3 scary games series"
+    },
+    "hfN": {
+      "blockId": null,
+      "x": 115.0195473251029,
+      "y": 2895.6435185185182,
+      "width": 232.37353515625,
+      "height": 197.767333984375,
+      "minimized": false,
+      "text": "Slide 14:\nSpecial Shoutouts:\n\nMy mom - believed in me from the beginning, and never stopped."
+    }
+  },
+  "currentCostume": 19,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e6084804a7ddf26486e2536f95a1c8c5",
+      "md5ext": "e6084804a7ddf26486e2536f95a1c8c5.svg",
+      "rotationCenterX": 289.4999999999997,
+      "rotationCenterY": 185.25
+    },
+    {
+      "name": "picture 1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "08239e6552c636bbaad5314c0a06bf28",
+      "md5ext": "08239e6552c636bbaad5314c0a06bf28.png",
+      "rotationCenterX": -124,
+      "rotationCenterY": 217
+    },
+    {
+      "name": "picture 2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "48d3d1d95c2c973dd23b7980181f4886",
+      "md5ext": "48d3d1d95c2c973dd23b7980181f4886.png",
+      "rotationCenterX": -124,
+      "rotationCenterY": 217
+    },
+    {
+      "name": "picture 3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1819da4f508d7a11c87dd1e7431c493e",
+      "md5ext": "1819da4f508d7a11c87dd1e7431c493e.png",
+      "rotationCenterX": -124,
+      "rotationCenterY": 217
+    },
+    {
+      "name": "picture 4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "56b4e394b58a9d0030670a3848ba0c0c",
+      "md5ext": "56b4e394b58a9d0030670a3848ba0c0c.png",
+      "rotationCenterX": -124,
+      "rotationCenterY": 217
+    },
+    {
+      "name": "picture 5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "310edaaa190e623d59f94eaa072a421f",
+      "md5ext": "310edaaa190e623d59f94eaa072a421f.png",
+      "rotationCenterX": -112,
+      "rotationCenterY": 236
+    },
+    {
+      "name": "picture 6",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bb8c01a59544f3c782f32707fd2ead21",
+      "md5ext": "bb8c01a59544f3c782f32707fd2ead21.png",
+      "rotationCenterX": -114,
+      "rotationCenterY": 248
+    },
+    {
+      "name": "picture 7",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "721771bd578a8891703573b196a468e9",
+      "md5ext": "721771bd578a8891703573b196a468e9.png",
+      "rotationCenterX": -112,
+      "rotationCenterY": 236
+    },
+    {
+      "name": "picture 8",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f24efe059facd6e6430260287728e94f",
+      "md5ext": "f24efe059facd6e6430260287728e94f.svg",
+      "rotationCenterX": -56.00450548089998,
+      "rotationCenterY": 121.85420966393247
+    },
+    {
+      "name": "picture 9",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "1353402b417a259076470f0ea2c1f0d9",
+      "md5ext": "1353402b417a259076470f0ea2c1f0d9.svg",
+      "rotationCenterX": -56.87528273732812,
+      "rotationCenterY": 121.49960000000009
+    },
+    {
+      "name": "picture 10",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "83340fc5bfbb9fe63971bec2f24a1648",
+      "md5ext": "83340fc5bfbb9fe63971bec2f24a1648.svg",
+      "rotationCenterX": -54.99955421280032,
+      "rotationCenterY": 119.63255642547443
+    },
+    {
+      "name": "picture 11",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f5938bf53cd12b678808f8d3f2e1e5bb",
+      "md5ext": "f5938bf53cd12b678808f8d3f2e1e5bb.svg",
+      "rotationCenterX": -53.99854499999981,
+      "rotationCenterY": 120.27729528707411
+    },
+    {
+      "name": "picture 12",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "04869361196b23c5d6d602481176991e",
+      "md5ext": "04869361196b23c5d6d602481176991e.svg",
+      "rotationCenterX": -56,
+      "rotationCenterY": 118
+    },
+    {
+      "name": "picture 13",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "082b697aa70144a48f4ff1ff979ff421",
+      "md5ext": "082b697aa70144a48f4ff1ff979ff421.svg",
+      "rotationCenterX": -56,
+      "rotationCenterY": 118
+    },
+    {
+      "name": "picture 14",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1050e883c4a0b98997f77a9ebf6ca29f",
+      "md5ext": "1050e883c4a0b98997f77a9ebf6ca29f.png",
+      "rotationCenterX": -112,
+      "rotationCenterY": 236
+    },
+    {
+      "name": "picture 15",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3af44c03eb57598543ec44c7b8eabd36",
+      "md5ext": "3af44c03eb57598543ec44c7b8eabd36.svg",
+      "rotationCenterX": -110.91292075806939,
+      "rotationCenterY": 88.99960999999998
+    },
+    {
+      "name": "picture 16",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "96a72e093611734790f4a224b4236a67",
+      "md5ext": "96a72e093611734790f4a224b4236a67.svg",
+      "rotationCenterX": 200.55000000000007,
+      "rotationCenterY": -53.64010439021078
+    },
+    {
+      "name": "picture 17",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "629c0ff86e20cab259124513af80bad5",
+      "md5ext": "629c0ff86e20cab259124513af80bad5.svg",
+      "rotationCenterX": -38.344290761152024,
+      "rotationCenterY": 169.47678752101092
+    },
+    {
+      "name": "words",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "da8ca1b92cf9d49e5367bc033fc61824",
+      "md5ext": "da8ca1b92cf9d49e5367bc033fc61824.svg",
+      "rotationCenterX": 119.33333499999996,
+      "rotationCenterY": 130.16666499999997
+    },
+    {
+      "name": "credits2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "f93933b794f46233837cd1d864a95715",
+      "md5ext": "f93933b794f46233837cd1d864a95715.svg",
+      "rotationCenterX": 260.75,
+      "rotationCenterY": 150.30000114440918
+    }
+  ],
+  "sounds": [
+    {
+      "name": "The Troubled boy1",
+      "assetId": "b34b300229d37ffdf53763225ed5bcc9",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 421350,
+      "md5ext": "b34b300229d37ffdf53763225ed5bcc9.wav"
+    },
+    {
+      "name": "The Troubled boy2",
+      "assetId": "e5cbec4c054c33badf5223e1eccf3001",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 455149,
+      "md5ext": "e5cbec4c054c33badf5223e1eccf3001.wav"
+    },
+    {
+      "name": "The Troubled boy3",
+      "assetId": "540f35167a85375eb9f43eee9d317371",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 415191,
+      "md5ext": "540f35167a85375eb9f43eee9d317371.wav"
+    },
+    {
+      "name": "The Troubled boy4",
+      "assetId": "def9947d7ff6478e5617a346586faca3",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 231197,
+      "md5ext": "def9947d7ff6478e5617a346586faca3.wav"
+    },
+    {
+      "name": "The Troubled boy5",
+      "assetId": "93ca74c0e06cc44deb30973b4b2e8720",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 200966,
+      "md5ext": "93ca74c0e06cc44deb30973b4b2e8720.wav"
+    },
+    {
+      "name": "The Troubled boy6",
+      "assetId": "3cab89dbb3e2b0260564e6b1d73f43c4",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 205081,
+      "md5ext": "3cab89dbb3e2b0260564e6b1d73f43c4.wav"
+    },
+    {
+      "name": "The Troubled boy7",
+      "assetId": "e6e1fc92bd8dbb9586bac34c9c5628e1",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 231059,
+      "md5ext": "e6e1fc92bd8dbb9586bac34c9c5628e1.wav"
+    },
+    {
+      "name": "The Troubled boy8",
+      "assetId": "87cd5c9b77f9fd56130117091174dc10",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 505014,
+      "md5ext": "87cd5c9b77f9fd56130117091174dc10.wav"
+    },
+    {
+      "name": "The Troubled boy9",
+      "assetId": "fcc25ec1a1d90b5e2602448e0dbc9b86",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 654025,
+      "md5ext": "fcc25ec1a1d90b5e2602448e0dbc9b86.wav"
+    },
+    {
+      "name": "The Troubled boy10",
+      "assetId": "5945e532f45dbcc1df2bf2dd319538b3",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 421850,
+      "md5ext": "5945e532f45dbcc1df2bf2dd319538b3.wav"
+    },
+    {
+      "name": "The Troubled boy11",
+      "assetId": "b89c82c2d1f44088055d2f7ae187b014",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 447867,
+      "md5ext": "b89c82c2d1f44088055d2f7ae187b014.wav"
+    },
+    {
+      "name": "The Troubled boy12",
+      "assetId": "58521c337cd7d55acbe522a0a3eaf7f0",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 436940,
+      "md5ext": "58521c337cd7d55acbe522a0a3eaf7f0.wav"
+    },
+    {
+      "name": "The Troubled boy13",
+      "assetId": "bbb2d75f77df486d561945ac61dcb5d0",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 415588,
+      "md5ext": "bbb2d75f77df486d561945ac61dcb5d0.wav"
+    },
+    {
+      "name": "The Troubled boy14",
+      "assetId": "6b041e04ad07a810619aaaf2bf3bbb95",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 523139,
+      "md5ext": "6b041e04ad07a810619aaaf2bf3bbb95.wav"
+    },
+    {
+      "name": "The Troubled boy15",
+      "assetId": "40aed5a8b46260fd03d4dc9e31a58ff8",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 424336,
+      "md5ext": "40aed5a8b46260fd03d4dc9e31a58ff8.wav"
+    },
+    {
+      "name": "The Troubled boy16",
+      "assetId": "2228d9f0c650491db41b5f39b445683b",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 436481,
+      "md5ext": "2228d9f0c650491db41b5f39b445683b.wav"
+    },
+    {
+      "name": "The Troubled boy17",
+      "assetId": "51ed9cbc8cb3f5335faf5d0da6e78957",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 999660,
+      "md5ext": "51ed9cbc8cb3f5335faf5d0da6e78957.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 152,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

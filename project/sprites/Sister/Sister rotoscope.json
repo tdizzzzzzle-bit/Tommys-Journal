@@ -1,0 +1,1744 @@
+{
+  "isStage": false,
+  "name": "Sister//Sister rotoscope",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "alU": {
+      "opcode": "event_whenflagclicked",
+      "next": "alV",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1301,
+      "y": 240
+    },
+    "alV": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "alU",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "alW": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "cuk",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 479,
+      "y": 64
+    },
+    "z": {
+      "opcode": "data_setvariableto",
+      "next": "A",
+      "parent": "cuk",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "cut game //dontsave//",
+          "gS`Y@z@_5a%)smq/W,vk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "A": {
+      "opcode": "looks_gotofrontback",
+      "next": "M",
+      "parent": "z",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "M": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "A",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "alX"
+        ],
+        "SUBSTACK": [
+          2,
+          "jq"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "alX": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "M",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "jq": {
+      "opcode": "control_wait",
+      "next": "jr",
+      "parent": "M",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "jr": {
+      "opcode": "sound_stopallsounds",
+      "next": "b}",
+      "parent": "jq",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b}": {
+      "opcode": "looks_show",
+      "next": "U",
+      "parent": "jr",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "U": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "b}",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "b~"
+        ],
+        "SUBSTACK": [
+          2,
+          "cul"
+        ],
+        "SUBSTACK2": [
+          2,
+          "cum"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b~": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "U",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "}",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1/4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "}": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "b~",
+      "inputs": {
+        "STRING1": [
+          3,
+          "alY",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "ca",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "alY": {
+      "opcode": "sensing_current",
+      "next": null,
+      "parent": "}",
+      "inputs": {},
+      "fields": {
+        "CURRENTMENU": [
+          "DATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ca": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "}",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "/"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "alZ",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "alZ": {
+      "opcode": "sensing_current",
+      "next": null,
+      "parent": "ca",
+      "inputs": {},
+      "fields": {
+        "CURRENTMENU": [
+          "MONTH",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cul": {
+      "opcode": "looks_setsizeto",
+      "next": "cun",
+      "parent": "U",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "68"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cun": {
+      "opcode": "lmsVideo_setVolume",
+      "next": "al!",
+      "parent": "cul",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "lego"
+          ]
+        ],
+        "VALUE": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al!": {
+      "opcode": "lmsVideo_showVideo",
+      "next": "cuo",
+      "parent": "cun",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "lego"
+          ]
+        ],
+        "TARGET": [
+          1,
+          "fm("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm(": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "al!",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuo": {
+      "opcode": "lmsVideo_startVideoAndWait",
+      "next": "cup",
+      "parent": "al!",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "lego"
+          ]
+        ],
+        "DURATION": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cup": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": null,
+      "parent": "cuo",
+      "inputs": {
+        "TARGET": [
+          1,
+          "fm)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm)": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "cup",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "al#": {
+      "opcode": "looks_switchcostumeto",
+      "next": "cuq",
+      "parent": "al%",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "fm*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm*": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "al#",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Game over",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuq": {
+      "opcode": "looks_setsizeto",
+      "next": "cur",
+      "parent": "al#",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cur": {
+      "opcode": "data_setvariableto",
+      "next": "al(",
+      "parent": "cuq",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "al(": {
+      "opcode": "sound_play",
+      "next": "cus",
+      "parent": "cur",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "fm+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm+": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "al(",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cus": {
+      "opcode": "looks_seteffectto",
+      "next": "cut",
+      "parent": "al(",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cut": {
+      "opcode": "looks_seteffectto",
+      "next": "al)",
+      "parent": "cus",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "al)": {
+      "opcode": "control_repeat",
+      "next": "al*",
+      "parent": "cut",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "50"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "cuu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuu": {
+      "opcode": "looks_changeeffectby",
+      "next": "cuv",
+      "parent": "al)",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuv": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "cuu",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "fm,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm,": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "cuv",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al*": {
+      "opcode": "control_wait_until",
+      "next": "cuw",
+      "parent": "al)",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cux"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cux": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "al*",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "cuy"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuy": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "cux",
+      "inputs": {
+        "SOUND": [
+          1,
+          "fm-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm-": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "cuy",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuw": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "fm.",
+      "parent": "al*",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm.": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "cuw",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "fm/": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "fm:",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1301,
+      "y": 64
+    },
+    "fm:": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "fm/",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuk": {
+      "opcode": "sound_setvolumeto",
+      "next": "z",
+      "parent": "alW",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm;": {
+      "opcode": "data_setvariableto",
+      "next": "fm=",
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "CUT SCENE //dontsave//",
+          ";6s1_[88CjAsP;P5XI0N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 761,
+      "y": -94
+    },
+    "fm=": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "fm;",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "game over",
+            "L1(/.F+%8O1{lVW}BIp0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm?": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "cuz",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "skip cutscene",
+          "7-Yd$j_c3H+^-{KI-nbw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -388,
+      "y": 70
+    },
+    "al+": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "cuz",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "fm@"
+        ],
+        "SUBSTACK": [
+          2,
+          "cuA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "al+",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuA": {
+      "opcode": "control_stop",
+      "next": "cuB",
+      "parent": "al+",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "cuC": {
+      "opcode": "sound_stopallsounds",
+      "next": "cuD",
+      "parent": "al,",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuD": {
+      "opcode": "looks_setsizeto",
+      "next": "al-",
+      "parent": "cuC",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al-": {
+      "opcode": "looks_switchcostumeto",
+      "next": "al.",
+      "parent": "cuD",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "fm["
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm[": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "al-",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Game over",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "al.": {
+      "opcode": "sound_play",
+      "next": "cuE",
+      "parent": "al-",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "fm]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm]": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "al.",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuF": {
+      "opcode": "data_setvariableto",
+      "next": "cuG",
+      "parent": "al/",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm^": {
+      "opcode": "data_setvariableto",
+      "next": "fm_",
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "cut game //dontsave//",
+          "gS`Y@z@_5a%)smq/W,vk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1504,
+      "y": 5739
+    },
+    "fm_": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "fm^",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hie": {
+      "opcode": "looks_nextcostume",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1277,
+      "y": 1520
+    },
+    "cum": {
+      "opcode": "lmsVideo_setVolume",
+      "next": "al:",
+      "parent": "U",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ],
+        "VALUE": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al:": {
+      "opcode": "lmsVideo_showVideo",
+      "next": "cuH",
+      "parent": "cum",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ],
+        "TARGET": [
+          1,
+          "fm`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm`": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "al:",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "al%": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": "al#",
+      "parent": "al;",
+      "inputs": {
+        "TARGET": [
+          1,
+          "fm{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm{": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "al%",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "fm|": {
+      "opcode": "lmsVideo_getAttribute",
+      "next": null,
+      "parent": "cuI",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ]
+      },
+      "fields": {
+        "ATTRIBUTE": [
+          "current time",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuB": {
+      "opcode": "lmsVideo_pause",
+      "next": "al,",
+      "parent": "cuA",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuH": {
+      "opcode": "lmsVideo_startVideo",
+      "next": "al=",
+      "parent": "al:",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ],
+        "DURATION": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al=": {
+      "opcode": "control_wait_until",
+      "next": "al?",
+      "parent": "cuH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cuI"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuI": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "al=",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "fm|",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            ".7"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al?": {
+      "opcode": "looks_seteffectto",
+      "next": "al;",
+      "parent": "al=",
+      "inputs": {
+        "VALUE": [
+          3,
+          "cuJ",
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm}": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "cuJ",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "GORE //dontsave//",
+            "7W7*;sep89T!({ukWTF#"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuJ": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "al?",
+      "inputs": {
+        "NUM1": [
+          3,
+          "fm}",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuK": {
+      "opcode": "lmsVideo_getState",
+      "next": null,
+      "parent": "cuL",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "sister"
+          ]
+        ],
+        "STATE": [
+          1,
+          "fm~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fm~": {
+      "opcode": "lmsVideo_menu_state",
+      "next": null,
+      "parent": "cuK",
+      "inputs": {},
+      "fields": {
+        "state": [
+          "playing",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "al;": {
+      "opcode": "control_wait_until",
+      "next": "al%",
+      "parent": "al?",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cuL"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuL": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "al;",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "cuK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al,": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": "cuC",
+      "parent": "cuB",
+      "inputs": {
+        "TARGET": [
+          1,
+          "fna"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fna": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "al,",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuE": {
+      "opcode": "looks_seteffectto",
+      "next": "cuM",
+      "parent": "al.",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuM": {
+      "opcode": "looks_seteffectto",
+      "next": "al@",
+      "parent": "cuE",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "al@": {
+      "opcode": "control_repeat",
+      "next": "al/",
+      "parent": "cuM",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "50"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "cuN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuN": {
+      "opcode": "looks_changeeffectby",
+      "next": "cuO",
+      "parent": "al@",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuO": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "cuN",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "fnb"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fnb": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "cuO",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al/": {
+      "opcode": "control_wait_until",
+      "next": "cuF",
+      "parent": "al@",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cuP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuP": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "al/",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "cuQ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuQ": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "cuP",
+      "inputs": {
+        "SOUND": [
+          1,
+          "fnc"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fnc": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "cuQ",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuG": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "fnd",
+      "parent": "cuF",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fnd": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "cuG",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "fne": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "CONDITION": [
+          2,
+          "cuR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1244,
+      "y": 1699
+    },
+    "cuR": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "fne",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "cuS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "cuS": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "cuR",
+      "inputs": {
+        "SOUND": [
+          1,
+          "fnf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "fnf": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "cuS",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "cuz": {
+      "opcode": "sound_setvolumeto",
+      "next": "al+",
+      "parent": "fm?",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "Game over",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "06758f412cd80d310a0456d8fd837ef8",
+      "md5ext": "06758f412cd80d310a0456d8fd837ef8.svg",
+      "rotationCenterX": 271.2164835164834,
+      "rotationCenterY": 207.75
+    }
+  ],
+  "sounds": [
+    {
+      "name": "Cymbal Echo",
+      "assetId": "47be8f1c9c3be081c4dc863125307a6e",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 118582,
+      "md5ext": "47be8f1c9c3be081c4dc863125307a6e.wav"
+    }
+  ],
+  "volume": 75,
+  "layerOrder": 154,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

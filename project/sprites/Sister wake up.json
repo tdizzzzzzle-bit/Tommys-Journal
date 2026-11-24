@@ -1,0 +1,1825 @@
+{
+  "isStage": false,
+  "name": "Sister wake up",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "e^p": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "b_R",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 251,
+      "y": 347
+    },
+    "qp": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "b_R",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "e^q"
+        ],
+        "SUBSTACK": [
+          2,
+          "acX"
+        ],
+        "SUBSTACK2": [
+          2,
+          "acY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^q": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "qp",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "attic"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "acX": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "qp",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "e^r"
+        ],
+        "SUBSTACK": [
+          2,
+          "b_S"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^r": {
+      "opcode": "chimerishibernator_isHibernating",
+      "next": null,
+      "parent": "acX",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Sister//1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_S": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_T",
+      "parent": "acX",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Sister//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^s": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "b_T",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "wakey wakey",
+            "hXU{iKl3H+67+.Ot)^ie"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "acY": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "qp",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "b_U"
+        ],
+        "SUBSTACK": [
+          2,
+          "b_V"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_U": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "acY",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "e^t"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^t": {
+      "opcode": "chimerishibernator_isHibernating",
+      "next": null,
+      "parent": "b_U",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Sister//1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_V": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "e^u",
+      "parent": "acY",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Sister//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_W": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_Y",
+      "parent": "b_X",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "mother//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_Y": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_Z",
+      "parent": "b_W",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Mirror//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_Z": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_!",
+      "parent": "b_Y",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "father//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^v": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "b_#",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 834,
+      "y": 318
+    },
+    "acZ": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "qq",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "e^w"
+        ],
+        "SUBSTACK": [
+          2,
+          "b_%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^w": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "acZ",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "attic"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_%": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_(",
+      "parent": "acZ",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Sister//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_)": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b_+",
+      "parent": "b_*",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "mother//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_+": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b_,",
+      "parent": "b_)",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Mirror//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_,": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b_-",
+      "parent": "b_+",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "father//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^x": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "b_(",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "wakey wakey",
+            "hXU{iKl3H+67+.Ot)^ie"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_.": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_:",
+      "parent": "b_/",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "hiding spots"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_:": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_;",
+      "parent": "b_.",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "parallax backgrounds"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_;": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_=",
+      "parent": "b_:",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "windows"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_=": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_?",
+      "parent": "b_;",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "piano"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_?": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_@",
+      "parent": "b_=",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "weather"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_@": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_[",
+      "parent": "b_?",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "interactables"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_[": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_]",
+      "parent": "b_@",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "mouse squirm"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_]": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_^",
+      "parent": "b_[",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "chandeliers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_^": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b__",
+      "parent": "b_]",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "severed hand"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b__": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_`",
+      "parent": "b_^",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "eyes"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_`": {
+      "opcode": "chimerishibernator_wake",
+      "next": "e^y",
+      "parent": "b__",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "looker"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^y": {
+      "opcode": "chimerishibernator_wake",
+      "next": null,
+      "parent": "b_`",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "eye thingy ray"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_{": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_/",
+      "parent": "b_|",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "orchestra"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_}": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_X",
+      "parent": "b_~",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "TOMMY BOSSFIGHT//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`a": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b_*",
+      "parent": "b`b",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "TOMMY BOSSFIGHT//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_/": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_.",
+      "parent": "b_{",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "papers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_|": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_{",
+      "parent": "b`c",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "painting"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_~": {
+      "opcode": "procedures_definition",
+      "next": "b_}",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "e^z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 888,
+      "y": 931
+    },
+    "e^z": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "b_~",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Wake non-attic",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "e^u": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "b_V",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Wake non-attic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "b`b": {
+      "opcode": "procedures_definition",
+      "next": "b`a",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "e^A"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1347,
+      "y": 929
+    },
+    "e^A": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "b`b",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Sleep non-attic",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "b_T": {
+      "opcode": "procedures_call",
+      "next": "e^s",
+      "parent": "b_S",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Sleep non-attic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "b_(": {
+      "opcode": "procedures_call",
+      "next": "e^x",
+      "parent": "b_%",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Sleep non-attic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "b`d": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`f",
+      "parent": "b`e",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "painting"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`f": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`g",
+      "parent": "b`d",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "orchestra"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`g": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`h",
+      "parent": "b`f",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "papers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`h": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`i",
+      "parent": "b`g",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "hiding spots"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`i": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`j",
+      "parent": "b`h",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "parallax backgrounds"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`j": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`k",
+      "parent": "b`i",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "windows"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`k": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`l",
+      "parent": "b`j",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "piano"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`l": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`m",
+      "parent": "b`k",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "weather"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`m": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`n",
+      "parent": "b`l",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "interactables"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`n": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`o",
+      "parent": "b`m",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "mouse squirm"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`o": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`p",
+      "parent": "b`n",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "chandeliers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`p": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`q",
+      "parent": "b`o",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "severed hand"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`q": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`r",
+      "parent": "b`p",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "eyes"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`r": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "e^B",
+      "parent": "b`q",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "looker"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^B": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": null,
+      "parent": "b`r",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "eye thingy ray"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`s": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`u",
+      "parent": "b`t",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//spirit demon wall"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`v": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`x",
+      "parent": "b`w",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//spirit demon wall"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`c": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b_|",
+      "parent": "b`y",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//Demons"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`e": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`d",
+      "parent": "b`z",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//Demons"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`u": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`y",
+      "parent": "b`s",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//Demon dance"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`z": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`e",
+      "parent": "b`x",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//THEMAN"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`y": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`c",
+      "parent": "b`u",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//THEMAN"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`t": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`s",
+      "parent": "b`A",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//killers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`w": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`v",
+      "parent": "b`B",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//killers"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`A": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`t",
+      "parent": "b`C",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//sheild"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`B": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`w",
+      "parent": "b`D",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//sheild"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`C": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`A",
+      "parent": "b`E",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//spirit attack"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`D": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`B",
+      "parent": "b`F",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//spirit attack"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`F": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`D",
+      "parent": "b`G",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//demon blast"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`E": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`C",
+      "parent": "b`H",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//demon blast"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_X": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b_W",
+      "parent": "b_}",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "ROSES//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_*": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b_)",
+      "parent": "b`a",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "ROSES//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`H": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`E",
+      "parent": "b`I",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "other police car"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`G": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`F",
+      "parent": "b`J",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "other police car"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`I": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`H",
+      "parent": "b`K",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "corruption"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`J": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`G",
+      "parent": "b`L",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "corruption"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`K": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`I",
+      "parent": "b`M",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Player//reflection"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`L": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`J",
+      "parent": "b`N",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Player//reflection"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`M": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`K",
+      "parent": "b`O",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//tommy dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`N": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`L",
+      "parent": "b`P",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//tommy dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`O": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`M",
+      "parent": "b`Q",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//Father dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`P": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`N",
+      "parent": "b`R",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//Father dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`Q": {
+      "opcode": "chimerishibernator_wake",
+      "next": "b`O",
+      "parent": "b_!",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//Mother dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`R": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`P",
+      "parent": "b_-",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Dialogue//Mother dialogue"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_!": {
+      "opcode": "chimerishibernator_wakeGroup",
+      "next": "b`Q",
+      "parent": "b_Z",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Collectables//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_-": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "b`R",
+      "parent": "b_,",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Collectables//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`x": {
+      "opcode": "chimerishibernator_hibernate",
+      "next": "b`z",
+      "parent": "b`v",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "demons//Demon dance"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_R": {
+      "opcode": "control_wait",
+      "next": "qp",
+      "parent": "e^p",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`S": {
+      "opcode": "procedures_call",
+      "next": "e^D",
+      "parent": "e^C",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Wake non-attic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "e^C": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "b`S",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "setup",
+          "C,OqPTyOdHOQY`:*L:6E"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 549,
+      "y": 172
+    },
+    "e^D": {
+      "opcode": "chimerisreverbsounds_stopAllCustom",
+      "next": null,
+      "parent": "b`S",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b_#": {
+      "opcode": "chimerishibernator_wakeAll",
+      "next": "qq",
+      "parent": "e^v",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "qq": {
+      "opcode": "control_if",
+      "next": "acZ",
+      "parent": "b_#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "b`T"
+        ],
+        "SUBSTACK": [
+          2,
+          "b`U"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`T": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "qq",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "e^E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^E": {
+      "opcode": "chimerishibernator_isHibernating",
+      "next": null,
+      "parent": "b`T",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "Sister//1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "b`U": {
+      "opcode": "chimerishibernator_hibernateGroup",
+      "next": "e^F",
+      "parent": "qq",
+      "inputs": {
+        "PREFIX": [
+          1,
+          [
+            10,
+            "Sister//"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e^F": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "b`U",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Wake non-attic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    }
+  },
+  "comments": {
+    "b`V": {
+      "blockId": "ac!",
+      "x": 16290,
+      "y": 1865,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "12"
+    },
+    "b`W": {
+      "blockId": "ac#",
+      "x": 16240,
+      "y": 2108,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "12"
+    },
+    "b`X": {
+      "blockId": "qr",
+      "x": 16234,
+      "y": 2366,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "20"
+    },
+    "b`Y": {
+      "blockId": "qs",
+      "x": 16244,
+      "y": 2687,
+      "width": 200,
+      "height": 200,
+      "minimized": false,
+      "text": "20"
+    }
+  },
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+      "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 153,
+  "visible": true,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

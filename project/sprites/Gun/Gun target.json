@@ -1,0 +1,338 @@
+{
+  "isStage": false,
+  "name": "Gun//Gun target",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "g~T": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dY|",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "bang! (gun)",
+          "lD[1[zYH?Ht9Op3%KgWV"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 447,
+      "y": 64
+    },
+    "dY|": {
+      "opcode": "looks_show",
+      "next": "a[]",
+      "parent": "g~T",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a[^": {
+      "opcode": "control_repeat",
+      "next": "g~U",
+      "parent": "a[]",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "20"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "dY}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a[]": {
+      "opcode": "motion_goto",
+      "next": "a[^",
+      "parent": "dY|",
+      "inputs": {
+        "TO": [
+          1,
+          "g~V"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~V": {
+      "opcode": "motion_goto_menu",
+      "next": null,
+      "parent": "a[]",
+      "inputs": {},
+      "fields": {
+        "TO": [
+          "_mouse_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g~U": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "a[^",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~W": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g~X",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "g~X": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g~W",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dY}": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": "a[^",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g~Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~Y": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dY}",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~Z": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dY~",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Player Move",
+          "`UGXEL/UltpD*+}=Bxt$"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -49,
+      "y": 235
+    },
+    "dZa": {
+      "opcode": "looks_show",
+      "next": "dZb",
+      "parent": "a[_",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZb": {
+      "opcode": "motion_goto",
+      "next": null,
+      "parent": "dZa",
+      "inputs": {
+        "TO": [
+          1,
+          "g~!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~!": {
+      "opcode": "motion_goto_menu",
+      "next": null,
+      "parent": "dZb",
+      "inputs": {},
+      "fields": {
+        "TO": [
+          "_mouse_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a[_": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "dY~",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "dZa"
+        ],
+        "CONDITION": [
+          2,
+          "a[`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZc": {
+      "opcode": "sensing_keypressed",
+      "next": null,
+      "parent": "a[`",
+      "inputs": {
+        "KEY_OPTION": [
+          1,
+          "g~#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~#": {
+      "opcode": "sensing_keyoptions",
+      "next": null,
+      "parent": "dZc",
+      "inputs": {},
+      "fields": {
+        "KEY_OPTION": [
+          "f",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dY~": {
+      "opcode": "looks_hide",
+      "next": "a[_",
+      "parent": "g~Z",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a[`": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "a[_",
+      "inputs": {
+        "OPERAND2": [
+          2,
+          "dZc"
+        ],
+        "OPERAND1": [
+          2,
+          "g~%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g~%": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "a[`",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "holding?",
+            "@8KT?sT@gGcLmP8W09GT"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "gun"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "acf74fb8f996d98afbacce70b9033569",
+      "md5ext": "acf74fb8f996d98afbacce70b9033569.png",
+      "rotationCenterX": 35,
+      "rotationCenterY": 35
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 139,
+  "visible": false,
+  "x": -24,
+  "y": 15,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

@@ -1,0 +1,356 @@
+{
+  "isStage": false,
+  "name": "ROSES//rose counter",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "c:B": {
+      "opcode": "procedures_definition",
+      "next": "c:C",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "f[g"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -2589,
+      "y": -2419
+    },
+    "f[g": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c:B",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "figure out roses",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "c:C": {
+      "opcode": "data_deletealloflist",
+      "next": "c:D",
+      "parent": "c:B",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "roses",
+          "-Qcu|1:LS}Kw2UE0n%,b"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c:D": {
+      "opcode": "procedures_call",
+      "next": "AC",
+      "parent": "c:C",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "figure out roses",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "AC": {
+      "opcode": "looks_switchcostumeto",
+      "next": "aI]",
+      "parent": "c:D",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "f[h",
+          "f[i"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[h": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "AC",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[i": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "AC",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "piano",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aI]": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": "AC",
+      "inputs": {
+        "TIMES": [
+          3,
+          "f[j",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "c:E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[j": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "aI]",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c:E": {
+      "opcode": "looks_nextcostume",
+      "next": "aI^",
+      "parent": "aI]",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aI^": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "c:E",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aI_"
+        ],
+        "SUBSTACK": [
+          2,
+          "c:F"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aI_": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "aI^",
+      "inputs": {
+        "STRING1": [
+          3,
+          "f[k",
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "f[l",
+          [
+            10,
+            "a"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[k": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aI_",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "14"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "!!!!SAVE AND EXIT LIST",
+          "[1ykGjxuTeRbI5I(gP3("
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[l": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "aI_",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c:F": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "aI^",
+      "inputs": {
+        "ITEM": [
+          3,
+          "f[m",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "roses",
+          "-Qcu|1:LS}Kw2UE0n%,b"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f[m": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c:F",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 5,
+  "costumes": [
+    {
+      "name": "piano",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "40fad6653010cb3b71d1d5e2a7ba5b32",
+      "md5ext": "40fad6653010cb3b71d1d5e2a7ba5b32.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    },
+    {
+      "name": "toys",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "84b8ca942c8834bec8096b8a09fdbaec",
+      "md5ext": "84b8ca942c8834bec8096b8a09fdbaec.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    },
+    {
+      "name": "love",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "84b8ca942c8834bec8096b8a09fdbaec",
+      "md5ext": "84b8ca942c8834bec8096b8a09fdbaec.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    },
+    {
+      "name": "letters",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "84b8ca942c8834bec8096b8a09fdbaec",
+      "md5ext": "84b8ca942c8834bec8096b8a09fdbaec.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    },
+    {
+      "name": "mother",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "84b8ca942c8834bec8096b8a09fdbaec",
+      "md5ext": "84b8ca942c8834bec8096b8a09fdbaec.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    },
+    {
+      "name": "mother2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "84b8ca942c8834bec8096b8a09fdbaec",
+      "md5ext": "84b8ca942c8834bec8096b8a09fdbaec.svg",
+      "rotationCenterX": 19,
+      "rotationCenterY": 27
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 146,
+  "visible": false,
+  "x": 36,
+  "y": 28,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

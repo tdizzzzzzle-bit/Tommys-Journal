@@ -1,0 +1,1985 @@
+{
+  "isStage": false,
+  "name": "demons//twisty",
+  "variables": {
+    "X3@6#(`-pIJC7vU?;]qe": [
+      "I",
+      2
+    ],
+    "LD:!pwsed|a7WW)QIu=o": [
+      "I",
+      0
+    ],
+    "S]U@`D:B9,K-C`3(K;PF": [
+      "I",
+      0
+    ],
+    "_VK(AU]=H4@DP_-gV4/L": [
+      "clone?",
+      0
+    ],
+    "!je:9/[^/vi,XNKR#WBt": [
+      "I",
+      0
+    ],
+    "DZ{Xi6s00X|tIw7h^[d|": [
+      "x",
+      0
+    ],
+    "/X]eP!gj8Bd9mf?7,_5~": [
+      "y",
+      0
+    ],
+    "R:}a-4^I6H[uYe#nA~nF": [
+      "I",
+      0
+    ],
+    "uG},.C]ai}.*x7W{#dXF": [
+      "I",
+      0
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "gGO": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dqq",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 793,
+      "y": 64
+    },
+    "dqq": {
+      "opcode": "data_setvariableto",
+      "next": "dqr",
+      "parent": "gGO",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "cut game //dontsave//",
+          "gS`Y@z@_5a%)smq/W,vk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqr": {
+      "opcode": "sound_stopallsounds",
+      "next": "dqs",
+      "parent": "dqq",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqs": {
+      "opcode": "control_wait",
+      "next": "aY:",
+      "parent": "dqr",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY:": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "dqs",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gGP"
+        ],
+        "SUBSTACK": [
+          2,
+          "dqt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGP": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aY:",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqt": {
+      "opcode": "sound_setvolumeto",
+      "next": "dqu",
+      "parent": "aY:",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqu": {
+      "opcode": "sound_stopallsounds",
+      "next": "dqv",
+      "parent": "dqt",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqv": {
+      "opcode": "looks_gotofrontback",
+      "next": "dqw",
+      "parent": "dqu",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqw": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "dqx",
+      "parent": "dqv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqx": {
+      "opcode": "looks_seteffectto",
+      "next": "dqy",
+      "parent": "dqw",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqy": {
+      "opcode": "looks_show",
+      "next": "dqz",
+      "parent": "dqx",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqz": {
+      "opcode": "motion_gotoxy",
+      "next": "dqA",
+      "parent": "dqy",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqA": {
+      "opcode": "looks_setsizeto",
+      "next": "aY;",
+      "parent": "dqz",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "68"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY;": {
+      "opcode": "lmsVideo_showVideo",
+      "next": "dqB",
+      "parent": "dqA",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ],
+        "TARGET": [
+          1,
+          "gGQ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGQ": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "aY;",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqB": {
+      "opcode": "lmsVideo_startVideo",
+      "next": "aY=",
+      "parent": "aY;",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ],
+        "DURATION": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY=": {
+      "opcode": "control_wait_until",
+      "next": "aY?",
+      "parent": "dqB",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dqC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqC": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aY=",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dqD"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqD": {
+      "opcode": "lmsVideo_getState",
+      "next": null,
+      "parent": "dqC",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ],
+        "STATE": [
+          1,
+          "gGR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGR": {
+      "opcode": "lmsVideo_menu_state",
+      "next": null,
+      "parent": "dqD",
+      "inputs": {},
+      "fields": {
+        "state": [
+          "playing",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aY?": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": "aY@",
+      "parent": "aY=",
+      "inputs": {
+        "TARGET": [
+          1,
+          "gGS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGS": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "aY?",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aY@": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "dqE",
+      "parent": "aY?",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gGT"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGT": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aY@",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Dialogue//skip cutcene",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqE": {
+      "opcode": "data_setvariableto",
+      "next": "dqF",
+      "parent": "aY@",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqF": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "dqG",
+      "parent": "dqE",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqG": {
+      "opcode": "looks_setsizeto",
+      "next": "Fs",
+      "parent": "dqF",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Fs": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dqH",
+      "parent": "dqG",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "gGU",
+          "gGV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGU": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "Fs",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Game over"
+          ]
+        ],
+        "STRING2": [
+          3,
+          [
+            12,
+            "GORE //dontsave//",
+            "7W7*;sep89T!({ukWTF#"
+          ],
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGV": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "Fs",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Game over1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqH": {
+      "opcode": "looks_seteffectto",
+      "next": "aY[",
+      "parent": "Fs",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY[": {
+      "opcode": "sound_play",
+      "next": "aY]",
+      "parent": "dqH",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gGW"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGW": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aY[",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aY]": {
+      "opcode": "control_repeat",
+      "next": "aY^",
+      "parent": "aY[",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "50"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aY_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY_": {
+      "opcode": "control_wait_until",
+      "next": "gGX",
+      "parent": "aY]",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gGY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGY": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aY_",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gGX": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "aY_",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY^": {
+      "opcode": "control_wait_until",
+      "next": "gGZ",
+      "parent": "aY]",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dqI"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqI": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aY^",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dqJ"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqJ": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "dqI",
+      "inputs": {
+        "SOUND": [
+          1,
+          "gG!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG!": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "dqJ",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gGZ": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "aY^",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "gG#": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gG%",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 560
+    },
+    "gG%": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "gG#",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-999"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "dqK": {
+      "opcode": "procedures_definition",
+      "next": "dqL",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "dqM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "dqM": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dqK",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "gG("
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "gG(": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dqM",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqL": {
+      "opcode": "looks_gotofrontback",
+      "next": "dqN",
+      "parent": "dqK",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqN": {
+      "opcode": "data_setvariableto",
+      "next": "Ft",
+      "parent": "dqL",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "X3@6#(`-pIJC7vU?;]qe"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ft": {
+      "opcode": "control_repeat_until",
+      "next": "aY`",
+      "parent": "dqN",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dqO"
+        ],
+        "SUBSTACK": [
+          2,
+          "gG)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqO": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Ft",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aY{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY{": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "dqO",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "gG*",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "gG+",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG*": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aY{",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG+": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aY{",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "X3@6#(`-pIJC7vU?;]qe"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG)": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "Ft",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "X3@6#(`-pIJC7vU?;]qe"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY`": {
+      "opcode": "data_insertatlist",
+      "next": "dqP",
+      "parent": "Ft",
+      "inputs": {
+        "ITEM": [
+          3,
+          "gG,",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "X3@6#(`-pIJC7vU?;]qe"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG,": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aY`",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqP": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "aY`",
+      "inputs": {
+        "NUM": [
+          3,
+          "gG-",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG-": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dqP",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "X3@6#(`-pIJC7vU?;]qe"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gG/",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "delete all clones",
+          "z:v04./Or9rn].hzkx,m"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 1048
+    },
+    "gG/": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "gG.",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG:": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dqQ",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 736
+    },
+    "dqQ": {
+      "opcode": "looks_hide",
+      "next": "aY|",
+      "parent": "gG:",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY|": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "dqQ",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gG;"
+        ],
+        "SUBSTACK": [
+          2,
+          "gG="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG;": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aY|",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "father"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG=": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "aY|",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "CUT SCENE //dontsave//",
+          ";6s1_[88CjAsP;P5XI0N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG?": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aY}",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "skip cutscene",
+          "7-Yd$j_c3H+^-{KI-nbw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1476,
+      "y": 883
+    },
+    "aY}": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "gG?",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gG@"
+        ],
+        "SUBSTACK": [
+          2,
+          "dqR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG@": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aY}",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "father"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqR": {
+      "opcode": "lmsVideo_pause",
+      "next": "aY~",
+      "parent": "aY}",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY~": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": "aZa",
+      "parent": "dqR",
+      "inputs": {
+        "TARGET": [
+          1,
+          "gG["
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG[": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "aY~",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aZa": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "dqS",
+      "parent": "aY~",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gG]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG]": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aZa",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Dialogue//skip cutcene",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqS": {
+      "opcode": "data_setvariableto",
+      "next": "dqT",
+      "parent": "aZa",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "game overed //dontsave//",
+          "20:j?Nnf?1+p=Y,tKObA"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqT": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "dqU",
+      "parent": "dqS",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqU": {
+      "opcode": "looks_setsizeto",
+      "next": "Fu",
+      "parent": "dqT",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Fu": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dqV",
+      "parent": "dqU",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "gG^",
+          "gG_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG^": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "Fu",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "Game over"
+          ]
+        ],
+        "STRING2": [
+          3,
+          [
+            12,
+            "GORE //dontsave//",
+            "7W7*;sep89T!({ukWTF#"
+          ],
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG_": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "Fu",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Game over1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dqV": {
+      "opcode": "looks_seteffectto",
+      "next": "aZb",
+      "parent": "Fu",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aZb": {
+      "opcode": "sound_play",
+      "next": "aZc",
+      "parent": "dqV",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "gG`"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG`": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "aZb",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aZc": {
+      "opcode": "control_repeat",
+      "next": "aZd",
+      "parent": "aZb",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "50"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aZe"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aZe": {
+      "opcode": "control_wait_until",
+      "next": "gG{",
+      "parent": "aZc",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gG|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG|": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aZe",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG{": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "aZe",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PIXELATE",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aZd": {
+      "opcode": "control_wait_until",
+      "next": "gG}",
+      "parent": "aZc",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dqW"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqW": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aZd",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dqX"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dqX": {
+      "opcode": "lmsSoundExpanded_isSoundPlaying",
+      "next": null,
+      "parent": "dqW",
+      "inputs": {
+        "SOUND": [
+          1,
+          "gG~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gG~": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "dqX",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Cymbal Echo",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gG}": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "aZd",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "all",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "gHa": {
+      "opcode": "data_setvariableto",
+      "next": "gHb",
+      "parent": null,
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "cut game //dontsave//",
+          "gS`Y@z@_5a%)smq/W,vk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1834,
+      "y": 1111
+    },
+    "gHb": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "gHa",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gHc": {
+      "opcode": "event_whenflagclicked",
+      "next": "dqY",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1302,
+      "y": 136
+    },
+    "dqY": {
+      "opcode": "lmsVideo_loadVideoURL",
+      "next": null,
+      "parent": "gHc",
+      "inputs": {
+        "URL": [
+          3,
+          "gHd",
+          [
+            10,
+            "https://extensions.turbowarp.org/dango.mp4"
+          ]
+        ],
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gHd": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "dqY",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "13"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "rotoscope urls //dontsave//",
+          "*LI%q^[K4m]|l}sY*~^X"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gHe": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          1,
+          "gHf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1539,
+      "y": 768
+    },
+    "gHf": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "gHe",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Dialogue//skip cutcene",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "hkS": {
+      "opcode": "lmsVideo_resume",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "father"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 546,
+      "y": 754
+    },
+    "v": {
+      "opcode": "lmsMoreEvents_whenValueChanged",
+      "next": "dqZ",
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          2,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 82,
+      "y": 1481
+    },
+    "dqZ": {
+      "opcode": "sound_setvolumeto",
+      "next": "gHg",
+      "parent": "v",
+      "inputs": {
+        "VOLUME": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gHg": {
+      "opcode": "lmsVideo_setVolume",
+      "next": null,
+      "parent": "dqZ",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "twisty"
+          ]
+        ],
+        "VALUE": [
+          3,
+          [
+            12,
+            "%SFX VOLUME //dontsave//",
+            "GT,8`ASfpBFE=Xta3p^3"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "Game over1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c977b9eb37c5faffb750ce07f0e892df",
+      "md5ext": "c977b9eb37c5faffb750ce07f0e892df.svg",
+      "rotationCenterX": 248.40328,
+      "rotationCenterY": 248.40328
+    },
+    {
+      "name": "Game over0",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "5f7d15982b00817a6dac41f37fb9bd6b",
+      "md5ext": "5f7d15982b00817a6dac41f37fb9bd6b.svg",
+      "rotationCenterX": 248.40328,
+      "rotationCenterY": 248.40328
+    }
+  ],
+  "sounds": [
+    {
+      "name": "fx_the_gilligan_stumble-97697",
+      "assetId": "820f1a64aa2a83a24a79a77f78037aa2",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 88108,
+      "md5ext": "820f1a64aa2a83a24a79a77f78037aa2.wav"
+    },
+    {
+      "name": "bone-crack-121580",
+      "assetId": "b68f3972291b3f00528b6a8ccd32ebdf",
+      "dataFormat": "mp3",
+      "rate": 48000,
+      "sampleCount": 51408,
+      "md5ext": "b68f3972291b3f00528b6a8ccd32ebdf.mp3"
+    },
+    {
+      "name": "recording1",
+      "assetId": "e3951d8b365300339f6dd386ca95e3ee",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 41399,
+      "md5ext": "e3951d8b365300339f6dd386ca95e3ee.wav"
+    },
+    {
+      "name": "Cymbal Echo",
+      "assetId": "47be8f1c9c3be081c4dc863125307a6e",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 118582,
+      "md5ext": "47be8f1c9c3be081c4dc863125307a6e.wav"
+    }
+  ],
+  "volume": 75,
+  "layerOrder": 42,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

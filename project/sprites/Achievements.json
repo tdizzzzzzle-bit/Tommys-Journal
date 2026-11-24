@@ -1,0 +1,981 @@
+{
+  "isStage": false,
+  "name": "Achievements",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "hlZ": {
+      "opcode": "event_whenflagclicked",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -35,
+      "y": 406
+    },
+    "hl!": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -36,
+      "y": 537
+    },
+    "hdi": {
+      "opcode": "steamworks_getUserInfo",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "THING": [
+          1,
+          "hdj"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -76,
+      "y": 681
+    },
+    "hdj": {
+      "opcode": "steamworks_menu_userInfo",
+      "next": null,
+      "parent": "hdi",
+      "inputs": {},
+      "fields": {
+        "userInfo": [
+          "name",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "d#^": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]Y",
+      "parent": null,
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Horrible Babysitter"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdk"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 157,
+      "y": 472
+    },
+    "hdk": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "d#^",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]Y": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]Z",
+      "parent": "d#^",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "You Had to Touch Everything"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdl"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdl": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]Y",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]Z": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]!",
+      "parent": "a]Y",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Explorer"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdm"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdm": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]Z",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]!": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]#",
+      "parent": "a]Z",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Pianist"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdn": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]!",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]#": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]%",
+      "parent": "a]!",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Broken Ankles"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdo"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdo": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]#",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]%": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a](",
+      "parent": "a]#",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Broken Ankles (The Jukes)"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdp"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdp": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]%",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a](": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a])",
+      "parent": "a]%",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Spill The Tea"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdq"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdq": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a](",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a])": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]*",
+      "parent": "a](",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Master Warlock"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdr"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdr": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a])",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]*": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]+",
+      "parent": "a])",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "High Five"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hds"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hds": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]*",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]+": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a],",
+      "parent": "a]*",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "-1000 Aura"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdt": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]+",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a],": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]-",
+      "parent": "a]+",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Killer Instincts"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdu": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a],",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]-": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a].",
+      "parent": "a],",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Smells Delicious"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdv"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdv": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]-",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a].": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]/",
+      "parent": "a]-",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Palmatyr's Ambassador"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdw": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a].",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]/": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]:",
+      "parent": "a].",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Wash your hands, ya freak!"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdx"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdx": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]/",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]:": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a];",
+      "parent": "a]/",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Sneakster"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdy"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdy": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]:",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a];": {
+      "opcode": "steamworks_setAchievement",
+      "next": "a]=",
+      "parent": "a]:",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Jester's Shadow"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdz"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdz": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a];",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]=": {
+      "opcode": "steamworks_setAchievement",
+      "next": "d#_",
+      "parent": "a];",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Regina Restored"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdA": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]=",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "d#_": {
+      "opcode": "steamworks_setAchievement",
+      "next": null,
+      "parent": "a]=",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Demon blaster"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdB": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "d#_",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a]?": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "d#`",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "d#{"
+        ],
+        "SUBSTACK": [
+          2,
+          "a]@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdC": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "d#`",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "stinky?",
+            "S+cxE+fGd!KvCoPMplcq"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdD": {
+      "opcode": "steamworks_getAchievement",
+      "next": null,
+      "parent": "d#{",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Beelzebub's Curse"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d#{": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "a]?",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "hdD"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a]@": {
+      "opcode": "steamworks_setAchievement",
+      "next": "d#|",
+      "parent": "a]?",
+      "inputs": {
+        "ACHIEVEMENT": [
+          1,
+          [
+            10,
+            "Beelzebub's Curse"
+          ]
+        ],
+        "STATUS": [
+          1,
+          "hdE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdE": {
+      "opcode": "steamworks_menu_achievementUnlocked",
+      "next": null,
+      "parent": "a]@",
+      "inputs": {},
+      "fields": {
+        "achievementUnlocked": [
+          "true",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "d#|": {
+      "opcode": "data_setvariableto",
+      "next": "d#}",
+      "parent": "a]@",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "Jeepers! What's with the flies?"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "the thing to say (me) //dontsave//",
+          "g92!A/rDZbzbUWTm0T]+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d#}": {
+      "opcode": "event_broadcastandwait",
+      "next": "d#~",
+      "parent": "d#|",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d#~": {
+      "opcode": "data_setvariableto",
+      "next": "d%a",
+      "parent": "d#}",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "I don't stink that bad, do I?"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "the thing to say (me) //dontsave//",
+          "g92!A/rDZbzbUWTm0T]+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d%a": {
+      "opcode": "event_broadcast",
+      "next": "d%b",
+      "parent": "d#~",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d%b": {
+      "opcode": "data_setvariableto",
+      "next": "hdF",
+      "parent": "d%a",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "Yeesh! I smell like death!"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "the thing to say (me) //dontsave//",
+          "g92!A/rDZbzbUWTm0T]+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hdF": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": "d%b",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hl#": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -780,
+      "y": 635
+    },
+    "d#`": {
+      "opcode": "control_wait_until",
+      "next": "a]?",
+      "parent": null,
+      "inputs": {
+        "CONDITION": [
+          2,
+          "hdC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -586,
+      "y": 800
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+      "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 145,
+  "visible": true,
+  "x": 36,
+  "y": 28,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

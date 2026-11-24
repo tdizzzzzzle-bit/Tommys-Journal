@@ -1,0 +1,2224 @@
+{
+  "isStage": false,
+  "name": "out of body experience.gif",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "hau": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZT",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "out of body",
+          "AO3P_VDJU{W`PqZ#VK^H"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1361,
+      "y": 415
+    },
+    "dZT": {
+      "opcode": "data_setvariableto",
+      "next": "dZU",
+      "parent": "hau",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "%PAUSED //dontsave//",
+          "3V/ojquZ3Os2Sr|;~zt9"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZU": {
+      "opcode": "looks_hide",
+      "next": "dZV",
+      "parent": "dZT",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZV": {
+      "opcode": "motion_gotoxy",
+      "next": "dZW",
+      "parent": "dZU",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZW": {
+      "opcode": "looks_show",
+      "next": "dZX",
+      "parent": "dZV",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZX": {
+      "opcode": "looks_gotofrontback",
+      "next": "dZY",
+      "parent": "dZW",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZY": {
+      "opcode": "looks_seteffectto",
+      "next": "dZZ",
+      "parent": "dZX",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZZ": {
+      "opcode": "looks_setsizeto",
+      "next": "a]e",
+      "parent": "dZY",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "160"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a]e": {
+      "opcode": "control_repeat",
+      "next": "dZ!",
+      "parent": "dZZ",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "27"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "dZ#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ#": {
+      "opcode": "looks_nextcostume",
+      "next": "hav",
+      "parent": "a]e",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ!": {
+      "opcode": "looks_hide",
+      "next": "LO",
+      "parent": "a]e",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "LO": {
+      "opcode": "control_if",
+      "next": "dZ%",
+      "parent": "dZ!",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dZ("
+        ],
+        "SUBSTACK": [
+          2,
+          "haw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ(": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "LO",
+      "inputs": {
+        "OPERAND1": [
+          1,
+          [
+            10,
+            "180"
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "hax",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hax": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "dZ(",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haw": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "LO",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hav": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": "dZ#",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dZ%": {
+      "opcode": "data_changevariableby",
+      "next": "hay",
+      "parent": "LO",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Mother phase 1 hp //dontsave//",
+          "yTr5)9T.vdK_u4KwD~W@"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hay": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "dZ%",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "%PAUSED //dontsave//",
+          "3V/ojquZ3Os2Sr|;~zt9"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "haz": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "haA",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 631,
+      "y": 394
+    },
+    "haA": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "haz",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haB": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "haC",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 615,
+      "y": 586
+    },
+    "haC": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "haB",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haD": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZ)",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "mom CHOMP",
+          "~/%*SPt6eGoj1Ku@qZ}#"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 627,
+      "y": 771
+    },
+    "dZ)": {
+      "opcode": "control_stop",
+      "next": "haE",
+      "parent": "haD",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "haE": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dZ)",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haF": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "haG",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "PAUSE",
+          "qgegQSYlNgFZ!hj$Y`y+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 670,
+      "y": 1009
+    },
+    "haG": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "haF",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haH": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "haI",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 636,
+      "y": 1194
+    },
+    "haI": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "haH",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haJ": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dZ*",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "mother boss fight",
+          "/a7-3XJ/~:WQ8e8hpf^-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 999,
+      "y": 548
+    },
+    "dZ*": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "haJ",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "haK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "haK": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "dZ*",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b74d92e019296311db5f62dadd20f07f",
+      "md5ext": "b74d92e019296311db5f62dadd20f07f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "3",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7fdf5819a9d229785d47ebaf75798c6d",
+      "md5ext": "7fdf5819a9d229785d47ebaf75798c6d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "4",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7edecd482e56f5d53a9ce401eac3a543",
+      "md5ext": "7edecd482e56f5d53a9ce401eac3a543.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "5",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "01a1e07517f6824b1e1cd729eae2ef9b",
+      "md5ext": "01a1e07517f6824b1e1cd729eae2ef9b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "6",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "61bb174a7125620cd197f49b0f41aa8a",
+      "md5ext": "61bb174a7125620cd197f49b0f41aa8a.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "7",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7dd5ecaff944358e6e361e6534ac3845",
+      "md5ext": "7dd5ecaff944358e6e361e6534ac3845.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "8",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "37b1f64b7cb070da155b6a6a72bcdb47",
+      "md5ext": "37b1f64b7cb070da155b6a6a72bcdb47.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "9",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "66364fac20565c7f6b08bf118740690e",
+      "md5ext": "66364fac20565c7f6b08bf118740690e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "10",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0d50aed7bf03b954b0086bdf8ef8c4ac",
+      "md5ext": "0d50aed7bf03b954b0086bdf8ef8c4ac.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "11",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f57a2daa546e43a23de63a4eb6c212d5",
+      "md5ext": "f57a2daa546e43a23de63a4eb6c212d5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "12",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a6775714fb779f9bf677d33025d4559f",
+      "md5ext": "a6775714fb779f9bf677d33025d4559f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "13",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f670ee615c4d64edb25832bebac06497",
+      "md5ext": "f670ee615c4d64edb25832bebac06497.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "14",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "30a042fd83dc37523e38e731849ff739",
+      "md5ext": "30a042fd83dc37523e38e731849ff739.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "15",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "5f7255a336ca53db6f96aace933043ad",
+      "md5ext": "5f7255a336ca53db6f96aace933043ad.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "16",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "61396de6aee1621dc04ef9b95f7b7b8c",
+      "md5ext": "61396de6aee1621dc04ef9b95f7b7b8c.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "17",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "26b79115b10f7f1b4339c514ed89f88d",
+      "md5ext": "26b79115b10f7f1b4339c514ed89f88d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "18",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "24610e37749a446526c96650393883d2",
+      "md5ext": "24610e37749a446526c96650393883d2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "19",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e6835379082043f5ef5de73a43a3fd54",
+      "md5ext": "e6835379082043f5ef5de73a43a3fd54.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "20",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "21",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "22",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "23",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "24",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "25",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "26",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "27",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "28",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "92139e349fe6a6e538467f94047019f9",
+      "md5ext": "92139e349fe6a6e538467f94047019f9.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "29",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "09a5b77b826b3b6f1cb99677173b2deb",
+      "md5ext": "09a5b77b826b3b6f1cb99677173b2deb.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "30",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "afc372a03ebd72c4a452aabcdd24d9a0",
+      "md5ext": "afc372a03ebd72c4a452aabcdd24d9a0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "31",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1542b5901e224b4bb5fee2cc83685ee0",
+      "md5ext": "1542b5901e224b4bb5fee2cc83685ee0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "32",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a372f5e6f2a7ea4348aee42e25fcf07e",
+      "md5ext": "a372f5e6f2a7ea4348aee42e25fcf07e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "33",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "dcc4dd0575aa4a12107dbcb3e622ae45",
+      "md5ext": "dcc4dd0575aa4a12107dbcb3e622ae45.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "34",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8d43a8dc0b9b77eb27d7704bacaeb86b",
+      "md5ext": "8d43a8dc0b9b77eb27d7704bacaeb86b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "35",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e49ce3538d1a1065e69e55bb33ddf514",
+      "md5ext": "e49ce3538d1a1065e69e55bb33ddf514.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "36",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "fdf971b8889d7c2b90a2ce499bc2fe55",
+      "md5ext": "fdf971b8889d7c2b90a2ce499bc2fe55.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "37",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "80e105fe0210db1a71afe366618d33d9",
+      "md5ext": "80e105fe0210db1a71afe366618d33d9.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "38",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "6d8ee341116534a3d5398af005641d8a",
+      "md5ext": "6d8ee341116534a3d5398af005641d8a.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "39",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e0740cb0d53eb2be5eaef9b8e7fc5a5d",
+      "md5ext": "e0740cb0d53eb2be5eaef9b8e7fc5a5d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif40",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "99d8d38c5ac3a1c535e9b02e2da75918",
+      "md5ext": "99d8d38c5ac3a1c535e9b02e2da75918.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif41",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "6d0431002b8560ebe0202907392246a0",
+      "md5ext": "6d0431002b8560ebe0202907392246a0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif42",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f39a12b8e6f96859ec12b69700862f2e",
+      "md5ext": "f39a12b8e6f96859ec12b69700862f2e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif43",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "399757dc353aa492d79e0c2bae182684",
+      "md5ext": "399757dc353aa492d79e0c2bae182684.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif44",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "afc7ddc827ea0119817daa2056bceda7",
+      "md5ext": "afc7ddc827ea0119817daa2056bceda7.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif45",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "03318e7ba3285fba74938386550d94a1",
+      "md5ext": "03318e7ba3285fba74938386550d94a1.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif46",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f050b848e457f9220ff8861922fbd568",
+      "md5ext": "f050b848e457f9220ff8861922fbd568.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif47",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "512069613b5a11540e81e4da3e13a01e",
+      "md5ext": "512069613b5a11540e81e4da3e13a01e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif48",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b7e87598ada9f2894d31c160fcfc0600",
+      "md5ext": "b7e87598ada9f2894d31c160fcfc0600.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif49",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "52f19746b7a9bff3753cfeb058edea5a",
+      "md5ext": "52f19746b7a9bff3753cfeb058edea5a.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif50",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4fd424f43f4ec0620a359d72e9613098",
+      "md5ext": "4fd424f43f4ec0620a359d72e9613098.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif51",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "daf802e99a5d35c81f266fd6b8feade5",
+      "md5ext": "daf802e99a5d35c81f266fd6b8feade5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif52",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0ab8022ea4b0a69044443ddd561f2db0",
+      "md5ext": "0ab8022ea4b0a69044443ddd561f2db0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif53",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "57277a314029bc214d9b9f06e1000a8f",
+      "md5ext": "57277a314029bc214d9b9f06e1000a8f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif54",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "185a6afe54806962025d4526c6411f19",
+      "md5ext": "185a6afe54806962025d4526c6411f19.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif55",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8f00c2bb31734f43330c3693b9a60d14",
+      "md5ext": "8f00c2bb31734f43330c3693b9a60d14.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif56",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "dc14d37fe77b5419366af1087d6a8e31",
+      "md5ext": "dc14d37fe77b5419366af1087d6a8e31.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif57",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0bf89be32c09d747a34a7c03ff1a4dc2",
+      "md5ext": "0bf89be32c09d747a34a7c03ff1a4dc2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif58",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0fc58b5e1c04e125ab5ec54ffb710072",
+      "md5ext": "0fc58b5e1c04e125ab5ec54ffb710072.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif59",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e99f761a34cf77d101f93d22bbddf44e",
+      "md5ext": "e99f761a34cf77d101f93d22bbddf44e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif60",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2d7b6daa6cd58e39116e1190ae289386",
+      "md5ext": "2d7b6daa6cd58e39116e1190ae289386.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif61",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1936bfbdff06eba76630ad1fe21f5d95",
+      "md5ext": "1936bfbdff06eba76630ad1fe21f5d95.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif62",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "acfb7500ca070b90db8173d2215d6666",
+      "md5ext": "acfb7500ca070b90db8173d2215d6666.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif63",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "5395a928021f3930aabfa567c85b5740",
+      "md5ext": "5395a928021f3930aabfa567c85b5740.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif64",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "281b8d25526dc9265f25835a6cfd803b",
+      "md5ext": "281b8d25526dc9265f25835a6cfd803b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif65",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "50426651afdc570f01c4b2ce89a000ff",
+      "md5ext": "50426651afdc570f01c4b2ce89a000ff.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif66",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "1157c4b47724eab0049c24ab975cdef1",
+      "md5ext": "1157c4b47724eab0049c24ab975cdef1.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif67",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a145b1fa7ba6c012f034e34fce003e03",
+      "md5ext": "a145b1fa7ba6c012f034e34fce003e03.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif68",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0e03297480f01c5f103f7053b1f29232",
+      "md5ext": "0e03297480f01c5f103f7053b1f29232.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif69",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "cffa470866c5d4072bdf67be6988382a",
+      "md5ext": "cffa470866c5d4072bdf67be6988382a.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif70",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4deb2cf1bde82e139ae65889ce34364a",
+      "md5ext": "4deb2cf1bde82e139ae65889ce34364a.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif71",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "648c152eacf635103d6f3bf30e6a038c",
+      "md5ext": "648c152eacf635103d6f3bf30e6a038c.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif72",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7cd04c924427ab799c98f65a74ec1f1f",
+      "md5ext": "7cd04c924427ab799c98f65a74ec1f1f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif73",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4193200979e365ba94338961e34da437",
+      "md5ext": "4193200979e365ba94338961e34da437.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif74",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "52064a1ad67aaa1a9f700e755259c0cd",
+      "md5ext": "52064a1ad67aaa1a9f700e755259c0cd.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif75",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif76",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif77",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif78",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif79",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif80",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif81",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif82",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "5f6e43ab94defb50498009ac3e56b6ab",
+      "md5ext": "5f6e43ab94defb50498009ac3e56b6ab.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif83",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "361f83073fb22b20c773d415cdc64617",
+      "md5ext": "361f83073fb22b20c773d415cdc64617.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif84",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8b9c662185ee45eb84c6ddc24d0c832f",
+      "md5ext": "8b9c662185ee45eb84c6ddc24d0c832f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif85",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "64743751bff86a2d14022b8fbd51f63b",
+      "md5ext": "64743751bff86a2d14022b8fbd51f63b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif86",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "938792cb27be308af59407e289aba822",
+      "md5ext": "938792cb27be308af59407e289aba822.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif87",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "6a2aa792d13d897107da74095aac86e8",
+      "md5ext": "6a2aa792d13d897107da74095aac86e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif88",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7f6ff1bb143f2c8aea122db3887f47a5",
+      "md5ext": "7f6ff1bb143f2c8aea122db3887f47a5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif89",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "5611529dede75c03ef584c2303a5d815",
+      "md5ext": "5611529dede75c03ef584c2303a5d815.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif90",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "726aee0ea648b85238c38693d5883ded",
+      "md5ext": "726aee0ea648b85238c38693d5883ded.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif91",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "96a3a9bbce8811140bc0cca333cbad07",
+      "md5ext": "96a3a9bbce8811140bc0cca333cbad07.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif92",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "3443332dc891bec31b3ff74f2fa67ba2",
+      "md5ext": "3443332dc891bec31b3ff74f2fa67ba2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif93",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d5fa579c27c2f0a6b328e8b968118e82",
+      "md5ext": "d5fa579c27c2f0a6b328e8b968118e82.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif94",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "4feeddf1b5206842e7f0689f178076da",
+      "md5ext": "4feeddf1b5206842e7f0689f178076da.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif95",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "da9f383d97d213c8cc0b57ff212aa0fc",
+      "md5ext": "da9f383d97d213c8cc0b57ff212aa0fc.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif96",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8aacaec7de81d3495f0631c3951aa0e9",
+      "md5ext": "8aacaec7de81d3495f0631c3951aa0e9.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif97",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "14d557ff880cfb9d51d967a19158fd3c",
+      "md5ext": "14d557ff880cfb9d51d967a19158fd3c.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif98",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "98f8bd2dfeee08266428b8dcac01a5d0",
+      "md5ext": "98f8bd2dfeee08266428b8dcac01a5d0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif99",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "20c3bca301c278227c8ef1fd6cf7e652",
+      "md5ext": "20c3bca301c278227c8ef1fd6cf7e652.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif100",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "eed752a25b6f4ef1882aaf6bd0fac1fb",
+      "md5ext": "eed752a25b6f4ef1882aaf6bd0fac1fb.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif101",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b295f5d2dc82b964e9f90abe5385d2aa",
+      "md5ext": "b295f5d2dc82b964e9f90abe5385d2aa.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif102",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a8ec268ce293be46a4315b6db03e7439",
+      "md5ext": "a8ec268ce293be46a4315b6db03e7439.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif103",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "269498ac3fd1477fcd90beea5732a45f",
+      "md5ext": "269498ac3fd1477fcd90beea5732a45f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif104",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "92e886c3ddf4e070148eb2dc08b3ad19",
+      "md5ext": "92e886c3ddf4e070148eb2dc08b3ad19.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif105",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9f11cea55e4c2850e855e52c0de9c66c",
+      "md5ext": "9f11cea55e4c2850e855e52c0de9c66c.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif106",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "ec731c53c57d68c66a55b0bd2e1cad98",
+      "md5ext": "ec731c53c57d68c66a55b0bd2e1cad98.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif107",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0ae172d2199890a78233c57ac09f2efd",
+      "md5ext": "0ae172d2199890a78233c57ac09f2efd.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif108",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "b98cdc055b53d29b59cd216d4636c9fd",
+      "md5ext": "b98cdc055b53d29b59cd216d4636c9fd.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif109",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "597de30159debc9398f5d121507c15b4",
+      "md5ext": "597de30159debc9398f5d121507c15b4.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif110",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d7d9db1ba5cc167245ddb5ffe01fa3a0",
+      "md5ext": "d7d9db1ba5cc167245ddb5ffe01fa3a0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif111",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif112",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif113",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif114",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif115",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif116",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif117",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0f5277817526dad42a4f1e9d7833af6f",
+      "md5ext": "0f5277817526dad42a4f1e9d7833af6f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif118",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "5deb56eb99cfe1c4971daf2bcc734a54",
+      "md5ext": "5deb56eb99cfe1c4971daf2bcc734a54.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif119",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "871cadc9746b70cf3071fad81d1ee0f5",
+      "md5ext": "871cadc9746b70cf3071fad81d1ee0f5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif120",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "fd9047ade116e950a9111b3e172bb0ee",
+      "md5ext": "fd9047ade116e950a9111b3e172bb0ee.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif121",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7efd74ce9d07adfe9c790f53b190de5e",
+      "md5ext": "7efd74ce9d07adfe9c790f53b190de5e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif122",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "cdeeb476b36c1a8acde29c28ec14c7a8",
+      "md5ext": "cdeeb476b36c1a8acde29c28ec14c7a8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif123",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "156c745e011da943708b3fd497fe1249",
+      "md5ext": "156c745e011da943708b3fd497fe1249.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif124",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d9de5202d33245eeddfc74a6a5db9a29",
+      "md5ext": "d9de5202d33245eeddfc74a6a5db9a29.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif125",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a107c8b041d271fc3d8b52c1a40fe555",
+      "md5ext": "a107c8b041d271fc3d8b52c1a40fe555.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif126",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8b8346e9141fd9480602fa4a7e20fbf6",
+      "md5ext": "8b8346e9141fd9480602fa4a7e20fbf6.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif127",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0d47a5be69e013046b753af9a593b004",
+      "md5ext": "0d47a5be69e013046b753af9a593b004.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif128",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "91f0c686fd8af922bab1eaeeb4340fd2",
+      "md5ext": "91f0c686fd8af922bab1eaeeb4340fd2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif129",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "3ecec88a6f6787f0646ac471fd6a75d3",
+      "md5ext": "3ecec88a6f6787f0646ac471fd6a75d3.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif130",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7f9979f7aeb4a9a049bcbb6f42dc2a85",
+      "md5ext": "7f9979f7aeb4a9a049bcbb6f42dc2a85.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif131",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f644fb09817fed766f2bf112a7ab2124",
+      "md5ext": "f644fb09817fed766f2bf112a7ab2124.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif132",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "c6ae9655142cc2cfb708fe3ff9ea374e",
+      "md5ext": "c6ae9655142cc2cfb708fe3ff9ea374e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif133",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "df592db94aeaf30eedce111f3dad4a84",
+      "md5ext": "df592db94aeaf30eedce111f3dad4a84.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif134",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2fefaa2fda55fab4339d3f910e05aab5",
+      "md5ext": "2fefaa2fda55fab4339d3f910e05aab5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif135",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "760cc545ca3c275e4ef311c1a3e4e13f",
+      "md5ext": "760cc545ca3c275e4ef311c1a3e4e13f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif136",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "aa235f1959f3132e58d89fb1afc08f78",
+      "md5ext": "aa235f1959f3132e58d89fb1afc08f78.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif137",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bc22d6c6330fcc3a127f336013b91c8d",
+      "md5ext": "bc22d6c6330fcc3a127f336013b91c8d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif138",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "11503e05c559d3345308133c1dbf8eb6",
+      "md5ext": "11503e05c559d3345308133c1dbf8eb6.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif139",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "0c73dd2418c0b7a93c7a367375744d7b",
+      "md5ext": "0c73dd2418c0b7a93c7a367375744d7b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif140",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bbdc60d0b4dcb8c390256e72077a7ca2",
+      "md5ext": "bbdc60d0b4dcb8c390256e72077a7ca2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif141",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "7c4dc84aa7b366e053a271075aeb9b5d",
+      "md5ext": "7c4dc84aa7b366e053a271075aeb9b5d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif142",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "2b26e99e3abb353af3d644c18c87ce97",
+      "md5ext": "2b26e99e3abb353af3d644c18c87ce97.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif143",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f641d8fd14ce5dc53a027e2440868fd5",
+      "md5ext": "f641d8fd14ce5dc53a027e2440868fd5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif144",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "3915d0f30ccd67c45bd61eea670fc953",
+      "md5ext": "3915d0f30ccd67c45bd61eea670fc953.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif145",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "971e54a1d183248e5d9c92a8a26959dc",
+      "md5ext": "971e54a1d183248e5d9c92a8a26959dc.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif146",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e4fb869564c4d3dc9af5ded43dfc7b6e",
+      "md5ext": "e4fb869564c4d3dc9af5ded43dfc7b6e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif147",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bde0e0d2669124b8cdf471c0066cd945",
+      "md5ext": "bde0e0d2669124b8cdf471c0066cd945.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif148",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "466247cc6d5f28cd0ab6a39a65aaeef6",
+      "md5ext": "466247cc6d5f28cd0ab6a39a65aaeef6.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif152",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif153",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif154",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif155",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif156",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8656a778b16c889803517a70ae79be7d",
+      "md5ext": "8656a778b16c889803517a70ae79be7d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif157",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d674a694e11c50c61ba73910970d73d1",
+      "md5ext": "d674a694e11c50c61ba73910970d73d1.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif158",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "070febb9fc78f24173f868215a885c92",
+      "md5ext": "070febb9fc78f24173f868215a885c92.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif159",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "21921fca06b5d8bfe18d1eb4287cbedf",
+      "md5ext": "21921fca06b5d8bfe18d1eb4287cbedf.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif161",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f96f480d411e5127d2b17a4e4151e8e8",
+      "md5ext": "f96f480d411e5127d2b17a4e4151e8e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif160",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f96f480d411e5127d2b17a4e4151e8e8",
+      "md5ext": "f96f480d411e5127d2b17a4e4151e8e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif162",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f96f480d411e5127d2b17a4e4151e8e8",
+      "md5ext": "f96f480d411e5127d2b17a4e4151e8e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif163",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f96f480d411e5127d2b17a4e4151e8e8",
+      "md5ext": "f96f480d411e5127d2b17a4e4151e8e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif164",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f96f480d411e5127d2b17a4e4151e8e8",
+      "md5ext": "f96f480d411e5127d2b17a4e4151e8e8.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif165",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a6faec63642a2068a42979964fd288b5",
+      "md5ext": "a6faec63642a2068a42979964fd288b5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif166",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "fc80502df79e6c6af9a5e9a14cbab8e6",
+      "md5ext": "fc80502df79e6c6af9a5e9a14cbab8e6.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif167",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "12041915c47125bffc6e68ba513d658d",
+      "md5ext": "12041915c47125bffc6e68ba513d658d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif168",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "47aa0bf2ad385f14b9ff8f1d4535f979",
+      "md5ext": "47aa0bf2ad385f14b9ff8f1d4535f979.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif169",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "cb9031010f3855a36f6800d15241fe1c",
+      "md5ext": "cb9031010f3855a36f6800d15241fe1c.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif170",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "85e288b47736d82febd6a43ae31d6244",
+      "md5ext": "85e288b47736d82febd6a43ae31d6244.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif171",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "88406ef34c6321ab1ed14806cb1767e2",
+      "md5ext": "88406ef34c6321ab1ed14806cb1767e2.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif172",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "d28c08d51617f24b58339c2240080a3d",
+      "md5ext": "d28c08d51617f24b58339c2240080a3d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif173",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "e64f907abe99e9107849814b5bb77c1b",
+      "md5ext": "e64f907abe99e9107849814b5bb77c1b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif174",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "33ea1848b4d088539bd1baabe72df424",
+      "md5ext": "33ea1848b4d088539bd1baabe72df424.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif175",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "6c900848187d35f51d56d1bd1a011e64",
+      "md5ext": "6c900848187d35f51d56d1bd1a011e64.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif176",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f5113617a68e10d6ea08c3e40f5a7144",
+      "md5ext": "f5113617a68e10d6ea08c3e40f5a7144.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif177",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "532e3f73ab9869480de7234873adb1a3",
+      "md5ext": "532e3f73ab9869480de7234873adb1a3.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif178",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "41ed80a1b71092729149cb3d8fc2e44e",
+      "md5ext": "41ed80a1b71092729149cb3d8fc2e44e.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif179",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f3e756da9a2c8314af5c9fa864abcdc0",
+      "md5ext": "f3e756da9a2c8314af5c9fa864abcdc0.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif180",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "40455d47feb650829ab97706f5f10f57",
+      "md5ext": "40455d47feb650829ab97706f5f10f57.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif181",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f47eb1bc457e3ed728b1d5c0f425e269",
+      "md5ext": "f47eb1bc457e3ed728b1d5c0f425e269.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif182",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9b7ecce9d53140fd4d0ed8cc295a3f46",
+      "md5ext": "9b7ecce9d53140fd4d0ed8cc295a3f46.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif183",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "89460ba2255b11f07d0eeb0e615c6d96",
+      "md5ext": "89460ba2255b11f07d0eeb0e615c6d96.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif184",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "9eda8a79d2deb82da42a14b25a62f1f5",
+      "md5ext": "9eda8a79d2deb82da42a14b25a62f1f5.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif185",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f765c5b54dddc2393760d91c7a4afa4d",
+      "md5ext": "f765c5b54dddc2393760d91c7a4afa4d.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif186",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "3e7650fc7f418a1b61826811b9b8bf1b",
+      "md5ext": "3e7650fc7f418a1b61826811b9b8bf1b.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif187",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "86b2afbc673a5191ade0d49b6a696b11",
+      "md5ext": "86b2afbc673a5191ade0d49b6a696b11.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif188",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "40ec0a7f66acff114c4600762d46779f",
+      "md5ext": "40ec0a7f66acff114c4600762d46779f.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif189",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bac599c693421c1752f53c670e05c8be",
+      "md5ext": "bac599c693421c1752f53c670e05c8be.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif190",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bac599c693421c1752f53c670e05c8be",
+      "md5ext": "bac599c693421c1752f53c670e05c8be.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif191",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bac599c693421c1752f53c670e05c8be",
+      "md5ext": "bac599c693421c1752f53c670e05c8be.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif193",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bac599c693421c1752f53c670e05c8be",
+      "md5ext": "bac599c693421c1752f53c670e05c8be.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    },
+    {
+      "name": "ezgif-5c8fc4bd70a2c9-ezgif192",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "bac599c693421c1752f53c670e05c8be",
+      "md5ext": "bac599c693421c1752f53c670e05c8be.png",
+      "rotationCenterX": 348,
+      "rotationCenterY": 279
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 147,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 160,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

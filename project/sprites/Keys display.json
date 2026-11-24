@@ -1,0 +1,4793 @@
+{
+  "isStage": false,
+  "name": "Keys display",
+  "variables": {
+    "#vQ3;W/3J-egm=k0sK~r": [
+      "I",
+      2
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "g.J": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "Jv",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "New room",
+          "*Q)B$~LzO0_kwB~Crfww"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1170,
+      "y": 240
+    },
+    "Jv": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "g.J",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.K"
+        ],
+        "SUBSTACK": [
+          2,
+          "g.L"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dOh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.K": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "Jv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.L": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "Jv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOh": {
+      "opcode": "procedures_call",
+      "next": "dOi",
+      "parent": "Jv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "display keys",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "dOi": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "dOh",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.M"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.M": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "dOi",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "0",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.N": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dOj",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "dOj": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "g.N",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          3,
+          "dOk",
+          [
+            10,
+            "-20000000000000000000000001"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "dOk": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "dOj",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "-99999999"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "g.O",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.O": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "dOk",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOl": {
+      "opcode": "procedures_definition",
+      "next": "dOm",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "dOn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 248
+    },
+    "dOn": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dOl",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "g.P"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "g.P": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOn",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOm": {
+      "opcode": "looks_gotofrontback",
+      "next": "dOo",
+      "parent": "dOl",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOo": {
+      "opcode": "data_setvariableto",
+      "next": "Jw",
+      "parent": "dOm",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "#vQ3;W/3J-egm=k0sK~r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Jw": {
+      "opcode": "control_repeat_until",
+      "next": "a/F",
+      "parent": "dOo",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dOp"
+        ],
+        "SUBSTACK": [
+          2,
+          "g.Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOp": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Jw",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "a/G"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/G": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "dOp",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g.R",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "g.S",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.R": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/G",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.S": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "a/G",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "#vQ3;W/3J-egm=k0sK~r"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.Q": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "Jw",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "#vQ3;W/3J-egm=k0sK~r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/F": {
+      "opcode": "data_insertatlist",
+      "next": "dOq",
+      "parent": "Jw",
+      "inputs": {
+        "ITEM": [
+          3,
+          "g.T",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "#vQ3;W/3J-egm=k0sK~r"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.T": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/F",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOq": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "a/F",
+      "inputs": {
+        "NUM": [
+          3,
+          "g.U",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.U": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dOq",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "#vQ3;W/3J-egm=k0sK~r"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.V": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g.W",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 794,
+      "y": 240
+    },
+    "g.W": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "g.V",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.X": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g.Y",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 794,
+      "y": 64
+    },
+    "g.Y": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "g.X",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOr": {
+      "opcode": "procedures_definition",
+      "next": "a/H",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "g.Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1608,
+      "y": 72
+    },
+    "g.Z": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dOr",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "display keys",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "a/I": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "a/J",
+      "parent": "a/H",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g.!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.!": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "a/I",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/J": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dOs",
+      "parent": "a/I",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.#": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/J",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "0",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOs": {
+      "opcode": "looks_show",
+      "next": "dOt",
+      "parent": "a/J",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOt": {
+      "opcode": "motion_gotoxy",
+      "next": "dOu",
+      "parent": "dOs",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "-235"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-140"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOu": {
+      "opcode": "motion_pointindirection",
+      "next": "Jx",
+      "parent": "dOt",
+      "inputs": {
+        "DIRECTION": [
+          1,
+          [
+            8,
+            "90"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Jx": {
+      "opcode": "control_if",
+      "next": "Jy",
+      "parent": "dOu",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.%"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/K"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.%": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "Jx",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(0,350)center/front yard"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/K": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/L",
+      "parent": "Jx",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.(": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/K",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(0,350)center/front yard",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/L": {
+      "opcode": "control_create_clone_of",
+      "next": "g.)",
+      "parent": "a/K",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g.*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.*": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/L",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.)": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/L",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Jy": {
+      "opcode": "control_if",
+      "next": "Jz",
+      "parent": "Jx",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.+"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/M"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.+": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "Jy",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "attic"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/M": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/N",
+      "parent": "Jy",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.,": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/M",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "attic",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/N": {
+      "opcode": "control_create_clone_of",
+      "next": "g.-",
+      "parent": "a/M",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g.."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g..": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/N",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.-": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/N",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Jz": {
+      "opcode": "control_if",
+      "next": "JA",
+      "parent": "Jy",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g./"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/O"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g./": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "Jz",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "eye room"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/O": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/P",
+      "parent": "Jz",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.:": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/O",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "eye room",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/P": {
+      "opcode": "control_create_clone_of",
+      "next": "g.;",
+      "parent": "a/O",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g.="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.=": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/P",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.;": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/P",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JA": {
+      "opcode": "control_if",
+      "next": "JB",
+      "parent": "Jz",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.?"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.?": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JA",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-122,-98)upstairs storage TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/Q": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/R",
+      "parent": "JA",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.@": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/Q",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(-122,-98)upstairs storage TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/R": {
+      "opcode": "control_create_clone_of",
+      "next": "g.[",
+      "parent": "a/Q",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g.]"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.]": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/R",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.[": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/R",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JB": {
+      "opcode": "control_if",
+      "next": "JC",
+      "parent": "JA",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.^"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/S"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.^": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JB",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-338,190)upstairs storage TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/S": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/T",
+      "parent": "JB",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g._"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g._": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/S",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(-338,190)upstairs storage TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/T": {
+      "opcode": "control_create_clone_of",
+      "next": "g.`",
+      "parent": "a/S",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g.{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.{": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/T",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.`": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/T",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JC": {
+      "opcode": "control_if",
+      "next": "JD",
+      "parent": "JB",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g.|"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/U"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.|": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JC",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-298,6)upstairs storage TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/U": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/V",
+      "parent": "JC",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g.}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g.}": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/U",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(-298,6)upstairs storage TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/V": {
+      "opcode": "control_create_clone_of",
+      "next": "g.~",
+      "parent": "a/U",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/a"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/a": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/V",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g.~": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/V",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JD": {
+      "opcode": "control_if",
+      "next": "JE",
+      "parent": "JC",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/b"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/W"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/b": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JD",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-466,310)upstairs storage TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/W": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/X",
+      "parent": "JD",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/c"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/c": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/W",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(-466,310)upstairs storage TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/X": {
+      "opcode": "control_create_clone_of",
+      "next": "g/d",
+      "parent": "a/W",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/e"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/e": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/X",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/d": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/X",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JE": {
+      "opcode": "control_if",
+      "next": "JF",
+      "parent": "JD",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/f"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/f": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JE",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-294,-168)upstairs creepy room TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/Y": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "JE",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/g"
+        ],
+        "SUBSTACK2": [
+          2,
+          "a/Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/g": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "a/Y",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(96,103)bedroom TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/Z": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/!",
+      "parent": "a/Y",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/h"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/h": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/Z",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(-294,-168)upstairs creepy room TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/!": {
+      "opcode": "control_create_clone_of",
+      "next": "g/i",
+      "parent": "a/Z",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/j"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/j": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/!",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/i": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/!",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JF": {
+      "opcode": "control_if",
+      "next": "JG",
+      "parent": "JE",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/k"
+        ],
+        "SUBSTACK": [
+          2,
+          "JH"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/k": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JF",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(96,103)bedroom TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JH": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "JF",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/l"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/#"
+        ],
+        "SUBSTACK2": [
+          2,
+          "a/%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/l": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JH",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(-294,-168)upstairs creepy room TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/#": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/(",
+      "parent": "JH",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/m"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/m": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/#",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "BEAR",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/(": {
+      "opcode": "control_create_clone_of",
+      "next": "g/n",
+      "parent": "a/#",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/o"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/o": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/(",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/n": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/(",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/%": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/)",
+      "parent": "JH",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/p"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/p": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/%",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(96,103)bedroom TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/)": {
+      "opcode": "control_create_clone_of",
+      "next": "g/q",
+      "parent": "a/%",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/r"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/r": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/)",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/q": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/)",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JG": {
+      "opcode": "control_if",
+      "next": "JI",
+      "parent": "JF",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/s"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/s": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JG",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(56,-144)office TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/*": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/+",
+      "parent": "JG",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/t"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/t": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/*",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(56,-144)office TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/+": {
+      "opcode": "control_create_clone_of",
+      "next": "g/u",
+      "parent": "a/*",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/v"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/v": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/+",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/u": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/+",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JI": {
+      "opcode": "control_if",
+      "next": "JJ",
+      "parent": "JG",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/w"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/w": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JI",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "(68,-100)body room$ TOY"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/,": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/-",
+      "parent": "JI",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/x"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/x": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/,",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(68,-100)body room$ TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/-": {
+      "opcode": "control_create_clone_of",
+      "next": "g/y",
+      "parent": "a/,",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/z": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/-",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/y": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/-",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "JJ": {
+      "opcode": "control_if",
+      "next": "JK",
+      "parent": "JI",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/A"
+        ],
+        "SUBSTACK": [
+          2,
+          "a/."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/A": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "JJ",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "TOYS COLLECTED"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/.": {
+      "opcode": "looks_switchcostumeto",
+      "next": "dOv",
+      "parent": "JJ",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/B"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/B": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/.",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "(68,-100)body room$ TOY",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOv": {
+      "opcode": "looks_hide",
+      "next": "a//",
+      "parent": "a/.",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a//": {
+      "opcode": "control_create_clone_of",
+      "next": "g/C",
+      "parent": "dOv",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/D"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/D": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a//",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/C": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "a//",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/:": {
+      "opcode": "control_repeat",
+      "next": "g/E",
+      "parent": null,
+      "inputs": {
+        "TIMES": [
+          3,
+          "a/;",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "a/="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1437,
+      "y": 4169
+    },
+    "a/;": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "a/:",
+      "inputs": {
+        "NUM1": [
+          3,
+          "a/?",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "g/F",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/?": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "a/;",
+      "inputs": {
+        "NUM1": [
+          3,
+          "a/@",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "g/G",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/@": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "a/?",
+      "inputs": {
+        "NUM1": [
+          3,
+          "a/[",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "g/H",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/[": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "a/@",
+      "inputs": {
+        "NUM1": [
+          3,
+          "g/I",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "a/]",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/I": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "a/[",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/]": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "a/[",
+      "inputs": {
+        "NUM1": [
+          3,
+          "g/J",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "g/K",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/J": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "a/]",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "attic"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/K": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "a/]",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "eye room"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/H": {
+      "opcode": "strings_count",
+      "next": null,
+      "parent": "a/@",
+      "inputs": {
+        "SUBSTRING": [
+          1,
+          [
+            10,
+            "TOY"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/G": {
+      "opcode": "strings_count",
+      "next": null,
+      "parent": "a/?",
+      "inputs": {
+        "SUBSTRING": [
+          1,
+          [
+            10,
+            "JackBox"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/F": {
+      "opcode": "strings_count",
+      "next": null,
+      "parent": "a/;",
+      "inputs": {
+        "SUBSTRING": [
+          1,
+          [
+            10,
+            "LETTER"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            13,
+            "Keys",
+            "zYM;NSN[QVMx/]ON))It"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/=": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a/^",
+      "parent": "a/:",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/L"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/L": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a/=",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "template",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/^": {
+      "opcode": "control_create_clone_of",
+      "next": "g/M",
+      "parent": "a/=",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g/N"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/N": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a/^",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/M": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a/^",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/E": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "a/:",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/O": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "JL",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "collect key",
+          "}B*QiCC_MhiE;}+iZ^R?"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1170,
+      "y": 624
+    },
+    "JL": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "g/O",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/P"
+        ],
+        "SUBSTACK": [
+          2,
+          "g/Q"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dOw"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/P": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "JL",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/Q": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "JL",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOw": {
+      "opcode": "procedures_call",
+      "next": "dOx",
+      "parent": "JL",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "display keys",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "dOx": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "dOw",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/R"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/R": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "dOx",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "0",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/S": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dOy",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "SPIRIT BATTLE",
+          "-AM5h?ESM+nUUASc56ba"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1170,
+      "y": 64
+    },
+    "dOy": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": "g/S",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/T"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/T": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "dOy",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/U": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/V"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -50,
+      "y": 2154
+    },
+    "g/V": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "g/U",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/W": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a/_",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "mother boss fight",
+          "/a7-3XJ/~:WQ8e8hpf^-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 575,
+      "y": 638
+    },
+    "a/_": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "g/W",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/X"
+        ],
+        "SUBSTACK": [
+          2,
+          "dOz"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/X": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "a/_",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOz": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": "a/_",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/Y": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "dOz",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOA": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dOB"
+        ],
+        "SUBSTACK": [
+          2,
+          "g/Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 469,
+      "y": 925
+    },
+    "dOB": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dOA",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "dOC",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOC": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": "dOB",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/!": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "dOC",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/Z": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "dOA",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/#": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -894,
+      "y": 1130
+    },
+    "g/%": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "g/#",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/(": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dOD",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 804,
+      "y": 1416
+    },
+    "dOD": {
+      "opcode": "control_stop",
+      "next": "a/`",
+      "parent": "g/(",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "a/`": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "g/)",
+      "parent": "dOD",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/*": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "a/`",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/)": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "a/`",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/+": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "a/{",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 15,
+      "y": 1130
+    },
+    "a/{": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "g/+",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g/,"
+        ],
+        "SUBSTACK": [
+          2,
+          "dOE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/,": {
+      "opcode": "operator_contains",
+      "next": null,
+      "parent": "a/{",
+      "inputs": {
+        "STRING1": [
+          3,
+          [
+            12,
+            "ROOM",
+            "[N+aN=UiDQfo$le{XZS["
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            "mother bossfight"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOE": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": "a/{",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g/-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/-": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "dOE",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g/.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "JM",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "display keys",
+          "{*d}3{)QWu0kkeHhnkf1"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1117,
+      "y": 1024
+    },
+    "JM": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "g/.",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "g//"
+        ],
+        "SUBSTACK": [
+          2,
+          "g/:"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dOF"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g//": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "JM",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/:": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "JM",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOF": {
+      "opcode": "procedures_call",
+      "next": "dOG",
+      "parent": "JM",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "display keys",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "dOG": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": "dOF",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g/;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/;": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "dOG",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "0",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "hll": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "display keys",
+            "{*d}3{)QWu0kkeHhnkf1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 798,
+      "y": 1179
+    },
+    "dOH": {
+      "opcode": "procedures_definition",
+      "next": "a/|",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "a/}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2191,
+      "y": 209
+    },
+    "a/}": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dOH",
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          1,
+          "g/="
+        ],
+        "Ky#5+hKsG/#Nn+N6/!,N": [
+          3,
+          null,
+          "g/?"
+        ],
+        "=Hboxr|oTlPlI{kDyiGl": [
+          3,
+          null,
+          "g/@"
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          1,
+          "g/["
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "argumentnames": "[\"nimp\",\"index\"]",
+        "argumentdefaults": "[\"\",\"\",\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "g/=": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/}",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "nimp",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/|": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "dOH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dOI"
+        ],
+        "SUBSTACK": [
+          1,
+          null
+        ],
+        "SUBSTACK2": [
+          2,
+          "a/~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a:a": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "g/]",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g/^",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "g/_",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/?": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "m",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": true,
+      "x": 2452,
+      "y": 213
+    },
+    "g/^": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a:a",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "n",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/_": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "a:a",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/`": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          3,
+          "dOJ",
+          [
+            10,
+            ""
+          ]
+        ],
+        "=Hboxr|oTlPlI{kDyiGl": [
+          3,
+          null,
+          [
+            10,
+            ""
+          ]
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2686,
+      "y": 738,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "warp": "true"
+      }
+    },
+    "g/{": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOJ",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "n",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOJ": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "g/`",
+      "inputs": {
+        "NUM1": [
+          3,
+          "g/{",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a:b": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "dOK",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "dOL"
+        ],
+        "CONDITION": [
+          2,
+          "dOM"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/@": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "name",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": true,
+      "x": 2452,
+      "y": 213
+    },
+    "g/|": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dON",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOM": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "a:b",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "dON"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dON": {
+      "opcode": "data_listcontainsitem",
+      "next": null,
+      "parent": "dOM",
+      "inputs": {
+        "ITEM": [
+          3,
+          "g/|",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOO": {
+      "opcode": "data_itemnumoflist",
+      "next": null,
+      "parent": "dOL",
+      "inputs": {
+        "ITEM": [
+          3,
+          "g/}",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOL": {
+      "opcode": "data_deleteoflist",
+      "next": null,
+      "parent": "a:b",
+      "inputs": {
+        "INDEX": [
+          3,
+          "dOO",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/~": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "g:a",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOP": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dOQ",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g:b",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:b": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOP",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOQ": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "dOR"
+        ],
+        "CONDITION": [
+          2,
+          "dOP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2593,
+      "y": -4
+    },
+    "dOR": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "dOQ",
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          3,
+          "g:c",
+          [
+            10,
+            ""
+          ]
+        ],
+        "=Hboxr|oTlPlI{kDyiGl": [
+          3,
+          null,
+          [
+            10,
+            ""
+          ]
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "warp": "true"
+      }
+    },
+    "g:c": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOR",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "n",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:d": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INDEX": [
+          3,
+          "g:e",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2811,
+      "y": 56
+    },
+    "g:e": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "g:d",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "n",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "JN": {
+      "opcode": "data_insertatlist",
+      "next": "a:c",
+      "parent": "a/~",
+      "inputs": {
+        "ITEM": [
+          3,
+          "g:f",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          "g:g",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "hlm": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1859,
+      "y": -50,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "display keys",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "g:a": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          3,
+          "g/~",
+          [
+            10,
+            "1"
+          ]
+        ],
+        "=Hboxr|oTlPlI{kDyiGl": [
+          3,
+          null,
+          [
+            10,
+            ""
+          ]
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2016,
+      "y": 72,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "warp": "true"
+      }
+    },
+    "hln": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2245,
+      "y": -16
+    },
+    "g/}": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOO",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOK": {
+      "opcode": "procedures_definition",
+      "next": "a:b",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "dOS"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2176,
+      "y": 641
+    },
+    "dOS": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "dOK",
+      "inputs": {
+        "R3vvN1=#aWX@b)0`;B`%": [
+          1,
+          "g:h"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove all of %s",
+        "argumentids": "[\"R3vvN1=#aWX@b)0`;B`%\"]",
+        "argumentnames": "[\"name\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "g:h": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOS",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "name",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a/~": {
+      "opcode": "procedures_call",
+      "next": "JN",
+      "parent": "a/|",
+      "inputs": {
+        "R3vvN1=#aWX@b)0`;B`%": [
+          3,
+          "g:i",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove all of %s",
+        "argumentids": "[\"R3vvN1=#aWX@b)0`;B`%\"]",
+        "warp": "true"
+      }
+    },
+    "dOT": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g:j",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "g:k",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2305,
+      "y": 102
+    },
+    "g:j": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOT",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "n",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:k": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "dOT",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/]": {
+      "opcode": "operator_or",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "OPERAND2": [
+          2,
+          "a:a"
+        ],
+        "OPERAND1": [
+          1,
+          null
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2593,
+      "y": 170
+    },
+    "dOI": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "a/|",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "g:l",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:i": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/~",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "nimp",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:f": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "JN",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "nimp",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:l": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOI",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "nimp",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a:c": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "JN",
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          3,
+          "dOU",
+          [
+            10,
+            "1"
+          ]
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          3,
+          "dOV",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "warp": "true"
+      }
+    },
+    "dOU": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "a:c",
+      "inputs": {
+        "INDEX": [
+          3,
+          "dOW",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g/[": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "a/}",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "index",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g:g": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "JN",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "index",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:m": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOW",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "index",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOW": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "dOU",
+      "inputs": {
+        "NUM1": [
+          3,
+          "g:m",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOV": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "a:c",
+      "inputs": {
+        "NUM1": [
+          3,
+          "g:n",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:n": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "dOV",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "index",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a/H": {
+      "opcode": "procedures_call",
+      "next": "a/I",
+      "parent": "dOr",
+      "inputs": {
+        "xor^;K2m7p+^x9}9SB[0": [
+          3,
+          "g:o",
+          [
+            10,
+            "1"
+          ]
+        ],
+        "D`r!ylsut8I@5}2W^btm": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "remove duplicates %s %s",
+        "argumentids": "[\"xor^;K2m7p+^x9}9SB[0\",\"D`r!ylsut8I@5}2W^btm\"]",
+        "warp": "true"
+      }
+    },
+    "g:o": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "a/H",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "JK": {
+      "opcode": "control_repeat_until",
+      "next": "g:p",
+      "parent": "JJ",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "a:d"
+        ],
+        "CONDITION": [
+          2,
+          "dOX"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a:d": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a:e",
+      "parent": "JK",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "g:q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:q": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "a:d",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "template",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a:e": {
+      "opcode": "control_create_clone_of",
+      "next": "g:r",
+      "parent": "a:d",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "g:s"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:s": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "a:e",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "g:r": {
+      "opcode": "motion_changeyby",
+      "next": null,
+      "parent": "a:e",
+      "inputs": {
+        "DY": [
+          1,
+          [
+            4,
+            "12"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:p": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "JK",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dOY": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": "a:f",
+      "inputs": {
+        "INPUT": [
+          1,
+          "g:t"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:t": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "dOY",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Keys display",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dOX": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "JK",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "a:f"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a:f": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "dOX",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "dOY",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "g:u",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g:u": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "a:f",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Keys",
+          "zYM;NSN[QVMx/]ON))It"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "0",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "c446646a95cd43c36d25583fdaea3dbc",
+      "md5ext": "c446646a95cd43c36d25583fdaea3dbc.png",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    },
+    {
+      "name": "template",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "5fe91c057ee92980181cbd4bfe7c4fc6",
+      "md5ext": "5fe91c057ee92980181cbd4bfe7c4fc6.svg",
+      "rotationCenterX": 3.833333333333343,
+      "rotationCenterY": 4.999999999999972
+    },
+    {
+      "name": "lounge",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "11370cb78357edf0e5926f1dc56cfe7f",
+      "md5ext": "11370cb78357edf0e5926f1dc56cfe7f.svg",
+      "rotationCenterX": 3.7121212121211897,
+      "rotationCenterY": 5.000000000000028
+    },
+    {
+      "name": "(0,350)center/front yard",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "023f3447b3635a7c365f7d44ac58832e",
+      "md5ext": "023f3447b3635a7c365f7d44ac58832e.svg",
+      "rotationCenterX": 6.625000000000142,
+      "rotationCenterY": 7.625000000000114
+    },
+    {
+      "name": "eye room",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "c96dc3af54cc605d69ab2b0b67b2491a",
+      "md5ext": "c96dc3af54cc605d69ab2b0b67b2491a.svg",
+      "rotationCenterX": 4.199999999999989,
+      "rotationCenterY": 5.400000000000006
+    },
+    {
+      "name": "attic",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3060a6db75d8ccb2673335a0b5707ccd",
+      "md5ext": "3060a6db75d8ccb2673335a0b5707ccd.svg",
+      "rotationCenterX": 3.727272727272748,
+      "rotationCenterY": 5
+    },
+    {
+      "name": "(-122,-98)upstairs storage TOY",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "314ab1f197bc2de2b266e405b5d33bbc",
+      "md5ext": "314ab1f197bc2de2b266e405b5d33bbc.png",
+      "rotationCenterX": 3,
+      "rotationCenterY": 9
+    },
+    {
+      "name": "(-338,190)upstairs storage TOY",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "8531c9a17c087d5dfe3be7e8d8aba519",
+      "md5ext": "8531c9a17c087d5dfe3be7e8d8aba519.png",
+      "rotationCenterX": 2,
+      "rotationCenterY": 13
+    },
+    {
+      "name": "(-298,6)upstairs storage TOY",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "c90f257756c585becdc7230e278bc4db",
+      "md5ext": "c90f257756c585becdc7230e278bc4db.png",
+      "rotationCenterX": 2,
+      "rotationCenterY": 11
+    },
+    {
+      "name": "(-466,310)upstairs storage TOY",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "82a6a776f5f651c0f1c6b65f21b6dc4d",
+      "md5ext": "82a6a776f5f651c0f1c6b65f21b6dc4d.png",
+      "rotationCenterX": 11,
+      "rotationCenterY": 10
+    },
+    {
+      "name": "(-294,-168)upstairs creepy room TOY",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "886e12cf62352470589a9ae68b3613f8",
+      "md5ext": "886e12cf62352470589a9ae68b3613f8.svg",
+      "rotationCenterX": 0.5000000000000284,
+      "rotationCenterY": 4.75
+    },
+    {
+      "name": "(-294,-168)upstairs creepy room TOY2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "886e12cf62352470589a9ae68b3613f8",
+      "md5ext": "886e12cf62352470589a9ae68b3613f8.svg",
+      "rotationCenterX": 0.4999993750000158,
+      "rotationCenterY": 4.750001125000011
+    },
+    {
+      "name": "(96,103)bedroom TOY",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "988659d0b9cd5d74c7d5fa95d3cc0355",
+      "md5ext": "988659d0b9cd5d74c7d5fa95d3cc0355.svg",
+      "rotationCenterX": 1.2932267241378668,
+      "rotationCenterY": 5.293192413793122
+    },
+    {
+      "name": "BEAR",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "1533f971dc5852a26efe78906f14caca",
+      "md5ext": "1533f971dc5852a26efe78906f14caca.svg",
+      "rotationCenterX": 1.2592718926550788,
+      "rotationCenterY": 5.241859351644905
+    },
+    {
+      "name": "(56,-144)office TOY",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "7c8715dcbc1da3895ca03504d3e9b6da",
+      "md5ext": "7c8715dcbc1da3895ca03504d3e9b6da.svg",
+      "rotationCenterX": 0.9655172413791888,
+      "rotationCenterY": 4.379310344827502
+    },
+    {
+      "name": "(68,-100)body room$ TOY",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f5ec800c8d2441ce89785fbad6e56387",
+      "md5ext": "f5ec800c8d2441ce89785fbad6e56387.png",
+      "rotationCenterX": 4,
+      "rotationCenterY": 8
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 90,
+  "visible": false,
+  "x": -235,
+  "y": -116,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

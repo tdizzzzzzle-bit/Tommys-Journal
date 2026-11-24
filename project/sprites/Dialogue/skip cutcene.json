@@ -1,0 +1,1650 @@
+{
+  "isStage": false,
+  "name": "Dialogue//skip cutcene",
+  "variables": {
+    "@HDG07WzP/RT~5OL?+%B": [
+      "dialogue",
+      "I HATE those demons! They made me do it!"
+    ],
+    "O9VD;8d%BsRE+kzS!M+L": [
+      "+1 dummy variable",
+      14
+    ],
+    "M%@(K-uk0WtV=%2]lVOh": [
+      "I",
+      1
+    ]
+  },
+  "lists": {
+    "`UU(BThZJQy9K=Y-a;K/": [
+      "new dialogue",
+      [
+        "W",
+        "H",
+        "A",
+        "T",
+        " ",
+        "T",
+        "H",
+        "E",
+        " ",
+        "H",
+        "E",
+        "L",
+        "L",
+        "?"
+      ]
+    ]
+  },
+  "broadcasts": {},
+  "blocks": {
+    "gyF": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gyG",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "stop saying something",
+          "R%X(@$)du68aEakc4X7+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 592
+    },
+    "gyG": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "gyF",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyH": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "djT",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "cut scene",
+          "Ggd;vJvKj7.7CltfqEQ;"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -1905,
+      "y": 409
+    },
+    "hkC": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 112
+    },
+    "hkD": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 288
+    },
+    "gyI": {
+      "opcode": "event_whenflagclicked",
+      "next": "gyJ",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 416
+    },
+    "gyJ": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "gyI",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "djU": {
+      "opcode": "procedures_definition",
+      "next": "djV",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "gyK"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 808
+    },
+    "gyK": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "djU",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "new dialogue",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "djV": {
+      "opcode": "data_deletealloflist",
+      "next": "djW",
+      "parent": "djU",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "`UU(BThZJQy9K=Y-a;K/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "djW": {
+      "opcode": "data_setvariableto",
+      "next": "Ez",
+      "parent": "djV",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1 dummy variable",
+          "O9VD;8d%BsRE+kzS!M+L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ez": {
+      "opcode": "control_repeat",
+      "next": "djX",
+      "parent": "djW",
+      "inputs": {
+        "TIMES": [
+          3,
+          "gyL",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "djY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyL": {
+      "opcode": "operator_length",
+      "next": null,
+      "parent": "Ez",
+      "inputs": {
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "djY": {
+      "opcode": "data_changevariableby",
+      "next": "djZ",
+      "parent": "Ez",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "+1 dummy variable",
+          "O9VD;8d%BsRE+kzS!M+L"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "djZ": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "djY",
+      "inputs": {
+        "ITEM": [
+          3,
+          "gyM",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "`UU(BThZJQy9K=Y-a;K/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyM": {
+      "opcode": "operator_letter_of",
+      "next": null,
+      "parent": "djZ",
+      "inputs": {
+        "LETTER": [
+          3,
+          [
+            12,
+            "+1 dummy variable",
+            "O9VD;8d%BsRE+kzS!M+L"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ],
+        "STRING": [
+          3,
+          [
+            12,
+            "the thing to say (me) //dontsave//",
+            "g92!A/rDZbzbUWTm0T]+"
+          ],
+          [
+            10,
+            "apple"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "djX": {
+      "opcode": "data_deleteoflist",
+      "next": "gyN",
+      "parent": "Ez",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "new dialogue",
+          "`UU(BThZJQy9K=Y-a;K/"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyN": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "djX",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            13,
+            "new dialogue",
+            "`UU(BThZJQy9K=Y-a;K/"
+          ],
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "the thing to say (me) //dontsave//",
+          "g92!A/rDZbzbUWTm0T]+"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyO": {
+      "opcode": "event_broadcastandwait",
+      "next": "dj!",
+      "parent": null,
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -917,
+      "y": 438
+    },
+    "EA": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "djT",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dj#"
+        ],
+        "SUBSTACK": [
+          2,
+          "aV."
+        ],
+        "SUBSTACK2": [
+          2,
+          "dj%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj#": {
+      "opcode": "sensing_touchingobject",
+      "next": null,
+      "parent": "EA",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": [
+          1,
+          "gyP"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyP": {
+      "opcode": "sensing_touchingobjectmenu",
+      "next": null,
+      "parent": "dj#",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": [
+          "_mouse_"
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "dj%": {
+      "opcode": "looks_setsizeto",
+      "next": null,
+      "parent": "EA",
+      "inputs": {
+        "SIZE": [
+          3,
+          "aV/",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV/": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "dj%",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gyQ",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "dj(",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyQ": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "aV/",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj(": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "aV/",
+      "inputs": {
+        "NUM1": [
+          3,
+          "dj)",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj)": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dj(",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "gyR",
+          [
+            4,
+            "130"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyR": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "dj)",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV.": {
+      "opcode": "looks_setsizeto",
+      "next": "aV:",
+      "parent": "EA",
+      "inputs": {
+        "SIZE": [
+          3,
+          "aV;",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV;": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "aV.",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gyS",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "dj*",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyS": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "aV;",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj*": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "aV;",
+      "inputs": {
+        "NUM1": [
+          3,
+          "dj+",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj+": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dj*",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "230"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "gyT",
+          [
+            4,
+            "130"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyT": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "dj+",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hkE": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -1296,
+      "y": 271
+    },
+    "aV:": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "aV.",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gyU"
+        ],
+        "SUBSTACK": [
+          2,
+          "dj,"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyU": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "aV:",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj,": {
+      "opcode": "event_broadcast",
+      "next": "dj-",
+      "parent": "aV:",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "skip cutscene",
+            "7-Yd$j_c3H+^-{KI-nbw"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj!": {
+      "opcode": "event_broadcastandwait",
+      "next": "dj.",
+      "parent": "gyO",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj.": {
+      "opcode": "event_broadcastandwait",
+      "next": "dj/",
+      "parent": "dj!",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj/": {
+      "opcode": "event_broadcastandwait",
+      "next": "dj:",
+      "parent": "dj.",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj:": {
+      "opcode": "event_broadcastandwait",
+      "next": "gyV",
+      "parent": "dj/",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyV": {
+      "opcode": "event_broadcastandwait",
+      "next": null,
+      "parent": "dj:",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Me say something",
+            "GA`-o(--AtgQe(bY2G(z"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyW": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aV=",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -1776,
+      "y": 1165
+    },
+    "EB": {
+      "opcode": "control_repeat_until",
+      "next": "gyX",
+      "parent": "aV?",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gyY"
+        ],
+        "SUBSTACK": [
+          2,
+          "dj;"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyY": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "EB",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "game overed //dontsave//",
+            "20:j?Nnf?1+p=Y,tKObA"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj=": {
+      "opcode": "looks_show",
+      "next": "gyZ",
+      "parent": "dj;",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyZ": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "dj=",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy!": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "gy#",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -2145,
+      "y": 1161
+    },
+    "gy#": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "gy!",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gyX": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "EB",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj;": {
+      "opcode": "motion_gotoxy",
+      "next": "dj=",
+      "parent": "EB",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "188"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "-155"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV?": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "gy%",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "EB"
+        ],
+        "CONDITION": [
+          2,
+          "dj?"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy(": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "dj?",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "CUT SCENE //dontsave//",
+            ";6s1_[88CjAsP;P5XI0N"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "bad ending"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj?": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aV?",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "gy("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj@": {
+      "opcode": "control_stop",
+      "next": "gy*",
+      "parent": "gy)",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "gy)": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "dj@",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "skip cutscene",
+          "7-Yd$j_c3H+^-{KI-nbw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -1029,
+      "y": 1167
+    },
+    "gy*": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dj@",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj-": {
+      "opcode": "looks_hide",
+      "next": "gy+",
+      "parent": "dj,",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV=": {
+      "opcode": "control_create_clone_of",
+      "next": "gy,",
+      "parent": "gyW",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "gy-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy-": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "aV=",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gy%": {
+      "opcode": "control_start_as_clone",
+      "next": "aV?",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -1617,
+      "y": 1360
+    },
+    "dj[": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "gy.",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "EC"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "EC": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "dj[",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "dj]"
+        ],
+        "SUBSTACK": [
+          2,
+          "aV@"
+        ],
+        "SUBSTACK2": [
+          2,
+          "dj^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj]": {
+      "opcode": "sensing_touchingobject",
+      "next": null,
+      "parent": "EC",
+      "inputs": {
+        "TOUCHINGOBJECTMENU": [
+          1,
+          "gy/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy/": {
+      "opcode": "sensing_touchingobjectmenu",
+      "next": null,
+      "parent": "dj]",
+      "inputs": {},
+      "fields": {
+        "TOUCHINGOBJECTMENU": [
+          "_mouse_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aV@": {
+      "opcode": "looks_setsizeto",
+      "next": "aV[",
+      "parent": "EC",
+      "inputs": {
+        "SIZE": [
+          3,
+          "aV]",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV]": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "aV@",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gy:",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "dj_",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy:": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "aV]",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj_": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "aV]",
+      "inputs": {
+        "NUM1": [
+          3,
+          "dj`",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj`": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dj_",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "230"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "gy;",
+          [
+            4,
+            "130"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy;": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "dj`",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV[": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "aV@",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "gy="
+        ],
+        "SUBSTACK": [
+          2,
+          "dj{"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy=": {
+      "opcode": "sensing_mousedown",
+      "next": null,
+      "parent": "aV[",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj{": {
+      "opcode": "event_broadcast",
+      "next": "gy?",
+      "parent": "aV[",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "skip cutscene",
+            "7-Yd$j_c3H+^-{KI-nbw"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy?": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "dj{",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj^": {
+      "opcode": "looks_setsizeto",
+      "next": null,
+      "parent": "EC",
+      "inputs": {
+        "SIZE": [
+          3,
+          "aV^",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV^": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "dj^",
+      "inputs": {
+        "NUM1": [
+          3,
+          "gy@",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "dj|",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy@": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "aV^",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj|": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "aV^",
+      "inputs": {
+        "NUM1": [
+          3,
+          "dj}",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "5"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "dj}": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "dj|",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "gy[",
+          [
+            4,
+            "130"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy[": {
+      "opcode": "looks_size",
+      "next": null,
+      "parent": "dj}",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy.": {
+      "opcode": "control_start_as_clone",
+      "next": "dj[",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -2388,
+      "y": 445
+    },
+    "gy,": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aV=",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "h": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "i",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -1308,
+      "y": 427
+    },
+    "i": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "h",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "apV": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aV_",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -2640,
+      "y": 372
+    },
+    "aV_": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "gy]",
+      "parent": "apV",
+      "inputs": {
+        "INPUT": [
+          1,
+          "gy^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy^": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aV_",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Dialogue//skip cutcene",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "gy]": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "aV_",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "djT": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "gyH",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "EA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "gy+": {
+      "opcode": "control_stop",
+      "next": null,
+      "parent": "dj-",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "this script",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "false"
+      }
+    },
+    "hkF": [
+      12,
+      "skip dialogue? //dontsave//",
+      "VAEbnNnE`!g8R9t-44NR",
+      -863,
+      98
+    ]
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "e3dd070e4a5d49679f234b0fcab6c81c",
+      "md5ext": "e3dd070e4a5d49679f234b0fcab6c81c.svg",
+      "rotationCenterX": 21.75,
+      "rotationCenterY": 10.536270394970586
+    },
+    {
+      "name": "costume2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "3ac5a3e87774d30bf7325ded021f456d",
+      "md5ext": "3ac5a3e87774d30bf7325ded021f456d.svg",
+      "rotationCenterX": 36.99999999999997,
+      "rotationCenterY": 8.34615384615384
+    }
+  ],
+  "sounds": [
+    {
+      "name": "tone",
+      "assetId": "df754f7319c2409d89d11952282a6ce6",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 48000,
+      "sampleCount": 3699,
+      "md5ext": "df754f7319c2409d89d11952282a6ce6.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 150,
+  "visible": false,
+  "x": 188,
+  "y": -155,
+  "size": 201.6,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

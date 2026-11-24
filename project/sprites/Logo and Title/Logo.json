@@ -1,0 +1,532 @@
+{
+  "isStage": false,
+  "name": "Logo and Title//Logo",
+  "variables": {
+    "Sw=V.WlITbEr1/AEFdgf": [
+      "y",
+      0
+    ],
+    "gmu8AEBF*Whd+cgETsn+": [
+      "x",
+      0
+    ],
+    "wKhr5w5YE/l|2}jYv@O@": [
+      "bang bang?",
+      0
+    ],
+    "h.v-!tKPu;Iut1JB/bUD": [
+      "my speed",
+      5
+    ],
+    "xFW6gy.wKaddOIxo+9pf": [
+      "flashed",
+      0
+    ]
+  },
+  "lists": {
+    "E[e9je}/Nr/M[tmB5R@-": [
+      "my attack list",
+      []
+    ]
+  },
+  "broadcasts": {},
+  "blocks": {
+    "d*L": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "M=",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "copper works",
+          "F!OMsVAp=F[7o-Zu3-Et"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 517,
+      "y": 430
+    },
+    "M=": {
+      "opcode": "looks_switchcostumeto",
+      "next": "a`u",
+      "parent": "d*L",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "d*M"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*M": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "M=",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "0001-2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a`u": {
+      "opcode": "looks_show",
+      "next": "M?",
+      "parent": "M=",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "M@": {
+      "opcode": "lmsVideo_loadVideoURL",
+      "next": "a`v",
+      "parent": "M?",
+      "inputs": {
+        "URL": [
+          3,
+          "d*N",
+          [
+            10,
+            "https://extensions.turbowarp.org/dango.mp4"
+          ]
+        ],
+        "NAME": [
+          1,
+          [
+            10,
+            "logo"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*N": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "M@",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "13"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "rotoscope urls //dontsave//",
+          "*LI%q^[K4m]|l}sY*~^X"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`w": {
+      "opcode": "control_wait",
+      "next": "a`x",
+      "parent": "a`v",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`x": {
+      "opcode": "looks_show",
+      "next": "a`y",
+      "parent": "a`w",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`y": {
+      "opcode": "looks_seteffectto",
+      "next": "a`z",
+      "parent": "a`x",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`z": {
+      "opcode": "looks_setsizeto",
+      "next": "a`A",
+      "parent": "a`y",
+      "inputs": {
+        "SIZE": [
+          1,
+          [
+            4,
+            "200"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`A": {
+      "opcode": "control_wait",
+      "next": "a`B",
+      "parent": "a`z",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`B": {
+      "opcode": "looks_seteffectto",
+      "next": "M[",
+      "parent": "a`A",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "M[": {
+      "opcode": "lmsVideo_showVideo",
+      "next": "a`C",
+      "parent": "a`B",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "logo"
+          ]
+        ],
+        "TARGET": [
+          1,
+          "d*O"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*O": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "M[",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a`C": {
+      "opcode": "lmsVideo_startVideoAndWait",
+      "next": "a`D",
+      "parent": "M[",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "logo"
+          ]
+        ],
+        "DURATION": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`D": {
+      "opcode": "looks_hide",
+      "next": "a`E",
+      "parent": "a`C",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`E": {
+      "opcode": "sound_stopallsounds",
+      "next": "a`F",
+      "parent": "a`D",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`F": {
+      "opcode": "looks_hide",
+      "next": "a`G",
+      "parent": "a`E",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*P": {
+      "opcode": "event_whenflagclicked",
+      "next": "a`H",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 27,
+      "y": 851
+    },
+    "a`H": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "d*P",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "d*Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*Q": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "a`H",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*R": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          1,
+          "d*S"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -1871,
+      "y": -931
+    },
+    "d*S": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "d*R",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "Story",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "hft": {
+      "opcode": "control_wait_until",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -1091,
+      "y": 582
+    },
+    "M?": {
+      "opcode": "lmsVideo_stopShowingVideo",
+      "next": "M@",
+      "parent": "a`u",
+      "inputs": {
+        "TARGET": [
+          1,
+          "d*T"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "d*T": {
+      "opcode": "lmsVideo_menu_targets",
+      "next": null,
+      "parent": "M?",
+      "inputs": {},
+      "fields": {
+        "targets": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "a`G": {
+      "opcode": "control_stop",
+      "next": "d*U",
+      "parent": "a`F",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "d*U": {
+      "opcode": "lmsVideo_setVolume",
+      "next": null,
+      "parent": "a`G",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "logo"
+          ]
+        ],
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a`v": {
+      "opcode": "lmsVideo_setVolume",
+      "next": "a`w",
+      "parent": "M@",
+      "inputs": {
+        "NAME": [
+          1,
+          [
+            10,
+            "logo"
+          ]
+        ],
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 1,
+  "costumes": [
+    {
+      "name": "0001-0120120",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "c32dac674c92cd3c294dfdfd7e4078aa",
+      "md5ext": "c32dac674c92cd3c294dfdfd7e4078aa.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 270
+    },
+    {
+      "name": "0001-2",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "a1dd9311dacd25fd0c5e5381b984b8e0",
+      "md5ext": "a1dd9311dacd25fd0c5e5381b984b8e0.png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 158,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 200,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

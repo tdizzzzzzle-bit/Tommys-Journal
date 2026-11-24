@@ -1,0 +1,2838 @@
+{
+  "isStage": false,
+  "name": "TOMMY BOSSFIGHT//Life Bar",
+  "variables": {
+    "#O`Wwz*VW-CXd[U#(%C=": [
+      "I",
+      2
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "f;L": {
+      "opcode": "control_start_as_clone",
+      "next": "Ad",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1272,
+      "y": 648
+    },
+    "Ad": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "f;L",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c.M"
+        ],
+        "SUBSTACK": [
+          2,
+          "c.N"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c.O"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.M": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "Ad",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f;M",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;M": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c.M",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.N": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "Ad",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "aIe"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIe": {
+      "opcode": "control_wait_until",
+      "next": "c.P",
+      "parent": "c.N",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f;N"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;N": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIe",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.P": {
+      "opcode": "stretch_setStretchX",
+      "next": "aIf",
+      "parent": "aIe",
+      "inputs": {
+        "X": [
+          3,
+          [
+            12,
+            "spirit HP //dontsave//",
+            "6j0sl4pHt%0oHU]|YYud"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIf": {
+      "opcode": "looks_switchcostumeto",
+      "next": "f;O",
+      "parent": "c.P",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f;P"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;P": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aIf",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume2",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;O": {
+      "opcode": "motion_setx",
+      "next": null,
+      "parent": "aIf",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "-136"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.O": {
+      "opcode": "stretch_setStretchX",
+      "next": "c.Q",
+      "parent": "Ad",
+      "inputs": {
+        "X": [
+          3,
+          [
+            12,
+            "spirit HP //dontsave//",
+            "6j0sl4pHt%0oHU]|YYud"
+          ],
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.Q": {
+      "opcode": "looks_cleargraphiceffects",
+      "next": "c.R",
+      "parent": "c.O",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.R": {
+      "opcode": "looks_seteffectto",
+      "next": "aIg",
+      "parent": "c.Q",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "BRIGHTNESS",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIg": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c.S",
+      "parent": "c.R",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f;Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;Q": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aIg",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume3",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.S": {
+      "opcode": "motion_setx",
+      "next": "aIh",
+      "parent": "aIg",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "-136"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIh": {
+      "opcode": "control_repeat",
+      "next": "f;R",
+      "parent": "c.S",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aIi"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIi": {
+      "opcode": "control_wait_until",
+      "next": "f;S",
+      "parent": "aIh",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f;T"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;T": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIi",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;S": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "aIi",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;R": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "aIh",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;U": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.T",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "setup",
+          "C,OqPTyOdHOQY`:*L:6E"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1896,
+      "y": 432
+    },
+    "c.T": {
+      "opcode": "data_setvariableto",
+      "next": "aIj",
+      "parent": "f;U",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIj": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "f;V",
+      "parent": "c.T",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f;W"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;W": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIj",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;V": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aIj",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;X": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.U",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Title sequence",
+          "5KX_%CL_~?Y]io]#1@,V"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1272,
+      "y": 1648
+    },
+    "c.U": {
+      "opcode": "data_setvariableto",
+      "next": "aIk",
+      "parent": "f;X",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIk": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "f;Y",
+      "parent": "c.U",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f;Z"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;Z": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIk",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;Y": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aIk",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;!": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.V",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "start game",
+          "K_=!lJv?^fFzF*=.9u#R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 448,
+      "y": 1288
+    },
+    "c.V": {
+      "opcode": "data_setvariableto",
+      "next": "aIl",
+      "parent": "f;!",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIl": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "f;#",
+      "parent": "c.V",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f;%"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;%": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIl",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;#": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aIl",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;(": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.W",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "SPIRIT BATTLE 2",
+          "G8zL`.*iL7SItZQC[Il{"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 448,
+      "y": 64
+    },
+    "c.W": {
+      "opcode": "looks_show",
+      "next": "aIm",
+      "parent": "f;(",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIm": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "c.X",
+      "parent": "c.W",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f;)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;)": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIm",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.X": {
+      "opcode": "motion_gotoxy",
+      "next": "c.Y",
+      "parent": "aIm",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "20"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.Y": {
+      "opcode": "stretch_setStretchX",
+      "next": "aIn",
+      "parent": "c.X",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIn": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c.Z",
+      "parent": "c.Y",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f;*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;*": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aIn",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.Z": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "aIn",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "f;+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;+": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "c.Z",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;,": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "f;-",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "###ORDER SPRITES###",
+          "G0am,oNPf2S`xbK_NfWz"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1896,
+      "y": 1200
+    },
+    "hjR": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2490,
+      "y": 1330
+    },
+    "Ae": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "c.!",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c.#"
+        ],
+        "SUBSTACK": [
+          2,
+          "f;."
+        ],
+        "SUBSTACK2": [
+          2,
+          "Af"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.#": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "Ae",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f;/",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;/": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c.#",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;.": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "Ae",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-9997"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "Af": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "Ae",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c.%"
+        ],
+        "SUBSTACK": [
+          2,
+          "f;:"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c.("
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.%": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "Af",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f;;",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;;": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c.%",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;:": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "Af",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-9999"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "f;=": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "c.(",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          [
+            10,
+            "-9998"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "warp": "true"
+      }
+    },
+    "c.)": {
+      "opcode": "procedures_definition",
+      "next": "c.*",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "c.+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1896,
+      "y": 704
+    },
+    "c.+": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c.)",
+      "inputs": {
+        "5F!bDGCF-JmZv.7%92%^": [
+          1,
+          "f;?"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Order sprite by %s",
+        "argumentids": "[\"5F!bDGCF-JmZv.7%92%^\"]",
+        "argumentnames": "[\"category\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "f;?": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "c.+",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.*": {
+      "opcode": "looks_gotofrontback",
+      "next": "c.,",
+      "parent": "c.)",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.,": {
+      "opcode": "data_setvariableto",
+      "next": "Ag",
+      "parent": "c.*",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "#O`Wwz*VW-CXd[U#(%C="
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ag": {
+      "opcode": "control_repeat_until",
+      "next": "aIo",
+      "parent": "c.,",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c.-"
+        ],
+        "SUBSTACK": [
+          2,
+          "f;@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.-": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "Ag",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "aIp"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIp": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "c.-",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f;[",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "f;]",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;[": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aIp",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;]": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "aIp",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "#O`Wwz*VW-CXd[U#(%C="
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;@": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "Ag",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "I",
+          "#O`Wwz*VW-CXd[U#(%C="
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIo": {
+      "opcode": "data_insertatlist",
+      "next": "c..",
+      "parent": "Ag",
+      "inputs": {
+        "ITEM": [
+          3,
+          "f;^",
+          [
+            10,
+            "thing"
+          ]
+        ],
+        "INDEX": [
+          3,
+          [
+            12,
+            "I",
+            "#O`Wwz*VW-CXd[U#(%C="
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "###LAYERING### //dontsave//",
+          "4_t.Ztwk_jrzigSB7N}P"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;^": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aIo",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "category",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c..": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": null,
+      "parent": "aIo",
+      "inputs": {
+        "NUM": [
+          3,
+          "f;_",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;_": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "c..",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "I",
+            "#O`Wwz*VW-CXd[U#(%C="
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;`": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aIq",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "damage spirit",
+          "A12jz`W;zyYB*yC5yTBk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1272,
+      "y": 64
+    },
+    "aIq": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "f;`",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c./"
+        ],
+        "SUBSTACK": [
+          2,
+          "c.:"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c./": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIq",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f;{",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;{": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c./",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.:": {
+      "opcode": "data_changevariableby",
+      "next": "c.;",
+      "parent": "aIq",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-.8"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.;": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "c.:",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "f;|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;|": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "c.;",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f;}": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aIr",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "damage tommy",
+          "G)QhaG~M*UTk7v=Aat06"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1272,
+      "y": 376
+    },
+    "aIr": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "f;}",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aIs"
+        ],
+        "SUBSTACK": [
+          2,
+          "f;~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIs": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aIr",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "f=a"
+        ],
+        "OPERAND2": [
+          2,
+          "c.="
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=a": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "aIs",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "spirit HP //dontsave//",
+            "6j0sl4pHt%0oHU]|YYud"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.=": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aIs",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "f=b"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=b": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "c.=",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f;~": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "aIr",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            ".5"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=c": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aIt",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Move level",
+          "4:khfQt)@k7A_).?@0{5"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -366,
+      "y": 783
+    },
+    "aIu": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "aIt",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aIv"
+        ],
+        "SUBSTACK": [
+          2,
+          "Ah"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIv": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aIu",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "f=d"
+        ],
+        "OPERAND2": [
+          2,
+          "f=e"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=d": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "aIv",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "spirit HP //dontsave//",
+            "6j0sl4pHt%0oHU]|YYud"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=e": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "aIv",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "Ah": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "aIu",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f=f"
+        ],
+        "SUBSTACK": [
+          2,
+          "c.?"
+        ],
+        "SUBSTACK2": [
+          2,
+          "c.@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=f": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "Ah",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!Spirit Battle Mother!!!",
+            "K(6O8$O(z%{ZJ3yb:R~v"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.?": {
+      "opcode": "event_broadcast",
+      "next": "f=g",
+      "parent": "Ah",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "mom CHOMP",
+            "~/%*SPt6eGoj1Ku@qZ}#"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=g": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "c.?",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.@": {
+      "opcode": "data_setvariableto",
+      "next": "c.[",
+      "parent": "Ah",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "CUT SCENE //dontsave//",
+          ";6s1_[88CjAsP;P5XI0N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.[": {
+      "opcode": "event_broadcast",
+      "next": "f=h",
+      "parent": "c.@",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "game over",
+            "L1(/.F+%8O1{lVW}BIp0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=h": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "c.[",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=i": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.]",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "end tommy bossfight",
+          "KHj]e6f1dYN79~w#Y{zw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 448,
+      "y": 480
+    },
+    "c.]": {
+      "opcode": "control_stop",
+      "next": "aIw",
+      "parent": "f=i",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "aIw": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "aIx",
+      "parent": "c.]",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f=j"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=j": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIw",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aIx": {
+      "opcode": "looks_switchcostumeto",
+      "next": "f=k",
+      "parent": "aIw",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f=l"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=l": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aIx",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "neutral",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f=k": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aIx",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=m": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.^",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "SPIRIT BATTLE 2",
+          "G8zL`.*iL7SItZQC[Il{"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 448,
+      "y": 800
+    },
+    "c.^": {
+      "opcode": "data_setvariableto",
+      "next": "aIy",
+      "parent": "f=m",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIy": {
+      "opcode": "control_wait_until",
+      "next": "aIz",
+      "parent": "c.^",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aIA"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIA": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aIy",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "c._"
+        ],
+        "OPERAND2": [
+          2,
+          "f=n"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c._": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aIA",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "f=o"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=o": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c._",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!Spirit Battle Tommy!!!",
+            "TD1WaR@!URZe!xi`t6;{"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=n": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIA",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIz": {
+      "opcode": "control_repeat_until",
+      "next": null,
+      "parent": "aIy",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f=p"
+        ],
+        "SUBSTACK": [
+          2,
+          "aIB"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=p": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIz",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!Spirit Battle Tommy!!!",
+            "TD1WaR@!URZe!xi`t6;{"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIB": {
+      "opcode": "control_wait_until",
+      "next": "c.`",
+      "parent": "aIz",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "f=q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=q": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIB",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "%PAUSED //dontsave//",
+            "3V/ojquZ3Os2Sr|;~zt9"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.`": {
+      "opcode": "data_changevariableby",
+      "next": "f=r",
+      "parent": "aIB",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-.2"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=r": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": "c.`",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            ".1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=s": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c.{",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "mother boss fight",
+          "/a7-3XJ/~:WQ8e8hpf^-"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -335,
+      "y": 171
+    },
+    "c.{": {
+      "opcode": "looks_show",
+      "next": "aIC",
+      "parent": "f=s",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIC": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "c.|",
+      "parent": "c.{",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f=t"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=t": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIC",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.|": {
+      "opcode": "motion_gotoxy",
+      "next": "c.}",
+      "parent": "aIC",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "20"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.}": {
+      "opcode": "stretch_setStretchX",
+      "next": "aID",
+      "parent": "c.|",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aID": {
+      "opcode": "looks_switchcostumeto",
+      "next": "c.~",
+      "parent": "c.}",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "f=u"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=u": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "aID",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "costume1",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c.~": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "aID",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "f=v"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=v": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "c.~",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f=w": {
+      "opcode": "lmsclonesplus_spriteCloneCount",
+      "next": null,
+      "parent": null,
+      "inputs": {
+        "INPUT": [
+          1,
+          "f=x"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": -222,
+      "y": 62
+    },
+    "f=x": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "f=w",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f=y": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "f=z",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "game over",
+          "L1(/.F+%8O1{lVW}BIp0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -485,
+      "y": 1498
+    },
+    "f=z": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "f=y",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=A": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "c/a",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "beefy spirit damage",
+          "s*sxu{3?FQ@8%XbIhLb`"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 448,
+      "y": 1598
+    },
+    "aIE": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "c/a",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "c/b"
+        ],
+        "SUBSTACK": [
+          2,
+          "c/c"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c/b": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIE",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "f=B",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=B": {
+      "opcode": "looks_costumenumbername",
+      "next": null,
+      "parent": "c/b",
+      "inputs": {},
+      "fields": {
+        "NUMBER_NAME": [
+          "number",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c/c": {
+      "opcode": "data_changevariableby",
+      "next": "c/d",
+      "parent": "aIE",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "-2"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "c/d": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "c/c",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "f=C"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=C": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "c/d",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c/a": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": "f=A",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "5"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "aIE"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.(": {
+      "opcode": "control_wait",
+      "next": "f;=",
+      "parent": "Af",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=D": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aIF",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "heal player",
+          "dhirbw][R{g-PwIZWZa!"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 467,
+      "y": 2024
+    },
+    "aIF": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "f=D",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aIG"
+        ],
+        "SUBSTACK": [
+          2,
+          "f=E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIG": {
+      "opcode": "operator_and",
+      "next": null,
+      "parent": "aIF",
+      "inputs": {
+        "OPERAND1": [
+          2,
+          "f=F"
+        ],
+        "OPERAND2": [
+          2,
+          "c/e"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=F": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "aIG",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "spirit HP //dontsave//",
+            "6j0sl4pHt%0oHU]|YYud"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c/e": {
+      "opcode": "operator_not",
+      "next": null,
+      "parent": "aIG",
+      "inputs": {
+        "OPERAND": [
+          2,
+          "f=G"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=G": {
+      "opcode": "lmsclonesplus_isClone",
+      "next": null,
+      "parent": "c/e",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=E": {
+      "opcode": "data_changevariableby",
+      "next": null,
+      "parent": "aIF",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            ".5"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "spirit HP //dontsave//",
+          "6j0sl4pHt%0oHU]|YYud"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIH": {
+      "opcode": "lmsclonesplus_deleteClonesInSprite",
+      "next": "f=I",
+      "parent": "f=H",
+      "inputs": {
+        "INPUT": [
+          1,
+          "f=J"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "f=J": {
+      "opcode": "lmsclonesplus_menu_spriteMenu",
+      "next": null,
+      "parent": "aIH",
+      "inputs": {},
+      "fields": {
+        "spriteMenu": [
+          "TOMMY BOSSFIGHT//Life Bar",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "f=H": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aIH",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Kill last demon roto",
+          "Nc(*]H!Gej6]w]).p!nT"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -527,
+      "y": 1713
+    },
+    "f=I": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aIH",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "c.!": {
+      "opcode": "procedures_definition",
+      "next": "Ae",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "f=K"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1888,
+      "y": 1391
+    },
+    "f=K": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "c.!",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "order",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "f;-": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "f;,",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "order",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "E": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "aIt",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "!!!!!!GOD MODE //dontsave//",
+            "HT@4W-i@UBpn@ory%y3!"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aIt": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "f=c",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "aIu"
+        ],
+        "CONDITION": [
+          2,
+          "E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "name": "costume1",
+      "bitmapResolution": 2,
+      "dataFormat": "png",
+      "assetId": "f49699723a677dba8e1942e6ec639174",
+      "md5ext": "f49699723a677dba8e1942e6ec639174.png",
+      "rotationCenterX": 376,
+      "rotationCenterY": 324
+    },
+    {
+      "name": "costume2",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "29d42d8cca2201632bff73694d11bb49",
+      "md5ext": "29d42d8cca2201632bff73694d11bb49.svg",
+      "rotationCenterX": 1.1999999999999886,
+      "rotationCenterY": 162
+    },
+    {
+      "name": "costume3",
+      "bitmapResolution": 1,
+      "dataFormat": "svg",
+      "assetId": "29d42d8cca2201632bff73694d11bb49",
+      "md5ext": "29d42d8cca2201632bff73694d11bb49.svg",
+      "rotationCenterX": 1.1999999999999886,
+      "rotationCenterY": 162
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 83,
+  "visible": false,
+  "x": 20,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}
